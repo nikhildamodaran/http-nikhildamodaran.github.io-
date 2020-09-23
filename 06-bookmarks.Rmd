@@ -11,30 +11,39 @@
 
 [The Free Press Journal](https://www.freepressjournal.in/), 1928 Mumbai, India
 
-<a href="https://indianexpress.com", target="_blank"> The Indian Express</a> (1932), Noida, India <br>
-<a href="https://www.newindianexpress.com", target="_blank"> The New Indian Express</a> (1932, 1999), Chennai, India <br>
-<a href="https://www.deccanchronicle.com", target="_blank"> Deccan Chronicle</a> (1938), Hyderabad, India <br>
-<a href="https://economictimes.indiatimes.com", target="_blank"> The Economic Times</a> (1961), Mumbai, India <br>
-<a href="https://www.financialexpress.com", target="_blank"> The Financial Express</a> (1961), Noida, India <br>
-<a href="https://www.business-standard.com/", target="_blank"> Business Standard</a> (1975), New Delhi, India <br>
-<a href="https://www.asianage.com", target="_blank"> Asian Age</a> (1994), New Delhi, India <br>
-<a href="https://www.livemint.com", target="_blank"> Mint</a> (2007), New Delhi, India <br>
-</p>
+[The Indian Express](https://indianexpress.com), 1932 Noida, India
 
-<h3> Television</h3>
-<hr>
-<p>
-<a href="https://www.ndtv.com", target="_blank"> NDTV</a> (1988), New Delhi, India <br>
-<a href="https://www.news18.com", target="_blank"> CNN News18</a> (1995), Noida, India <br>
-</p>
+[The New Indian Express](https://www.newindianexpress.com) 1932, 1999 Chennai, India
 
-<h3> Magazines</h3>
-<hr>
-<a href="https://www.indiatoday.in", target="_blank"> India Today</a> (1975), Noida, India <br>
-<a href="https://frontline.thehindu.com", target="_blank"> Frontline</a> (1984), Chennai, India <br>
-<a href="https://www.outlookindia.com/", target="_blank"> Outlook</a> (1995), New Delhi, India <br>
+[Deccan Chronicle](https://www.deccanchronicle.com), 1938 Hyderabad, India
 
-<h3> Online</h3>
+[The Economic Times](https://economictimes.indiatimes.com), 1961 Mumbai, India
+
+[The Financial Express](https://www.financialexpress.com), 1961 Noida, India
+
+[Business Standard](https://www.business-standard.com/), 1975 New Delhi, India
+
+[Asian Age](https://www.asianage.com), 1994 New Delhi, India
+
+[Mint](https://www.livemint.com), 2007 New Delhi, India
+
+
+### Television  {.unlisted .unnumbered}
+
+[NDTV](https://www.ndtv.com), 1988 New Delhi, India
+
+[CNN News18](https://www.news18.com), 1995 Noida, India
+
+
+### Magazines {.unlisted .unnumbered}
+
+[India Today](https://www.indiatoday.in), 1975 Noida, India
+
+[Frontline](https://frontline.thehindu.com), 1984 Chennai, India
+
+[Outlook](https://www.outlookindia.com/), 1995 New Delhi, India
+
+### Online {.unlisted .unnumbered}
 <hr>
 <p> 
 <a href="https://pib.gov.in/indexd.aspx", target="_blank"> Press Information Bureau</a>, GOI (1919) <br>
@@ -207,9 +216,10 @@
 <h3> Reading Poems </h3>
 <a href="https://poets.org/", target="_blank"> Poets.org</a> (American Academy of Poets) <br>
 
-<h3> Reading Random </h3>
-<a href="https://fs.blog", target="_blank"> Farnam Street</a> on <a href="https://www.nytimes.com/2018/11/11/business/intelligence-expert-wall-street.html">NYTimes</a> <br>
+### Reading Random {.unlisted .unnumbered}
+
+[Farnam Street](https://fs.blog)
 
 
-### Watching
+### Watching {.unlisted .unnumbered}
 [SBS on Demand, 2016](https://www.sbs.com.au/ondemand/)

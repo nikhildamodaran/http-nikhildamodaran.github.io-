@@ -1,74 +1,12 @@
 # Macroeconomics II {#macro .unnumbered .unlisted}
 
-Welcome to Macroeconomics II course at Jindal School of Government and Public Policy! 
-  
-I am excited to discuss the developments in Macroeconomics, and learn more of it as we go through this course. The key to being a macroeconomist is to start doing practical macroeconomics to answer everyday questions. The more questions you raise, the more you learn. 
-To begin, I recommend taking a few minutes to explore the course webapge. Review the lecture notes we intend to cover each week before I start talking about the material. Some of the discussion in the course is going to be informative. I would leave you to read and know about it on your own, so that we spend the class time developing analytical ideas about macroeconomics.
+## Lecture Notes {.unnumbered .unlisted}
+[Fall, 2020](https://www.dropbox.com/s/4pky154wdnyphoa/Syllabus%20Macroeconomics%20II%20Fall%202020.pdf?dl=0)
 
-Good luck as you get started, and I hope you enjoy the course!
+[How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html), Mike Vaughan.
 
-## Course Synopsis {.unlisted .unnumbered}
-
-First, familiarize yourself with the [syllabus](https://www.dropbox.com/s/4pky154wdnyphoa/Syllabus%20Macroeconomics%20II%20Fall%202020.pdf?dl=0)
-
-This is the second course in macroeconomics at an undergraduate level. 
-
-We presume basic knowledge of the the goods and asset markets which comprise of a macroeconomic system from the previous macro course.
-
-We formalize the interactions between these markets to examine macroeconomic policy in a model economy and shed light contemporary, real world economic issues. For instance: can the central bank help us get out of this slump? Where does the government pitch in to support the central bank? or Should the resurgence be spearheaded by the government? Can government intervention hurt us instead? 
-
-We study the textbook answers and contrast it with what we observe in real life.
-
-__First part of the course__: In the first part of the course, we then initiate an analysis of short run economic fluctuations in output using a simple macroeconomic model. We examine a simple static model with product and factor markets and build a general equilibrium model with micro-foundations.
-
-This is a version of the textbook IS-LM model. We use this model to explore Classical and Keynesian explanations of output fluctuations and the differences therein. We look at the early chronological wave of explanations for temporary fluctuations in economic activity and gradually work towards a more realistic depiction of the world. We illustrate a possible mechanism of how our economies might work and what happens after it is hit by a shock.
-
-__Second part of the course__: The second part focuses on what can policymakers do after they witness this shock.
-
-We introduce two policy institutions into our model who try to precariously balance and attain a level of employment and inflation. How and why do these institutions work? We understand the logic of government policy and of governance by analyzing issues of government spending, taxation and debt which come under the ambit of fiscal policy. We also examine the objectives of central bank and its policy options in printing money and managing its balance sheet.
-
-__Hits and Misses__: We conclude the course by taking a snapshot of what we have missed and where new directions of research is taking the analysis of macroeconomics. What are the missing pieces of the puzzle which makes policy making challenging. Why can't we answer old questions and why do we keep repeating our exercises to answer the same old questions in macroeconomics?
-
-
-## Course Goals {.unlisted .unnumbered}
-
-Participants who successfully complete the course are expected to:
-
-- Build a basic model and understand its main mechanisms of transmission i.e. how macroeconomic variables are interconnected in the complex economic web,
-
-- Integrate our model into a textbook IS-LM model.
-
-- Imagine new ideas of integrating observations about the macro-economy into our model economy,
-
-- Embed the role of policy-makers in the model economy and re-evaluate the model,
-
-- Examine policy alternatives in the model and contrast it with the role of policymakers in the real world,
-
-- Understand common methods of policy stimulus to counteract temporary cyclical downturns.
-
-We will try and mix economic theories with empirical realities to understand how far can simple models explain what we as macro economists observe in any economy. At the end of this course, you should be able to start thinking like a macro economist, and even hopefully inch closer to being one.
-
-
-## Course Materials {.unnumbered .unlisted}
-
-- Required Textbook: [Macroeconomics](https://www.amazon.in/Macroeconomics-8e-Abel/dp/9332518246/ref=sr_1_2?ie=UTF8&qid=1533923451&sr=8-2&keywords=macroeconomics+abel), Andrew B. Abel, Ben S. Bernanke, and Dean Croushore. Pearson Education India; 8 edition (2013), ISBN 10 - 9332518246.  
-
-- Blogs - check out [my collection](https://nikhildamodaran.github.io/blogs/bookmark-ed.html) of webpages for research and [Resources for Economists](https://www.aeaweb.org/rfe/), American Economic Association
-
-
-## Course Outline and Lecture Notes {.unnumbered .unlisted}
-
-__Important__:The syllabus is intended to give the student guidance in what may be covered during the semester and will be followed as closely as possible. However, the instructor reserves the right to modify, supplement and make changes as the course needs arise. 
-
-
-- [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html) | Mike Vaughan | TEDxMileHigh
 
 ### Topic 1: Introduction to Short Run Macroeconomics {.unnumbered .unlisted}
-
-
-
-
-
 
 <ul>
 <li> ABC, Chapter 8: Business Cycles <br> </li>

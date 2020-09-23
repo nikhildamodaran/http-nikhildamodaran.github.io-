@@ -1,4 +1,4 @@
-# Mathematical Methods for Economics I {.unnumbered .unlisted}
+# Mathematical Methods {.unnumbered .unlisted}
 
 
 

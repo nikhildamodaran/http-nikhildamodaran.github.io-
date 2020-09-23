@@ -3,7 +3,18 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Nikhil Damodaran</a></li>
+        <li><a href="./">Welcome to my Webpage</a></li>
       after: |
         <li><a href="https://twitter.com/nikhildamodaran" target="blank">My Twitter</a></li>
-    download: ["pdf", "epub"]
+      collapse: subsection
+      scroll_highlight: yes
+    search: yes 
+    sharing:
+      Facebook: yes
+      GitHub: yes
+      Twitter: yes
+      Linkedin: yes
+      weibo: no
+      instapaper: no
+      vk: no
+    info: no

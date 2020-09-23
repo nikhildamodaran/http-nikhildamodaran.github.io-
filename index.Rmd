@@ -21,7 +21,7 @@ Email: [ndamodaran@jgu.edu.in](mailto:ndamodaran@jgu.edu.in)
 
 
 Welcome to my webpage!
-Here is a [short introduction](01-bio.html) and here's my latest blog post. 
+Here is a [short introduction](bio.html) and here's my latest blog post. 
 
 
 ### Research {.unlisted .unnumbered}
@@ -39,8 +39,8 @@ I teach Macroeconomics I and II, International Trade, Mathematical Methods for E
 
 __Ongoing courses__:
 
-EC 13: [Macroeconomics II](04-macro2.html) -  Fall 2020 
+EC 13: [Macroeconomics II](macro.html) -  Fall 2020 
 
-EC 01: Mathematical Methods for Economics I, Fall 2020
+EC 01: [Mathematical Methods for Economics I](), Fall 2020
 
 
