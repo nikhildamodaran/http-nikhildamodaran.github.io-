@@ -1,0 +1,36 @@
+# Teaching {#Teaching .unnumbered}
+
+My lecture notes are available in the <text style="color:blue;"> blue hyperlinks </text>, whenever highlighted. These are for open source sharing. Please feel free to use them with due credit.
+
+[Mankiw, 2019](https://www.dropbox.com/s/kha8js3axg8ur0k/Mankiw%202019%20Six%20Guidelines%20for%20Teaching%20Intermediate%20Macroeconnomics.pdf?dl=0)
+
+> "One of the biggest challenges instructors face is avoiding the tendency to overestimate students’ knowledge and ability to absorb new information. This is sometimes called the curse of knowledge: once you know something, it is hard to remember what it is like to not know it. It is easy to unwittingly overwhelm students....Bad public policies are bad for the nation, but they are great fodder for the economics classroom. As an instructor, you can count on a ready supply." 
+
+[Miles Kimball](https://blog.supplysideliberal.com/post/2018/5/24/on-teaching-and-learning-macroeconomics), May 24, 2018 from "On Teaching and Learning Macroeconomics"
+
+>"I don't want my students to just get a degree. I want them to be able to impress employers with their skills, and to have the skills they need when they themselves becomes bosses."
+
+
+## Courses Instructed {.unlisted .unnumbered}
+
+EC 12: Statistics II - Spring 2020
+
+EC 13: Macroeconomics II - Spring 2019, Spring 2020, [Fall 2020](_book/04-macro2.html)
+
+EC 01: Mathematical Methods for Economics I - Fall 2019, [Fall 2020](_book/07-maths.html)
+
+EC 08: Macroeconomics I - Fall 2018
+
+EC 21: International Trade - Spring 2019 and Fall 2018
+
+Agricultural Price Analysis, Spring 2017 
+
+
+## Courses Assisted {.unlisted .unnumbered}
+
+Principles of Economics, Spring 2015
+
+EC 13: Econometric Methods I,  Spring 2015
+
+Principles of Macroeconomics, Spring 2014
+
