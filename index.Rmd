@@ -41,6 +41,6 @@ __Ongoing courses__:
 
 EC 13: [Macroeconomics II](macro.html) -  Fall 2020 
 
-EC 01: [Mathematical Methods for Economics I](), Fall 2020
+EC 01: [Mathematical Methods for Economics I](mathematical-methods.html), Fall 2020
 
 
