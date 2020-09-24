@@ -1,30 +1,17 @@
-# Articles {-}
+# Articles {.unnumbered}
 
-### Published {.unlisted .unnumbered}
+<p class="red"> __Published__ </p>  
+__Monetary Poicy__  
+[How can RBI facilitate State expenditures through Unconventional Monetary Policy](https://indianexpress.com/article/opinion/columns/rbi-coronavirus-covid-19-state-governments-imf-gdp-growth-india-6377682/), The Indian Express, April 24, 2020.  
+__COVID-19__  
+[Breaking the Value Chain](https://indianexpress.com/article/opinion/coronavirus-india-lockdown-economic-impact-nikhil-damodaran-6358707/), The Indian Express, April 12, 2020  
 
-__Monetary Poicy__
-
-[How can RBI facilitate State expenditures through Unconventional Monetary Policy](https://indianexpress.com/article/opinion/columns/rbi-coronavirus-covid-19-state-governments-imf-gdp-growth-india-6377682/), The Indian Express, April 24, 2020.
-
-__COVID-19__
-[Breaking the Value Chain](https://indianexpress.com/article/opinion/coronavirus-india-lockdown-economic-impact-nikhil-damodaran-6358707/), The Indian Express, April 12, 2020
-
-### Unpublished {.unlisted .unnumbered}
-
-__R Blogs__
-
-[On a Data Analytics sequence: Getting started with R for Data Science]()
-
-[Exploring Time Series Data in R]()
-
-
-__Leisure__
-
-Movie reviews: [Certified Copy]()
-
-[Calvin and Hobbes, 1985, Nov 18]()
-
-
-__Student Resources__
-
-[Bookmarks](docs/bookmarks.html)
+<p class="red"> __Unpublished__ </p>  
+__R Blogs__  
+[On a Data Analytics sequence: Getting started with R for Data Science]()  
+[Exploring Time Series Data in R]()  
+__Leisure__  
+Movie reviews: [Certified Copy]()   
+[Calvin and Hobbes, 1985, Nov 18]()  
+__Student Resources__  
+[Bookmarks]()
