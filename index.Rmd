@@ -1,5 +1,5 @@
 ---
-title: "Nikhil Damodaran"
+title: " Nikhil Damodaran"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -9,7 +9,7 @@ link-citations: yes
 
 ---
 
-# {#Home .unnumbered}
+# Home {#Home .unnumbered}
 
 Assistant Professor <br>
 [School of Government and Public Policy](http://jsgp.edu.in/) <br>
@@ -24,7 +24,7 @@ Welcome to my webpage!
 Here is a [short introduction](bio.html) and here's my latest blog post. 
 
 
-<text class = red> __Research__ </text>
+<p class="red" > __Research__ </p>
 
 My research focuses on transmission of economic policy across open economies.
 
@@ -33,7 +33,7 @@ I examine transmission in a variety of setting. I analyze regional economies whi
 In similar spirit, I examine transmission of Demonetization shock on the Indian economy in a paper "[Consumer Payment Choice and the Heterogeneous Impact of India's Demonetization](https://www.monash.edu/__data/assets/pdf_file/0005/2252795/07-20-Consumer-payment-choice-and-demonetizationedited-final.pdf)" in which we look at the disaggregate effects of India's demonetization through short payment choices for consumers. This is largely regional transmission of this monetary shock.
 
 
-<text class = red> __Teaching__ </text>
+<p class = "red" > __Teaching__ </p>
 
 I teach Macroeconomics I and II, International Trade, Mathematical Methods for Economics, Statistics II all of which are compulsary courses for BA.(Hons) Economics at O.P. Jindal Global University.
 

@@ -3,9 +3,7 @@
 ### Indian Section {.unlisted .unnumbered}
 
 
-#### Dalies {.unlisted .unnumbered}
-
-
+<p class="red"> __Dalies__ </p>  
 [The Hindu](https://www.thehindu.com/),1878 Chennai, India  
 [Hindustan Times](https://www.hindustantimes.com/), 1924 New Delhi, India  
 [The Free Press Journal](https://www.freepressjournal.in/), 1928 Mumbai, India  
@@ -18,21 +16,16 @@
 [Asian Age](https://www.asianage.com), 1994 New Delhi, India  
 [Mint](https://www.livemint.com), 2007 New Delhi, India
 
-
-#### Television  {.unlisted .unnumbered}
-
+<p class="red"> __Television__ </p>  
 [NDTV](https://www.ndtv.com), 1988 New Delhi, India  
 [CNN News18](https://www.news18.com), 1995 Noida, India
 
-
-#### Magazines {.unlisted .unnumbered}
-
+<p class="red"> __Magazines__ </p>  
 [India Today](https://www.indiatoday.in), 1975 Noida, India  
 [Frontline](https://frontline.thehindu.com), 1984 Chennai, India  
 [Outlook](https://www.outlookindia.com/), 1995 New Delhi, India  
 
-#### Online {.unlisted .unnumbered}
-
+<p class="red"> __Online__ </p>  
 [Press Information Bureau](https://pib.gov.in/indexd.aspx), GOI (1919)  
 [DNA](https://www.dnaindia.com), 2005-2019  
 [One India](https://www.oneindia.com), 2006  
@@ -47,8 +40,6 @@
 
 
 ### International Section {.unlisted .unnumbered}
-
-
 <text class = red> __Dalies__ </text>  
 [The Times](https://www.thetimes.co.uk/), 1788 London, UK.  
 [The Guardian](https://www.theguardian.com/uk), 1821 London, UK.  
