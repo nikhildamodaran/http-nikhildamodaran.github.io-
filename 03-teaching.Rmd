@@ -17,7 +17,7 @@ EC 12: Statistics II - Spring 2020
 
 EC 13: Macroeconomics II - Spring 2019, Spring 2020, [Fall 2020](macro.html)
 
-EC 01: Mathematical Methods for Economics I - Fall 2019, [Fall 2020](mathematical-methods.html)
+EC 01: Mathematical Methods for Economics I - Fall 2019, [Fall 2020](maths.html)
 
 EC 08: Macroeconomics I - Fall 2018
 
