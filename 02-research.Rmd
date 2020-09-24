@@ -1,4 +1,4 @@
-# Research {.unnumbered}
+# Research {#Research .unnumbered}
 
 <text class = red> __Fiscal Policy and Transmission: The Case of India's States__ </text>  
 _Abstract_: The magnitude of interstate trade in India adds a unique dimension to within and interstate transmission of fiscal policies. We exploit regional variations in fiscal policy to examine its local potency and spillover using a two country New Keynesian model. We find that an increase in spending generates larger domestic expansion than a reduction in excise or VAT cut. Although an increase in spending worsens home trade balance, it triggers a positive spillover on the trading partner thus contributing to regional stability. We also implement a fiscal devaluation through excise-VAT adjustments which rely on interstate trade to boost domestic output. 

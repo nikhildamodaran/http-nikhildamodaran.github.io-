@@ -1,4 +1,4 @@
-# Teaching { .unnumbered}
+# Teaching {#Teaching .unnumbered}
 
 My lecture notes are available in the <text class = blue> blue hyperlinks </text>, whenever highlighted. These are for open source sharing. Please feel free to use them with due credit.
 
