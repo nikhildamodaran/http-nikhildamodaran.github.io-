@@ -17,4 +17,4 @@ Movie reviews: [Certified Copy]()
 [Calvin and Hobbes, 1985, Nov 18]()  
 
 __Student Resources__  
-[Bookmarks]()
+[Bookmarks](docs/bookmarks.html)
