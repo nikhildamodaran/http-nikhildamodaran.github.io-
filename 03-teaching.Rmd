@@ -1,6 +1,6 @@
-# Teaching {#Teaching .unnumbered}
+# Teaching { .unnumbered}
 
-My lecture notes are available in the <text style="color:blue;"> blue hyperlinks </text>, whenever highlighted. These are for open source sharing. Please feel free to use them with due credit.
+My lecture notes are available in the <text class = blue> blue hyperlinks </text>, whenever highlighted. These are for open source sharing. Please feel free to use them with due credit.
 
 [Mankiw, 2019](https://www.dropbox.com/s/kha8js3axg8ur0k/Mankiw%202019%20Six%20Guidelines%20for%20Teaching%20Intermediate%20Macroeconnomics.pdf?dl=0)
 
@@ -10,14 +10,14 @@ My lecture notes are available in the <text style="color:blue;"> blue hyperlinks
 
 >"I don't want my students to just get a degree. I want them to be able to impress employers with their skills, and to have the skills they need when they themselves becomes bosses."
 
+<text class = red> __Courses Instructed__ </text>
 
-## Courses Instructed {.unlisted .unnumbered}
 
 EC 12: Statistics II - Spring 2020
 
-EC 13: Macroeconomics II - Spring 2019, Spring 2020, [Fall 2020](_book/04-macro2.html)
+EC 13: Macroeconomics II - Spring 2019, Spring 2020, [Fall 2020](macro.html)
 
-EC 01: Mathematical Methods for Economics I - Fall 2019, [Fall 2020](_book/07-maths.html)
+EC 01: Mathematical Methods for Economics I - Fall 2019, [Fall 2020](mathematical-methods.html)
 
 EC 08: Macroeconomics I - Fall 2018
 
@@ -25,8 +25,7 @@ EC 21: International Trade - Spring 2019 and Fall 2018
 
 Agricultural Price Analysis, Spring 2017 
 
-
-## Courses Assisted {.unlisted .unnumbered}
+<text class = red> __Courses Assisted__ </text>
 
 Principles of Economics, Spring 2015
 

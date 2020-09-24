@@ -1,5 +1,6 @@
 bookdown::gitbook:
   css: style.css
+  split_by: section
   config:
     toc:
       before: |
@@ -8,6 +9,7 @@ bookdown::gitbook:
         <li><a href="https://twitter.com/nikhildamodaran" target="blank">My Twitter</a></li>
       collapse: subsection
       scroll_highlight: yes
+        
     search: yes 
     sharing:
       Facebook: yes

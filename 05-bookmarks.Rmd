@@ -1,225 +1,197 @@
-# Bookmarks {#Bookmarks .unnumbered .unlisted} 
+# Bookmarks {#bookmarks .unnumbered .unlisted} 
 
-## Indian Section {.unlisted .unnumbered}
+### Indian Section {.unlisted .unnumbered}
 
 
-### Dalies {.unlisted .unnumbered}
+#### Dalies {.unlisted .unnumbered}
 
-[The Hindu](https://www.thehindu.com/),1878 Chennai, India
 
-[Hindustan Times](https://www.hindustantimes.com/), 1924 New Delhi, India
-
-[The Free Press Journal](https://www.freepressjournal.in/), 1928 Mumbai, India
-
-[The Indian Express](https://indianexpress.com), 1932 Noida, India
-
-[The New Indian Express](https://www.newindianexpress.com) 1932, 1999 Chennai, India
-
-[Deccan Chronicle](https://www.deccanchronicle.com), 1938 Hyderabad, India
-
-[The Economic Times](https://economictimes.indiatimes.com), 1961 Mumbai, India
-
-[The Financial Express](https://www.financialexpress.com), 1961 Noida, India
-
-[Business Standard](https://www.business-standard.com/), 1975 New Delhi, India
-
-[Asian Age](https://www.asianage.com), 1994 New Delhi, India
-
+[The Hindu](https://www.thehindu.com/),1878 Chennai, India  
+[Hindustan Times](https://www.hindustantimes.com/), 1924 New Delhi, India  
+[The Free Press Journal](https://www.freepressjournal.in/), 1928 Mumbai, India  
+[The Indian Express](https://indianexpress.com), 1932 Noida, India  
+[The New Indian Express](https://www.newindianexpress.com) 1932, 1999 Chennai, India  
+[Deccan Chronicle](https://www.deccanchronicle.com), 1938 Hyderabad, India  
+[The Economic Times](https://economictimes.indiatimes.com), 1961 Mumbai, India  
+[The Financial Express](https://www.financialexpress.com), 1961 Noida, India  
+[Business Standard](https://www.business-standard.com/), 1975 New Delhi, India  
+[Asian Age](https://www.asianage.com), 1994 New Delhi, India  
 [Mint](https://www.livemint.com), 2007 New Delhi, India
 
 
-### Television  {.unlisted .unnumbered}
+#### Television  {.unlisted .unnumbered}
 
-[NDTV](https://www.ndtv.com), 1988 New Delhi, India
-
+[NDTV](https://www.ndtv.com), 1988 New Delhi, India  
 [CNN News18](https://www.news18.com), 1995 Noida, India
 
 
-### Magazines {.unlisted .unnumbered}
+#### Magazines {.unlisted .unnumbered}
 
-[India Today](https://www.indiatoday.in), 1975 Noida, India
+[India Today](https://www.indiatoday.in), 1975 Noida, India  
+[Frontline](https://frontline.thehindu.com), 1984 Chennai, India  
+[Outlook](https://www.outlookindia.com/), 1995 New Delhi, India  
 
-[Frontline](https://frontline.thehindu.com), 1984 Chennai, India
+#### Online {.unlisted .unnumbered}
 
-[Outlook](https://www.outlookindia.com/), 1995 New Delhi, India
-
-### Online {.unlisted .unnumbered}
-<hr>
-<p> 
-<a href="https://pib.gov.in/indexd.aspx", target="_blank"> Press Information Bureau</a>, GOI (1919) <br>
-<a href="https://www.dnaindia.com", target="_blank"> DNA</a> (2005-2019), known as Daily News and Analysis, owned by Zee, Mumbai, India<br>
-<a href="https://www.oneindia.com", target="_blank"> One India</a> (2006), 
-<a href="https://www.firstpost.com", target="_blank"> Firstpost</a> (late 2010), Mumbai, India<br>
-<a href="https://www.brookings.edu/center/brookings-india/", target="_blank">Brookings India</a> (2013), India <br>
-<a href="https://scroll.in", target="_blank"> Scroll.in</a> (2014), Delaware, USA. <br>
-<a href="https://thewire.in/", target="_blank"> The Wire</a> (2015), New Delhi, India <br>
-<a href="https://www.thequint.com", target="_blank"> The Quint</a> (2015), New Delhi, India <br>
-<a href="https://the-ken.com", target="_blank"> The Ken</a> (2016), Bangalore, India <br>
-<a href="https://www.bloombergquint.com/", target="_blank"> Bloomberg Quint</a> (2016), India <br>
-<a href="https://theprint.in", target="_blank"> The Print</a> (2017), New Delhi, India <br>
-</p>
-
-<h2>International Section</h2>
-<hr> 
-<h3> Dalies </h3>
-<hr>
-<p>
-<a href="https://www.nytimes.com/", target="_blank"> The New York Times</a> (1851), New York City, USA.  <br> 
-<a href="https://www.wsj.com/", target="_blank"> The Wall Street Journal</a> (1889), New York City, USA.  <br> 
-<a href="https://www.csmonitor.com/", target="_blank"> The Christian Science Monitor</a> (1908), Boston, USA. <br>
-<a href="https://www.washingtonpost.com", target="_blank"> The Washington Post</a> (1877), Washington D.C., USA.  <br> 
-<a href="https://www.bbc.com/", target="_blank"> BBC</a> (1922), London, UK. <br> 
-<a href="https://www.latimes.com/", target="_blank"> Los Angeles Times</a> (1881), Los Angeles, USA. <br> 
-<a href="https://www.usatoday.com/", target="_blank"> USA Today</a> (1982), Virginia, USA. <br>
-<a href="https://www.ft.com/", target="_blank"> Financial Times</a> (1888), London, UK. <br>
-<a href="https://www.theguardian.com/uk", target="_blank"> The Guardian</a> (1821), London, UK. <br>
-<a href="https://www.thetimes.co.uk/", target="_blank"> The Times</a> (1788), London, UK. <br>
-<a href="https://www.telegraph.co.uk/", target="_blank">The Telegraph</a> or The Daily Telegraph (1855), London, UK. <br>
-<a href="https://www.afr.com/", target="_blank">The Australian Financial Review</a> (1950), Sydney, New South Whales, Australia. <br>
-</p>
-
-<h3> Magazines</h3>
-<hr>
-<p>
-<a href="https://www.economist.com/", target="_blank"> The Economist</a> (1843), London, UK <br> 
-<a href="https://www.theatlantic.com/world/", target="_blank"> The Atlantic</a> (1857), Washington D.C., USA <br> 
-<a href="https://www.thenation.com/", target="_blank"> The Nation</a> (1865), New York City, USA <br>
-<a href="https://www.dailynews.com/", target="_blank"> Los Angeles Daily News</a> (1911), Los Angeles, USA <br>
-<a href="https://newrepublic.com/", target="_blank"> The New Republic</a> (1914) New York City, USA <br>
-<a href="https://www.forbes.com/", target="_blank"> FORBES</a> (1917), New Jersey, USA <br>
-<a href="https://www.foreignaffairs.com/", target="_blank"> Foreign Affairs</a> (1922) USA <br> 
-<a href="https://time.com/", target="_blank"> Time </a> (1923), New York City, USA <br>
-<a href="https://www.newyorker.com/", target="_blank"> The New Yorker</a> (1925) New York City, USA<br>
-<a href="https://fortune.com/", target="_blank">Fortune</a>, (1929) New York City, USA <br>
-<a href="https://progressive.org/", target="_blank">The Progressive</a> (1929), Wisconsin, USA <br>
-<a href="https://www.bloomberg.com/businessweek", target="_blank"> Businessweek</a> (1929),by Bloomberg, New York City, USA.<br>
-<a href="https://www.nationalreview.com/", target="_blank"> National Review</a> (1955), New York City, USA<br>
-<a href="https://nationalinterest.org", target="_blank">The National Interest</a> (1985),  Washington D.C., USA <br>
-<a href="https://www.weeklystandard.com/", target="_blank"> The Weekly Standard</a> (1995), Washington D.C., USA <br>
-<a href="https://slate.com/", target="_blank"> Slate</a> (1996), New York City, USA. <br>
-<a href="https://www.politico.com/", target="_blank"> Politico</a> (2007), Virginia, USA. <br> 
-</p>
-
-<h3> Television</h3>
-<hr>
-<p>
-<a href="https://www.aljazeera.com/", target="_blank"> Al-Jzeera</a>, (1996) Doha, Quatar. <br>
-<a href="https://www.npr.org/", target="_blank"> National Public Radio</a> (NPR, USA) (1970) <br> 
-<a href="https://edition.cnn.com/", target="_blank"> CNN (Cable News Network)</a>, 1980, Georgia, USA. <br>
-<a href="https://www.nbcnews.com/", target="_blank"> NBC News</a>(1940), New York City, USA <br>
-<a href="https://www.cbsnews.com/", target="_blank"> CBS News</a>, 1927, New York City, USA <br>
-<a href="https://abcnews.go.com/", target="_blank">ABC</a> (American Broadcasting Company) News, 1943, California, USA <br>
-<a href="https://www.abc.net.au/", target="_blank"> Australian Broadcasting Corporation</a>, (1929) Sydney, New South Whales, Australia. <br>
-<a href="https://www.sbs.com.au", target="_blank"> SBS</a> (Special Broadcasting Service), 1978, New South Whales, Australia. <br>
-</p>
-
-<h3> Online</h3>
-<hr>
-<a href="https://www.brookings.edu/", target="_blank"> The Brookings Institution</a> (1916) Washington D.C., USA <br>
-<a href="https://www.pewresearch.org/", target="_blank"> The Pew Research Center</a> (1993) Washington D.C., USA <br>
-<a href="https://www.thebureauinvestigates.com/", target="_blank">The Bureau of Investigative Journalism</a> (2010) London, UK. <br>
-<a href="https://www.project-syndicate.org", target="_blank"> Project Syndicate</a> (late 2000s) <br>
-<a href="https://www.voxmedia.com/a/vm", target="_blank"> Vox Media</a> (2011) New York, USA. <br>
-<a href="https://theconversation.com/au". target="_blank"> The Conversation</a> (2011), Australia. <br>
-<a href="https://qz.com/", target="_blank"> Quartz</a> Media (2012), New York City, USA. <br>
-<a href="https://www.ideasforindia.in", target="_blank"> Medium</a> (2012), USA. <br>
-<a href="https://theintercept.com/", target="_blank"> The Intercept</a>, (2014) USA.<br>
-<a href="https://www.vox.com/", target="_blank"> Vox</a> (2014), New York, USA.<br>
-
-<h3> News Agencies </h3>
-<hr>
-<a href="https://www.ap.org/en-gb/", target="_blank">The Associate Press Agency</a> (1917), New York City, USA.<br> 
-<a href="https://apnews.com", target="_blank">The Associate Press News</a> (1917), New York City, USA.<br> 
-<a href="https://www.thomsonreuters.com/en.html", target="_blank">Reuters Agency</a> (1851), London, UK. <br> 
-<a href="https://www.reuters.com", target="_blank">Reuters News</a> (1851), London, UK. <br> 
-<a href="https://www.bloomberg.com", target="_blank"> Bloomberg</a>, L.P. (Limited partnership) (1981), New York City, USA. <br> 
-
-<h2> Economic Cornner</h2>
-<hr>
-<blockquote> Some of the above news sources are as much economics as any serious academic papers. Additionally there are some institutes which conduct their own research and give newsletters to your inbox which could be worth the watch. It also depends upon your area of interest within the broad platter of economics. </blockquote>
-
-<h3> Blogosphere</h3>
-<hr>
-<a href="https://marginalrevolution.com", target="_blank"> Marginal Revolution </a> (2003) by Tyler Cowen and Alex Tabarrok, George Mason University <br>
-<a href="https://fivethirtyeight.com/", target="_blank"> Five Thirty Eight</a> (2008) by Nate Silver, owned by ESPN (ABC Media) since 2012 <br>
-<a href="https://gregmankiw.blogspot.com/", target="_blank"> Greg Mankiw's Blog</a> (2006) <br>
-<a href="https://macromarketmusings.blogspot.com/", target="_blank"> Macromusings</a> (2007) by David Beckworth <br>
-<a href="https://mainlymacro.blogspot.com/", target="_blank"> Mainly Macro</a> (2011) by <a href="https://sites.google.com/site/sjqwrenlewis/home">Simon Wren Lewis</a>, Merton College, University of Oxford. <br>
-<a href="https://blog.supplysideliberal.com/", target="_blank"> Confessions of a Supply Side Liberal</a> (2012) by Miles Kimball, Univeristy of Colorado, Boulder <br>
-<a href="https://conversableeconomist.blogspot.com/", target="_blank"> Conversable Economist</a> (2011) by Timothy Taylor <br>
-<a href="https://www.nakedcapitalism.com/", target="_blank"> Naked Capitalism</a> (2006) by various authors <br>
-<a href="http://econbrowser.com/", target="_blank"> Econbrowser</a> (2005) by <a href="https://econweb.ucsd.edu/~jhamilto/", target="_blank">Hamilton</a> and <a href="https://www.ssc.wisc.edu/~mchinn/", target="_blank"> Chinn</a> <br>
-<a href="https://neweconomicperspectives.org/", target="_blank"> New Economic Perspectives</a>(2007) <br>
-<a href="The Library of Economics and Liberty", target="_blank"> The Library of Economics and Liberty</a> (1993) <br>
-<a href="https://timharford.com/", target="_blank"> Undercover Economist</a>, by Tim Hardford (early 2000s) <br>
-<a href="https://econlife.com/", target="_blank"> EconLife</a> (early 2000s), by Elaine Swartz <br>
-<a href="https://www.intelligenteconomist.com/", target="_blank"> Intelligent Economist</a>(?) by Prateek Agarwal <br>
-<a href="https://cafehayek.com/", target="_blank"> Cafe Hayek</a> (2004) <br>
-<a href="https://www.thestreet.com/economonitor/", target="_blank"> Economonitor</a> (2010) by Nouriel Roubini <br>
-<a href="https://dolanecon.blogspot.com/", target="_blank"> Ed Dolan's Econ Blog</a> (2009) by <a href="https://www.niskanencenter.org/author/ed-dolan/", target="_blank">Ed Dolan</a> <br>
-<a href="https://audioecon.com", target="_blank"> Audio Econ</a> (2012) by <a href="https://www.emmanuel.edu/academics/our-faculty/rebecca-moryl.html", target="_blank"> Rebecca L. Moryl </a> <br>
-<a href="https://nathantankus.substack.com", target="_blank"> Notes on the Crisis</a>, Nathan Tankus, covered by <a href="https://www.bloombergquint.com/amp/businessweek/nathan-tankus-s-newsletter-subscribers-don-t-care-about-diplomas"> Bloomberg</a> <br>
-<a href="https://www.networkideas.org", target="_blank"> International Development Economics Association</a> (IDEAS) <br>
-<a href="https://voxdev.org", target="_blank"> Vox Development</a> (2017) <br>
-
-<h3> Research Portals</h3>
-<hr>
-<a href="https://www.aeaweb.org/rfe/toc.php?show=complete", target="_blank"> Resources for Economists</a> (2017) by the American Economics Association - curated source of economics blogs, data, institutional outreach and publicity. <br>
-<a href="https://voxeu.org/", target="_blank">VOX  CEPR Policy Portal</a> (2007) <br>
-<a href="https://blogs.imf.org/", target="_blank"> IMF Blogs</a> <br>
-<a href="https://www.piie.com", target="_blank"> Peterson Institute of International Economics, PIIE</a> (1981), Washington D.C., USA <br>
-<a href="https://libertystreeteconomics.newyorkfed.org/", target="_blank"> Liberty Street Economics</a>, New York Fed <br>
-<a href="https://www.frbatlanta.org/blogs/macroblog.aspx", target="_blank"> Macroblog</a>, Atlanta Fed <br>
-<a href="https://cepr.net/", target="_blank"> CEPR</a>, Washington DC <br>
-<a href="https://www.imf.org/external/pubs/ft/fandd/index.htm", target="_blank"> IMF Finance & Development</a> (early 1990s) with online issue since 1993, Vol 33 available. <br>
-<a href="https://www.theigc.org", target="_blank"> International Growth Center</a> (2008) <br>
-<a href="https://www.ineteconomics.org/", target="_blank">Institute for New Economic Thinking</a>, (2009) <br>
-<a href="https://equitablegrowth.org/", target="_blank"> The Washington Center for Equitable Growth</a> (2013) <br>
-<a href="https://tcd.uchicago.edu", target="_blank"> TATA Center for Development, University of Chicago, Delhi, India </a>
-<a href="https://melbourneinstitute.unimelb.edu.au", target="_blank"> The Melbourne Institute</a> (1962) <br>
-
-<h3> Indian Economy</h3>
-<hr>
-<a href="https://www.ideasforindia.in", target="_blank">Ideas of India</a> (2012) <br>
-<a href="https://www.epw.in/", target="_blank"> Economic and Political Weekly</a> (1949). <br>
-<a href="https://www.ihdindia.org", target="_blank"> Institue of Human Development </a> <br>
+[Press Information Bureau](https://pib.gov.in/indexd.aspx), GOI (1919)  
+[DNA](https://www.dnaindia.com), 2005-2019  
+[One India](https://www.oneindia.com), 2006  
+[Firstpost](https://www.firstpost.com), late 2010 in Mumbai, India  
+[Brookings India](https://www.brookings.edu/center/brookings-india/), 2013 India  
+[Scroll.in](https://scroll.in) 2014, Delaware, USA.  
+[The Wire](https://thewire.in/), 2015 New Delhi, India  
+[The Quint](https://www.thequint.com), 2015 New Delhi, India  
+[The Ken](https://the-ken.com), 2016 Bangalore, India  
+[Bloomberg Quint](https://www.bloombergquint.com/),2016 India  
+[The Print](https://theprint.in),2017 New Delhi, India  
 
 
-<h3> Institutions</h3>
-<hr>
-<a href="https://www.imf.org/external/index.htm", target="_blank"> IMF</a> (1945)<br>
-<a href="https://blogs.worldbank.org", target="_blank"> World Bank Blogs</a> () <br>
-<a href = "https://www.worldbank.org", target="_blank"> World Bank</a> <br>
-<a href="https://www.bis.org", target="_blank"> Bank of International Settlements</a> (1930) <br>
-<a href="https://www.aeaweb.org", target="_blank"> American Economic Association</a> (1885) <br>
-<a href="https://www.nber.org", target="_blank"> The National Bureau of Economic Research</a> (1920) <br>
-<a href="http://www.levyinstitute.org", target="_blank"> Levy Economics Institute, Bard College</a> (1986) <br>
-<a href="http://www.cepr.org/", target="_blank">CEPR</a> (1983) <br>
-<a href="https://www.worldeconomicsassociation.org"> World Economic Association</a> (2011) <br>
-
-<h3> Agricultural, Environmental and Resource Economics</h3>
-<hr>
-<a href="https://www.aaea.org", target="_blank"> American Agricultural Economics Association</a> (1970s, exact date unknown). <br>
-<a href="https://www.choicesmagazine.org", target="_blank">Choices Magazine</a> (1999) <br>
-<a href="https://www.aere.org/about-aere", target="_blank"> Association of Environmental and Resource Economics (1979)</a> <br>
-<a href="https://www.ppic.org", target="_blank"> Public Policy Institue of California</a> (1994) <br>
+### International Section {.unlisted .unnumbered}
 
 
-<h2> Relaxing</h2>
-<hr>
+<text class = red> __Dalies__ </text>  
+[The Times](https://www.thetimes.co.uk/), 1788 London, UK.  
+[The Guardian](https://www.theguardian.com/uk), 1821 London, UK.  
+[The New York Times](https://www.nytimes.com/), 1851 New York City, USA.  
+[The Telegraph](https://www.telegraph.co.uk/) or The Daily Telegraph (1855), London, UK.  
+[The Washington Post](https://www.washingtonpost.com), 1877 Washington D.C., USA.  
+[Los Angeles Times](https://www.latimes.com/), 1881 Los Angeles, USA.  
+[Financial Times](https://www.ft.com/), 1888 London, UK.  
+[The Wall Street Journal](https://www.wsj.com/), 1889 New York City, USA.  
+[The Christian Science Monitor](https://www.csmonitor.com/), 1908 Boston, USA.  
+[BBC](https://www.bbc.com/), 1922 London, UK.  
+[The Australian Financial Review](https://www.afr.com/), 1950 Sydney, Australia.  
+[USA Today](https://www.usatoday.com/), 1982 Virginia, USA.  
 
-<h3> Reading Comics </h3>
-<a href="https://naruto-shipuden.com", target="_blank"> Naruto Shippuden</a><br>
-<a href="https://manganelo.com/chapter/read_naruto_manga_online_free3/chapter_246">Manganelo</a><br>
-<a href="https://www.crunchyroll.com/naruto-shippuden", target="_blank"> Crunchyroll</a>     <br>
 
-<h3> Reading Poems </h3>
-<a href="https://poets.org/", target="_blank"> Poets.org</a> (American Academy of Poets) <br>
+<text class = red> __Magazines__ </text>
 
-### Reading Random {.unlisted .unnumbered}
+[The Economist](https://www.economist.com/), 1843 London, UK.   
+[The Atlantic](https://www.theatlantic.com/world/), 1857 Washington D.C., USA.  
+[The Nation](https://www.thenation.com/), 1865 New York City, USA.  
+[Los Angeles Daily News](https://www.dailynews.com/), 1911 Los Angeles, USA.  
+[The New Republic](https://newrepublic.com/), 1914 New York City, USA.  
+[FORBES](https://www.forbes.com/), 1917 New Jersey, USA.  
+[Foreign Affairs](https://www.foreignaffairs.com/), 1922 USA.  
+[Time](https://time.com/), 1923 New York City, USA.  
+[The New Yorker](https://www.newyorker.com/), 1925 New York City, USA.  
+[Fortune](https://fortune.com/), 1929 New York City, USA.  
+[The Progressive](https://progressive.org/), 1929 Wisconsin, USA.  
+[Businessweek](https://www.bloomberg.com/businessweek), 1929 originated independently, later acquired by Bloomberg, New York City, USA.  
+[National Review](https://www.nationalreview.com/), 1955 New York City, USA. 
+[The National Interest](https://nationalinterest.org), 1985  Washington D.C., USA.  
+[The Weekly Standard](https://www.weeklystandard.com/), 1995 Washington D.C., USA.  
+[Slate](https://slate.com/), 1996 New York City, USA.  
+[Politico](https://www.politico.com/), 2007 Virginia, USA.  
 
-[Farnam Street](https://fs.blog)
+<text class = red> __Television__ </text>  
+[Al-Jzeera](https://www.aljazeera.com/), 1996 Doha, Quatar.  
+[National Public Radio](https://www.npr.org/), 1970 NPR USA.  
+[CNN (Cable News Network)](https://edition.cnn.com/), 1980 Georgia, USA.  
+[NBC News](https://www.nbcnews.com/), 1940 New York City, USA.  
+[CBS News](https://www.cbsnews.com/), 1927 New York City, USA.  
+[ABC](https://abcnews.go.com/) (American Broadcasting Company) News, 1943 California, USA.  
+[Australian Broadcasting Corporation](https://www.abc.net.au/), 1929 Sydney Australia.  
+[SBS](https://www.sbs.com.au) (Special Broadcasting Service), 1978 Australia.  
 
+
+<text class = red> __Online__ </text>  
+[The Brookings Institution](https://www.brookings.edu/), 1916 Washington D.C., USA.  
+[The Pew Research Center](https://www.pewresearch.org/), 1993 Washington D.C., USA.  
+[The Bureau of Investigative Journalism](https://www.thebureauinvestigates.com/), 2010 London, UK.  
+[Project Syndicate](https://www.project-syndicate.org), late 2000.  
+[Vox Media](https://www.voxmedia.com/a/vm), 2011 New York, USA.  
+[The Conversation](https://theconversation.com/au), 2011 Australia.  
+[Quartz](https://qz.com/) Media, 2012 New York City, USA.  
+[Medium](https://medium.com/), 2012 USA.  
+[The Intercept](https://theintercept.com/), 2014 USA.  
+[Vox](https://www.vox.com/), 2014 New York, USA.  
+
+<text class = red> __News Agencies__ </text>  
+[The Associate Press Agency](https://www.ap.org/en-gb/), 1917 New York City, USA.  
+[The Associate Press News](https://apnews.com), 1917 New York City, USA.  
+[Reuters Agency](https://www.thomsonreuters.com/en.html), 1851 London, UK.  
+[Reuters News](https://www.reuters.com), 1851 London, UK.  
+[Bloomberg, L.P.](https://www.bloomberg.com) (Limited partnership), 1981 New York, USA.   
+
+### Economic Cornner {.unlisted .unnumbered}
+
+>Some of the above news sources are as much economics as any serious academic papers. Additionally there are some institutes which conduct their own research and give newsletters to your inbox which could be worth the watch. It also depends upon your area of interest within the broad platter of economics.
+
+<text class = red> __Blogosphere__ </text>  
+
+[Marginal Revolution](https://marginalrevolution.com), 2003 Tyler Cowen and Alex Tabarrok, George Mason University.  
+[Five Thirty Eight](https://fivethirtyeight.com/), 2008, Nate Silver, owned by ESPN (ABC Media) since 2012.  
+[Greg Mankiw's Blog](https://gregmankiw.blogspot.com/), 2006.  
+[Macromusings](https://macromarketmusings.blogspot.com/), 2007 David Beckworth.  
+[Mainly Macro](https://mainlymacro.blogspot.com/), 2011 by [Simon Wren Lewis](https://sites.google.com/site/sjqwrenlewis/home), Merton College, University of Oxford.  
+[Confessions of a Supply Side Liberal](https://blog.supplysideliberal.com/), 2012 by Miles Kimball, Univeristy of Colorado, Boulder.  
+[Conversable Economist](https://conversableeconomist.blogspot.com/), 2011 Timothy Taylor.  
+[Naked Capitalism](https://www.nakedcapitalism.com/), 2006 various authors.  
+[Econbrowser](http://econbrowser.com/), 2005 by [Hamilton](https://econweb.ucsd.edu/~jhamilto/) and [Chinn](https://www.ssc.wisc.edu/~mchinn/).  
+[New Economic Perspectives](https://neweconomicperspectives.org/), 2007.  
+[The Library of Economics and Liberty](https://www.econlib.org/), 1993.  
+[Undercover Economist](https://timharford.com/),Tim Hardford, early 2000s.  
+[EconLife](https://econlife.com/), early 2000s by Elaine Swartz.  
+[Intelligent Economist](https://www.intelligenteconomist.com/), Prateek Agarwal.  
+[Cafe Hayek](https://cafehayek.com/), 2004.  
+[Economonitor](https://www.thestreet.com/economonitor/), 2010 Nouriel Roubini.  
+[Ed Dolan's Econ Blog](https://dolanecon.blogspot.com/), 2009 [Ed Dolan](https://www.niskanencenter.org/author/ed-dolan/).  
+[Audio Econ](https://audioecon.com), 2012 by [Rebecca L. Moryl](https://www.emmanuel.edu/academics/our-faculty/rebecca-moryl.html).  
+[Notes on the Crisis](https://nathantankus.substack.com), Nathan Tankus.  
+[International Development Economics Association](https://www.networkideas.org) (IDEAS).  
+[Vox Development](https://voxdev.org), 2017.  
+
+#### Research Portals {.unlisted .unnumbered}
+
+[The Melbourne Institute](https://melbourneinstitute.unimelb.edu.au), 1962.  
+[World Bank Blogs](https://blogs.worldbank.org).  
+[Resources for Economist](https://www.aeaweb.org/rfe/toc.php?show=complete), 2017 by the American Economics Association - curated source of economics blogs, data, institutional outreach and publicity.  
+[VOX  CEPR Policy Portal](https://voxeu.org/), 2007.  
+[IMF Blogs](https://blogs.imf.org/).  
+[Peterson Institute of International Economics](https://www.piie.com), PIIE, 1981 Washington D.C., USA.  
+[Liberty Street Economics](https://libertystreeteconomics.newyorkfed.org/), New York Fed.  
+[Macroblog](https://www.frbatlanta.org/blogs/macroblog.aspx), Atlanta Fed.  
+[CEPR](https://cepr.net/),1999 Washington DC.  
+[IMF Finance & Development](https://www.imf.org/external/pubs/ft/fandd/index.htm), early 1990s with online issue since 1993, Vol 33 available.  
+[International Growth Center](https://www.theigc.org),2008.  
+[Institute for New Economic Thinking](https://www.ineteconomics.org/), 2009.  
+[The Washington Center for Equitable Growth](https://equitablegrowth.org/), 2013.  
+[TATA Center for Development](https://tcd.uchicago.edu), University of Chicago, Delhi, India.  
+
+#### Indian Economy {.unlisted .unnumbered}
+
+[Economic and Political Weekly](https://www.epw.in/), 1949. 
+[Ideas of India](https://www.ideasforindia.in), 2012.  
+[Institue of Human Development](https://www.ihdindia.org).  
+
+
+#### Institutions {.unlisted .unnumbered}
+
+[American Economic Association](https://www.aeaweb.org), 1885.  
+[The National Bureau of Economic Research](https://www.nber.org), 1920.  
+[Bank of International Settlements](https://www.bis.org), 1930.  
+[World Bank](https://www.worldbank.org), 1944.  
+[IMF](https://www.imf.org/external/index.htm), 1945.  
+[CEPR](http://www.cepr.org/) 1983.  
+[Levy Economics Institute](http://www.levyinstitute.org), Bard College 1986.  
+[World Economic Association](https://www.worldeconomicsassociation.org), 2011.  
+
+#### Agricultural, Environmental and Resource Economics {.unlisted .unnumbered}
+
+[American Agricultural Economics Association](https://www.aaea.org), 1970s, exact date unknown.  
+[Choices Magazine](https://www.choicesmagazine.org), 1999.  
+[Association of Environmental and Resource Economics](https://www.aere.org/about-aere), 1979.  
+[Public Policy Institue of California](https://www.ppic.org), 1994.  
+
+### Reading {.unlisted .unnumbered}
+
+[Poets.org](https://poets.org/) (American Academy of Poets)   
+[Farnam Street](https://fs.blog)  
+[Naruto Shippuden](https://naruto-shipuden.com)  
+[Manganelo](https://manganelo.com/chapter/read_naruto_manga_online_free3/chapter_246)  
+[Crunchyroll](https://www.crunchyroll.com/naruto-shippuden)    
 
 ### Watching {.unlisted .unnumbered}
+
 [SBS on Demand, 2016](https://www.sbs.com.au/ondemand/)

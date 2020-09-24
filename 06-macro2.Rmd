@@ -1,569 +1,158 @@
 # Macroeconomics II {#macro .unnumbered .unlisted}
 
-## Lecture Notes {.unnumbered .unlisted}
-[Fall, 2020](https://www.dropbox.com/s/4pky154wdnyphoa/Syllabus%20Macroeconomics%20II%20Fall%202020.pdf?dl=0)
+### Lecture Notes {.unnumbered .unlisted}
+[Syllabus,](https://www.dropbox.com/s/4pky154wdnyphoa/Syllabus%20Macroeconomics%20II%20Fall%202020.pdf?dl=0) Fall 2020
 
-[How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html), Mike Vaughan.
+__Topic 1: Introduction to Short Run Macroeconomics__
 
+_Additional Reading_
 
-### Topic 1: Introduction to Short Run Macroeconomics {.unnumbered .unlisted}
+[Hicks, J. R. (1937)](https://www.jstor.org/stable/1907242). Mr. Keynes and the ”Classics”: A suggested interpretation. Econometrica, pages 147–159.
 
-<ul>
-<li> ABC, Chapter 8: Business Cycles <br> </li>
-<li> 8.1 Business Cycle <a href="https://www.dropbox.com/s/qdic53g8vwnbzj2/lec-01.pdf?dl=0", target="_blank"> Introduction </a> <br> </li>
-<ul> <li> India's Business Cycle History <br></li></ul>
-<li> 8.2 US Business Cycle History <br></li>
-<li> 8.3 Business Cycle Stylized Facts <br></li>
-<ul> <li>Static Toy RBC Model <a href="https://www.dropbox.com/s/i1lglbcgxdsrtvc/lec-02.pdf?dl=0", target="_blank">  (Lecture notes) </a> <br></li></ul>
-<li>8.4 Business Cycle Analysis:<a href="https://www.dropbox.com/s/v21b2c77q4gelda/lec-03.pdf?dl=0", target="_blank">  Preview </a> <br><br></li>
-<li>ABC, Chapter 9: <a href="https://www.dropbox.com/s/h1talmquo0wik6r/lec-04.pdf?dl=0", target="_blank"> The IS–LM/AD–AS Model: A General Framework for Macroeconomic Analysis </a>  <br></li>
-<li>9.1 The Full Employment Line: Labor Market Equilibrium <br></li>
-<li>9.2 The IS Curve: Goods Market Equilibrium <br></li>
-<li>9.3 The LM Curve: Asset Market Equilibrium<br></li>
-<ul>
-<li>Portfolio adjustment refresher<br></li>
-</ul>
-<li>9.4 General Equilibrium<br></li>
-<li>9.5 Price Adjustments in Attainment of General Equilibrium<br></li>
-<ul><li>Money Neutrality<br></li></ul>
-<li>9.6 Aggregate Demand and Supply as a version of IS-LM <br></li>
-<li> 9.A. <a href="https://www.dropbox.com/s/kg0bxl3ip4mwqsy/lec-05.pdf?dl=0", target="_blank">Numerical and Algebraic Versions of IS-LM/AD-AS models </a></li>
-<br> 
-<b>Additional Reading</b> <br><br>
-<li> <a href="https://www.jstor.org/stable/1907242", target="_blank"> Hicks, J. R. (1937).</a> Mr. Keynes and the ”Classics”: A suggested interpretation. Econometrica, pages 147–159. A must read for all undergraduates who have taken a first course in macroeconomics. After reading this paper, solve problem set 3 to test whether you've got the crucial aspects of IS-LM economics. <br>
-<a href="https://doi.org/10.1080/01603477.1980.11489209", target="_blank"> Hicks, J. (1980).</a> IS-LM: an explanation. Journal of Post Keynesian Economics, 3(2), 139-154.<br>
-<a href="https://doi.org/10.1080/01603477.1982.11489307", target="_blank"> Weintraub, S. (1982).</a> Hicks on IS-LM: more explanation?. Journal of Post Keynesian Economics, 4(3), 445-452. <br>
-<a href="https://muse.jhu.edu/article/13222/pdf", target="_blank"> De Vroey, M. (2000).</a> IS-LM à la Hicks versus IS-LM à la Modigliani. History of Political Economy, 32(2), 293-316.<br>
-</li><br>
-<li> <a href="https://krugman.blogs.nytimes.com/2011/10/09/is-lmentary/", target="_blank"> Krugman's IS-LMentry </a>, NYT Blogs. Krugman writes: "<em> Economists who understand IS-LM have done vastly better in tracking our current crisis than people who don’t. </em>" That should at least tell you how important understanding IS-LM could be for a student of macroeconomics. <br>
-Krugman's What I Mean When I Talk About IS-LM Wonkish: A <a href="https://krugman.blogs.nytimes.com/2014/03/28/what-i-mean-when-i-talk-about-is-lm-wonkish/", target="_blank"> follow up </a> where readers of the blog challege the predictive power of IS-LM. </li><br>
-<li>
-<q> Many of the main empirical questions in macroeconomics are the same as they have been since at least the Great Depression. What are the sources of business cycle fluctuations? How does monetary policy affect the economy? How does fiscal policy affect the economy? Why do some countries grow faster than others? Those new to our field may be tempted to ask, “How can it be that after all this time we don’t know the answers to these questions?” The reason is that identification in macroeconomics is difficult.</q> 
-<a href="10.1257/jep.32.3.59", target="_blank"> Nakamura, E. and Steinsson, J. (2018). </a>
-</li>
-</ul>
-</div>
-<img vspace=30>
+- A must read for all undergraduates who have taken a first course in macroeconomics. After reading this paper, solve [problem set](https://www.dropbox.com/s/euy4571mu5x6940/Problem%20Set%203.pdf?dl=0) to test whether you've got the crucial aspects of IS-LM economics.
+
+[Hicks, J. (1980)](https://doi.org/10.1080/01603477.1980.11489209). IS-LM: an explanation. Journal of Post Keynesian Economics, 3(2), 139-154.
+
+[Krugman's IS-LMentry](https://krugman.blogs.nytimes.com/2011/10/09/is-lmentary/), NYT Blogs. 
+
+- Krugman writes: 
+
+>"Economists who understand IS-LM have done vastly better in tracking our current crisis than people who don’t."
+
+[What I Mean When I Talk About IS-LM Wonkish](https://krugman.blogs.nytimes.com/2014/03/28/what-i-mean-when-i-talk-about-is-lm-wonkish/): A follow up where readers of the blog challege the predictive power of IS-LM. 
+
+_Academic Writing_
+
+[Weintraub, S. (1982)](https://doi.org/10.1080/01603477.1982.11489307).Hicks on IS-LM: more explanation?. Journal of Post Keynesian Economics, 4(3), 445-452.
+
+[De Vroey, M. (2000)](https://muse.jhu.edu/article/13222/pdf). IS-LM à la Hicks versus IS-LM à la Modigliani. History of Political Economy, 32(2), 293-316.
+
+[Nakamura, E. and Steinsson, J. (2018).](10.1257/jep.32.3.59) 
+
+> Many of the main empirical questions in macroeconomics are the same as they have been since at least the Great Depression. What are the sources of business cycle fluctuations? How does monetary policy affect the economy? How does fiscal policy affect the economy? Why do some countries grow faster than others? Those new to our field may be tempted to ask, “How can it be that after all this time we don’t know the answers to these questions?” The reason is that identification in macroeconomics is difficult.
 
 
-<button class="collapsible"><h3> Topic 2: Classical Business Cycle Model under Flexible Prices </h3></button>
-<div class="colapsecontent">
-<ul>
-<li> ABC, Chapter 10:  <a href="https://www.dropbox.com/s/jjfxgijkk9m39lg/lec-06.pdf?dl=0", target="_blank"> Classical Business Cycle Analysis: Market Clearing </a> </li>
-<li>10.1 Business cycles in classical model<br></li>
-<ul><li>Productivity shocks <br></li>
-<li>Solow Residual and Omitted Variable Bias<br></li></ul>
-<li>10.2 <a href="https://www.dropbox.com/s/ejlr4qnm7qog4il/lec-07.pdf?dl=0", target="_blank">Fiscal Shocks in Classical Model </a><br></li>
-<ul><li>Wealth Effects <br></li>
-<li>Crowding Out: A version<br></li></ul>
-<li>10.3 Unemployment in Classical Model<br></li>
-<li>10.4 Money in Classical Model<br></li>
-<ul><li>Non neutrality of money under flexible prices<br></li></ul>
-<li>10.5 Price Expectations and Money Non-neutrality<br></li>
-</ul>
-</div>
-<img vspace=30>
+__Topic 2: Classical Business Cycle Model under Flexible Prices and Keynesian under Sticky Prices__
 
-<button class="collapsible"><h3> Topic 3: Keynesian Business Cycle Model under Sticky Prices</h3></button>
-<div class="colapsecontent">
-<ul>
-<li>ABC Chapter 11: Keynesianism: The Macroeconomics of Wage and Price Rigidity</li>
-<li>11.1 <a href="https://www.dropbox.com/s/zw6m86zbfavnjg5/lec-08.pdf?dl=0", target="_blank"> Real Wage Rigidity</a> </li>
-<ul> 
-<li> Theory of Efficiency Wage and the effort curve </li> 
-</ul> 
-<li>11.2 <a href="https://www.dropbox.com/s/ngy40xvmo3iqwfl/lec-09.pdf?dl=0", target="_blank">Price Stickiness</a></li>
-<ul>   
-<li> Monopolistic competition </li>
-<li> Menu Cost </li>
-<li> Empirical evidence on sticky prices </li>
- <li> Theoretical implications of price-wage stickiness: How do firms under monopolisitic competition react to changes in demand? </li>
-</ul>
-<li>11.3 <a href="https://www.dropbox.com/s/vgv45rnziv8bjlr/lec-10.pdf?dl=0", target="_blank"> Monetary and Fiscal Policy  in Keynesian Model</a> </li>
-<ul> 
-<li> Short run non-neutrality in monetary expansions</li>
-<li> Government spending and short run expansions</li>
-<li> Tax cuts vs. government spending</li>
-</ul>
-<li>11.4 <a href="https://www.dropbox.com/s/2k3xhzh9auyzylg/lec-11.pdf?dl=0", target="_blank"> Keynesian theory of macroeconomic stabilization </a> </li>
-<ul>
-<li> Oil price shocks and stagflation </li>
-</ul>
-<li> 11.B and 11.C Keynesian multiplier <br>
-<li>  Introducing monopolistic competition in the static model (LN: excluded to simplify course structure for online delivery.) </li>
-<li> <b>Summary</b>: Make sure you understand and align your explanations with this <a href="https://www.dropbox.com/s/die7hirihb21xk0/lec-12.pdf?dl=0", target="_blank"> summary </a>. It is a good idea to practice writing summaries of chapters. </li>
-<br> <b>Additional Reading</b> <br><br>
-<img src = "../teaching/figures/fig-6.png" alt = "Monetary expansion for output growth", width="400" height="341", border="2"> <br><br>
-<li> <a href="https://blogs.imf.org/2020/04/06/an-early-view-of-the-economic-impact-of-the-pandemic-in-5-charts/", target="_blank">An explanation of the COVID Pandemic</a> in 5 Charts, IMF Blogs, April 6, alongwith a 11 minute video discussion with the economists.</li>
-<li> <a href="https://www.imf.org/en/Publications/WEO/Issues/2020/04/14/weo-april-2020", target="_blank"> World Economic Outlook, April 2020: The Great Lockdown: </a> IMF makes projections about GDP in its WEO reports. It uses data on various aspects and predicts the future of these economies. Why is it important for countries to feature in the IMFs positive economic outlook? </li>
-<li><a href="https://www.youtube.com/watch?v=XfYuA4OL82U", target="_blank"> Philadelphia Fed's 3:41 video on Stagflation of 1970s</a>: What does this video tell us about money neutrality during the 1970s? </li>
-<li><a href="https://www.jstor.org/stable/1816355", target="_blank"> Yellen, J. L. (1984). </a> Efficiency wage models of unemployment. The American Economic Review Papers and Proceedings, 74(2):200–205. </li>
-<li><a href="https://doi.org/10.1093/oxfordjournals.oep.a042015", target="_blank"> Wadhwani, S. B. and Wall, M. (1991).</a> A direct test of the efficiency wage model using uk micro-data. Oxford Economic Papers, 43(4):529–548. </li>
-</ul>
-</div>
-<img vspace=30>
+[Second part](https://www.dropbox.com/s/die7hirihb21xk0/lec-12.pdf?dl=0) summary
+
+_Additional Reading_
+
+```{r Image, echo=FALSE}
+knitr::include_graphics(rep('/Users/nikhildamodaran/Dropbox/Webpage/Old_HTML_Website/teaching/figures/fig-6.png', 1))
+```
+
+[An explanation of the COVID Pandemic](https://blogs.imf.org/2020/04/06/an-early-view-of-the-economic-impact-of-the-pandemic-in-5-charts/) in 5 Charts, IMF Blogs, April 6, alongwith a 11 minute video discussion with the economists.
+
+IMF makes projections about GDP in its WEO reports. It uses data on various aspects and predicts the future of these economies. Why is it important for countries to feature in the IMFs positive economic outlook? 
+[World Economic Outlook, April 2020](https://www.imf.org/en/Publications/WEO/Issues/2020/04/14/weo-april-2020): The Great Lockdown
+
+[Philadelphia Fed's 3:41 video on Stagflation of 1970s](https://www.youtube.com/watch?v=XfYuA4OL82U): What does this video tell us about money neutrality during the 1970s?  
+
+_Academic Writing_
+
+[Yellen, J. L. (1984)](https://www.jstor.org/stable/1816355). Efficiency wage models of unemployment. The American Economic Review Papers and Proceedings, 74(2):200–205.
+
+[Wadhwani, S. B. and Wall, M. (1991)](https://doi.org/10.1093/oxfordjournals.oep.a042015). A direct test of the efficiency wage model using uk micro-data. Oxford Economic Papers, 43(4):529–548.
 
 
-<button class="collapsible"><h3> Topic 4: Unemployment and Inflation </h3></button>
-<div class="colapsecontent">
-<ul>
-<li>ABC Chapter 12: Unemployment and Inflation<br></li>
-<li>12.1 <a href="https://www.dropbox.com/s/lcm36gv5umtjdyj/lec-13.pdf?dl=0", target="_blank"> Phillips Curve Trade-off </a> </li>
-<ul><li>Friedman-Phelps Expectations Augmented Phillips Curve<br></li>
-<li>Shifts in Phillips curve</li>
-<li>  <a href="https://www.dropbox.com/s/af3h3ocl79q7omd/lec-14.pdf?dl=0", target="_blank">Reconciliation of Phillips curve</a> and post 1960 evidence</li>
-</ul>
-<li>12.2 Macroeconomic Policy and Phillips Curve<br></li>
-<ul>
-<li> Menu for policymakers </li>
-<li>Classical and Keynesian disagreements, and agreements<br></li></ul>
-<li>12.3 Problem  of <a href="https://www.dropbox.com/s/5oyt9c441bnabd2/lec-15.pdf?dl=0", target="_blank"> Unemployment </a> </li>
-<ul><li> Estimating the loss of output on account of unemployment (Okun's Law)<br></li>
-<li> Natural Rate and its measurement error<br></li></ul>
-<li>12.4 Problem of <a href="https://www.dropbox.com/s/s7ke9e0t8t0x0pp/lec-16.pdf?dl=0", target="_blank"> Inflation</a> </li>
-<ul><li>US Inflation Era and Oil Prices<br></li>
-<li>Cost of  anticipated inflation : Shoe Leather and Menu Cost<br></li>
-<li>Cost of unanticipated inflation<br></li>
-<li>Hyperinflation and Money<br></li></ul>
-<li>12.5 <a href="https://www.dropbox.com/s/25zo5es99it8ga1/lec-17.pdf?dl=0", target="_blank"> Inflationary Expectations </a> </li>
-<ul>
-<li> Managing inflationary expectations: Gradualism vs. Cold Turkey</li>
-<li> Institutional Measure to Inflationary expectations</li>
-<li> Credibility, Reputation and Monetary Policy</li>
-</ul>
-<li>Natural rate of unemployment (8.2--8.3, OB). <br></li>
-<li>India's unemployment problem (LN) </li>
-<li> <b>Summary</b><a href="", target="_blank"> on unemployment and inflation. </a></li>
 
-<br> <b>Additional Reading</b> <br>
-<li> <a href="https://www.dropbox.com/s/sc3jkw2mi9sa1lt/Economist-The-end-of-inflation-Oct-2019.pdf?dl=0", target="_blank">The end of inflation? A special report by  the Economist </a> and explain the key takeaways from this piece. Substantiate your piece with what is happening to the Indian economy. </li>
-<li> Compilation on Inflation and Unemployment <a href="https://www.dropbox.com/s/rxt2edboussq671/Unemployment%20and%20Inflation.docx?dl=0", target="_blank"> Can we tolerate some unemployment? </a></li>
-<li> <a href="https://doi.org/10.1111/j.1468-0335.1958.tb00003.x", target="_blank">Phillips, A. W. (1958).</a> The relation between unemployment and the rate of change of money wage rates in the united kingdom, 1861–1957 1. Economica, 25(100):283–299. </li>
-</ul>
-
-</div>
-<img vspace=30>
+__Topic 3: Unemployment and Inflation__
 
 
-<button class="collapsible"><h3> Topic 5: Monetary Policy and the Central Bank</h3></button>
-<div class="colapsecontent">
-<ul>
-<li> ABC, Chapter 14: Monetary Policy and the Federal Reserve System</li>
-<li> 14.1 <a href="https://www.dropbox.com/s/dj7l5jgprug5x08/lec-19.pdf?dl=0", target="_blank">Principles of Money Supply determination</a> </li>
-<ul><li> Balance sheets of central and commercial banks</li>
-<li> Reserve deposts, monetary base and high powered money</li>
-<li> Open Market Operations</li>
-<li> The Money Multiplier Process</li>
-<li> Fractional reserve system and Bank Runs</li> </ul>
-<li> 14.2 <a href="https://www.dropbox.com/s/lnbricffkgdi0d4/lec-20.pdf?dl=0", target="_blank"> Monetary Control in India and the US </a></li>
-<ul> <li> The RBI History Project</li>
-<li> Fed Balance Sheet and Open Market Operations</li>
-<li> Other Ways of Controlling the Money Supply</li>
-<li> Discount Window Lending</li>
-<li> Reserve Requirements</li>
-<li> Fed Funds rate</li>
-<li> Interest on Reserves</li> </ul>
-<li>14.3 <a href="https://www.dropbox.com/s/g6zgesgtxdg9jhu/lec-21.pdf?dl=0", target="_blank"> Setting Monetary Policy Target through the Federal Funds Rate </a> </li>
-<li> 14.4 <a href="https://www.dropbox.com/s/n8yxmdmhb8q60em/lec-22.pdf?dl=0", target="_blank"> Making Monetary Policy in Practice</a> </li>
-<ul> <li> Lags in Monetary Policy Transmission</li>
-<li> Monetary Policy Under Uncertainty</li>
-<li> Monetary Policy and The Recent Recession</li>
-<ul><li>Zero Lower Bound and the Liquidity Trap</li>
-<li>Credit Easing</li>
-<li>Quantitative Easing  </li></ul></ul>
-<li> 14.5 <a href="https://www.dropbox.com/s/86oqqol90u1115p/lec-23.pdf?dl=0", target="_blank"> The Conduct of Monetary Policy: Rules Versus Discretion </a> </li>
-<ul> <li> The Monetarist Case for Rules</li>
-<li> Rules and Central Bank Credibility</li>
-<li> The Taylor Rule, The Taylor's principle (14.3, OB 23.2)</li> </ul>
-<li> Extending the basic model to include money in utility: money demand (LN)</li>
-<li> The optimal inflation (OB, 23.3) and Unconventional monetary policy (OB, 23.4) </li><br>
+_Additional Reading_
 
-<b>Additional Reading</b> <br><br>
-<li> RBI's Monetary Policy: <a href="https://www.rbi.org.in/scripts/FS_Overview.aspx?fn=2752", target="_blank">Overview from RBI</a> </li>
-<li> Controlling Rates Is More Complicated Than You Think, <a href="https://www.dropbox.com/s/kazfymseu8lcwmb/Interest%20Rate%20Control%20Stephen%20Williamson.pdf?dl=0", target="_blank"> Stephen Williamson </a>, St Louis Fed.<a href="https://www.stlouisfed.org/publications/regional-economist/april-2016/interest-rate-control-is-more-complicated-than-you-thought", target="_blank"></a> </li>
-<li> <a href="https://www.financialexpress.com/what-is/repo-rate-meaning/1748807/", target="_blank" > What is Repo Rate? </a>: Repo rate, also known as policy rate or repurchase rate, is the rate at which RBI lends money to banks. When the central bank reduces the repo rate, banks get money at a cheaper rate, and in turn, they reduce interest rates for borrowers. This is similar to the Repo rate for US Treasury and primarily a short term lending instrument with the terms of repurchase decided at the time of borrowing. <br>
-RBI recently (October 1, 2019) announced a <a href="https://www.financialexpress.com/what-is/repo-linked-lending-rate-rllr-meaning/1715264/", target="_blank"> lending rate which would be linked to this repo rate</a>, and hence makes repo rate an active interest rate which could determine credit supply in the market. </li>
-<li> <a href="https://www.financialexpress.com/what-is/reverse-repo-rate-meaning/1769011/", target="_blank"> What is Reverse Repo Rate? </a>: is the rate at which RBI provides interest on deposits with the RBI to commercial banks. albeit for shorter duration of deposit. <br>
-How reverse repo rate became benchmark interest rate in the economy <a href="https://indianexpress.com/article/explained/coronavirus-rbi-how-reverse-repo-rate-became-benchmark-interest-rate-in-the-economy-6369999/", target="_blank"> Udit Mishra, Indian Express</a>. An important clarification is required - Reverse repo rate can only be maintained for short term, and hence it is different from Interest on Reserves for commercial banks by the Fed.</li>
-<li><a href="https://www.financialexpress.com/what-is/cash-reserve-ratio-crr-meaning/1783580/", target="_blank"> What is Cash Reserve Ratio (CRR)? </a>: Exploring India's monetary policy options, Financial Express, FE Knowledge Desk</li>
-<li> RBI's Brief History on The Quint, April 01, 2020 by <a href="https://www.thequint.com/voices/opinion/coronavirus-rbi-history-economy-challenges", target="_blank"> Aunindyo Chakravarty</a></li>
-</ul>
-</div>
-<img vspace=30>
+[The end of inflation? A special report by  the Economist](https://www.dropbox.com/s/sc3jkw2mi9sa1lt/Economist-The-end-of-inflation-Oct-2019.pdf?dl=0). Explain the key takeaways from this piece. Substantiate your piece with what is happening to the Indian economy. 
 
-<button class="collapsible"><h3> Topic 6: Fiscal Policy: Source and Financing</h3></button>
-<div class="colapsecontent">
-<ul>
-<li> ABC, Chapter 15: Government Spending and Its Financing <br> <br> 
-<img src = "../teaching/figures/deficit.jpeg" alt = "What about monetizing?", width="400" height="341", border="2">
-</li>
-<li> 15.1 <a href="https://www.dropbox.com/s/my97jjto60107p9/lec-24.pdf?dl=0", target="_blank"> The Government Budget: Some Facts and Figures</a> </li>
-<ul>
-<li> Components, Trends and Composition</li>
-<ul>
-<li> Government Spending Types </li>
-<li> Types of Taxes and Its Relative Importance </li>
-</ul>
-<li> Devolution and Federalism </li>
-<li> Deficit Definitions: Primary,Current and Total Decit </li>
-</ul>
-<li> 15.2 <a href="https://www.dropbox.com/s/moem06ic5s1qxw3/lec-25.pdf?dl=0", target="_blank">Macroeconomic Effects of Fiscal Policy</a> </li>
-<ul>
-<li> Automatic Stabilizers </li>
-<li> Full Employment Deficit </li>
-<li> Spending: consumption vs investment spending </li>
-<li> Average and Marginal Tax Rates </li>
-</ul>
-<li> 15.3 <a href="https://www.dropbox.com/s/wpbrlf7dfv326oo/lec-26.pdf?dl=0", target="_blank">Government Deficits and Debt </a></li>
-<ul>
-<li> Debt-GDP Ratio: How do we measure the relative scale of national borrowings? How much borrowing could be acceptable and how much would be hard to repay? Is there such a limit for perpetual governments?  </li>
-<li> Debt as burden on future generations: Fiscal profligacy could be a burden shared by the future generations if it is not budgeted correctly. When does it pose a risk?  </li>
-<li> Ricardian Equivalence: Can a debt be used to stimulate the economy? Will tax cuts help increase consumption and hence be a fiscal instrument in times of economic distress? </li>
-<ul> 
-<li> Barro (1974) Overlapping Generations Model and Ricardian Equivalence: <a href="https://www.jstor.org/stable/1830663", target="_blank"> Barro, R. J. (1974). Are government bonds net wealth? </a> Journal of political economy, 82(6):1095–1117. </li>
-</ul>
-</ul>
-<li> 15.4 <a href="https://www.dropbox.com/s/9p75205fikpa3lw/lec-27.pdf?dl=0", target="_blank">Deficits and Inflation </a></li> <br>
-<ul>
-<li> Monetizing of Deficit and Seignorage Revenue: If Governments can finance their expenditures by printing money, why havent they done so consistently?  </li>
-<li> Is Monetizing Deficits Inflationary?: Does the frequent monetization of deficits create persistent inflation? </li>
-</ul>
-<br><br> 
-<b>Additional Reading</b> <br>
-<li> <a href="https://voxeu.org/article/growth-shadow-covid-19-debt", target="_blank"> Growth in the shadow of COVID-19 debt </a>: How does the public and private debts accumulated during COVID affect the growth of our economy? by Jamus Lim, VOX CEPR</li>
-<li> <a href="https://www.ft.com/content/68fbaf1e-e156-11df-90b7-00144feabdc0", target="_blank"> Reverse Ricardian Equivalence </a>: The idea that a government spending cut to curtain its deficit causes people to worry less about future tax increases. This certainty then fosters private spending. Ludicrous? Financial Times, October 27, 2010.  </li>
-<li> <a href="https://www.dropbox.com/s/8fjbwuj2z2pm6w0/helicopters%20can%20be%20dangerous%20%7C%20financial%20times.pdf?dl=0", target="_blank"> Helicopters can be dangerous </a>: Can central banks monetize deficits permanently? <a href="https://www.ft.com/content/ec128797-350c-3ca6-a8f3-6a577a6e1a1d", target="_blank"> Gavyn Davies</a> FEBRUARY 18 2013 </li>
-<li> <a href="https://www.nytimes.com/2010/11/01/opinion/01krugman.html?partner=rssnyt&emc=rss", target="_blank"> Is government debt a bad thing to sustain spending in times of recovery?</a> Krugman's Mugged by the Moralizers, Oct 31, 2010</li>
-</ul>
+[Compilation on Inflation and Unemployment](https://www.dropbox.com/s/rxt2edboussq671/Unemployment%20and%20Inflation.docx?dl=0).  Can we tolerate some unemployment?  
 
-</div>
-<img vspace=30>
-</div>
-<img vspace=30>
+_Academic Writing_
 
-<button class="collapsible"><h2>  Problem Sets </h2></button>
-<div class="colapsecontent">
-<p style="text-align: center"> <img src="../images/Calvin/1986:01:07.png",  width="900" height="250",  border="1" ></p>
-<br>
-<p>
-<b> Evaluations</b>: would involve MCQ's + Peer Evaluations + In-Class Discussions which would comprise of 50 points, and a final project worth 50 points. Together these would determine your total points for the course. These would be converted to letter grade according to university policy. Evaluations will be informed a week in advance so you are expected to engage with the material regularly.
-<br>
-Check the <a href="https://www.dropbox.com/s/4pky154wdnyphoa/Syllabus%20Macroeconomics%20II%20Fall%202020.pdf?dl=0">syllabus</a> for more details. Note that slight changes to the syllabus will be made after the first week of classes based on ongoing factors.
-</p>
-</div>
-<img vspace=30>
+[Phillips, A. W. (1958).](https://doi.org/10.1111/j.1468-0335.1958.tb00003.x) The relation between unemployment and the rate of change of money wage rates in the united kingdom, 1861–1957 1. Economica, 25(100):283–299.
 
-<button class="collapsible"><h2> Resources, Blogs and More </h2></button>
-<div class="colapsecontent">
-<ul>
-<li> <a href="https://gent.uab.cat/diego_prior/sites/gent.uab.cat.diego_prior/files/03_Writing_Economics_Neugeboren%20&%20Jacobson.pdf", target="_blank">Writing Economics</a>, by Robert Neugeboren with Mireille Jacobson, Harvard University. </li>
-<li> <a href="https://www.aeaweb.org/articles?id=10.1257/jel.37.1.157", target="_blank">Thomson, W. (1999).</a> The young person's guide to writing economic theory. Journal of Economic Literature, 37(1), 157-183.</li>
-<li> <a href="https://doi.org/10.1093/oxrep/grx053" target="_blank"> Reis, R. (2018)</a>. Is something really wrong with macroeconomics?. Oxford Review of Economic Policy, 34(1-2), 132-155.<br></li>
-<li> <a href="https://doi.org/10.1146/annurev.economics.050708.142952" target="_blank"> Blanchard, O. (2009)</a>. The state of macro. Annu. Rev. Econ., 1(1), 209-228. <br></li>
-<li> <a href="https://www.aeaweb.org/articles?id=10.1257/jep.32.1.81" target="_blank"> Mankiw, N. G., & Reis, R. (2018)</a>. Friedman's presidential address in the evolution of macroeconomic thought. Journal of Economic Perspectives, 32(1), 81-96.<br></li>
-<li> <a href="https://www.timeshighereducation.com/student/subjects/what-can-you-do-economics-degree", target="_blank"> What can you do with an Economics degree? </a><br></li>
-<li> Snowdon, B. and Vane, H. R. (1998). Transforming macroeconomics: an inter- view with <a href="https://doi.org/10.1080/13501789800000005" target="_blank"> Robert E. Lucas Jr.</a> Journal of Economic Methodology, 5(1):115–146. </li>
-<li> <a href="https://www.philadelphiafed.org/-/media/research-and-data/publications/economic-insights/2019/q1/eiq119-predicting-recessions.pdf?la=en" target="_blank"> Why Are Recessions So Hard to Predict? </a><br></li>
-<li> <a href="https://www.imf.org/external/pubs/ft/fandd/basics/bigsmall.htm" target="_blank"> Micro and Macro:</a> The Economic Divide by G. Chris Rodrigo<br></li>
-<li> George Hall, Brandeis University, <a href="http://people.brandeis.edu/~ghall/econ303/", target="_blank">Advanced Macroeconomics</a>, Lecture Notes and Matlab codes from Fall 2006</li>
-<li>Dornbusch, R., Fischer, S., and Startz, R. (2011). Macroeconomics. McGraw-Hill Education, 11th edition. </li>
-<li>Mankiw, N. (2016). Macroeconomics. Worth Publishers, 9th edition. </li>
-<li>D’Souza, E. (2009). Macroeconomics. Pearson Education. (Indian examples and institutional information)</li>
-<li>Williamson, S. (2017). Macroeconomics, volume ISBN 9781292215792. Pearson Education Limited, global edition.</li>
-<li>Jones, C. (2014). Macroeconomics. W.W. Norton, 3rd edition. </li>
-</ul>
 
-### Using R for Macroeconomic Data {.unnumbered .unlisted}
+__Topic 4: Monetary Policy and the Central Bank__
+
+
+_Additional Reading_
+
+[RBI's Monetary Policy](https://www.rbi.org.in/scripts/FS_Overview.aspx?fn=2752): An Overview from RBI.  
+
+[Controlling Rates Is More Complicated Than You Think](https://www.dropbox.com/s/kazfymseu8lcwmb/Interest%20Rate%20Control%20Stephen%20Williamson.pdf?dl=0), Stephen Williamson, [St Louis Fed](https://www.stlouisfed.org/publications/regional-economist/april-2016/interest-rate-control-is-more-complicated-than-you-thought)
+
+[What is Repo Rate?](https://www.financialexpress.com/what-is/repo-rate-meaning/1748807/)  
+
+>Repo rate, also known as policy rate or repurchase rate, is the rate at which RBI lends money to banks. When the central bank reduces the repo rate, banks get money at a cheaper rate, and in turn, they reduce interest rates for borrowers. This is similar to the Repo rate for US Treasury and primarily a short term lending instrument with the terms of repurchase decided at the time of borrowing.
+
+RBI recently (October 1, 2019) announced a <[lending rate which would be linked to this repo rate](https://www.financialexpress.com/what-is/repo-linked-lending-rate-rllr-meaning/1715264/), and hence makes repo rate an active interest rate which could determine credit supply in the market.
+
+[What is Reverse Repo Rate?](https://www.financialexpress.com/what-is/reverse-repo-rate-meaning/1769011/)  
+
+> is the rate at which RBI provides interest on deposits with the RBI to commercial banks. albeit for shorter duration of deposit. 
+
+How reverse repo rate became benchmark interest rate in the economy [Udit Mishra, Indian Express](https://indianexpress.com/article/explained/coronavirus-rbi-how-reverse-repo-rate-became-benchmark-interest-rate-in-the-economy-6369999/).
+
+> An important clarification is required - Reverse repo rate can only be maintained for short term, and hence it is different from Interest on Reserves for commercial banks by the Fed.
+
+[What is Cash Reserve Ratio (CRR)?](https://www.financialexpress.com/what-is/cash-reserve-ratio-crr-meaning/1783580/): Exploring India's monetary policy options, Financial Express, FE Knowledge Desk.  
+
+RBI's Brief History on The Quint, April 01, 2020 by [Aunindyo Chakravarty](https://www.thequint.com/voices/opinion/coronavirus-rbi-history-economy-challenges)
+
+
+__Topic 5: Fiscal Policy: Source and Financing__
+
+_Academic Writing_
+
+[Barro, R. J. (1974)](https://www.jstor.org/stable/1830663). Are government bonds net wealth? Journal of political economy, 82(6):1095–1117.
+
+_Additional Reading_
+
+[Growth in the shadow of COVID-19 debt](https://voxeu.org/article/growth-shadow-covid-19-debt): How does the public and private debts accumulated during COVID affect the growth of our economy? by Jamus Lim, VOX CEPR.  
+
+[Reverse Ricardian Equivalence](https://www.ft.com/content/68fbaf1e-e156-11df-90b7-00144feabdc0)
+
+>The idea that a government spending cut to curtain its deficit causes people to worry less about future tax increases. This certainty then fosters private spending. Ludicrous? Financial Times, October 27, 2010.
+
+[Helicopters can be dangerous](https://www.dropbox.com/s/8fjbwuj2z2pm6w0/helicopters%20can%20be%20dangerous%20%7C%20financial%20times.pdf?dl=0): Can central banks monetize deficits permanently? [Gavyn Davies](https://www.ft.com/content/ec128797-350c-3ca6-a8f3-6a577a6e1a1d)Feb 18, 2013.
+
+[Is government debt a bad thing to sustain spending in times of recovery?](https://www.nytimes.com/2010/11/01/opinion/01krugman.html?partner=rssnyt&emc=rss) Krugman's Mugged by the Moralizers, Oct 31, 2010.
+
+#### General Readings {.unnumbered .unlisted}
+
+[Writing Economics](https://gent.uab.cat/diego_prior/sites/gent.uab.cat.diego_prior/files/03_Writing_Economics_Neugeboren%20&%20Jacobson.pdf), by Robert Neugeboren with Mireille Jacobson, Harvard University.  
+[How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html), Mike Vaughan.  
+[What can you do with an Economics degree?](https://www.timeshighereducation.com/student/subjects/what-can-you-do-economics-degree).  
+[Why Are Recessions So Hard to Predict?](https://www.philadelphiafed.org/-/media/research-and-data/publications/economic-insights/2019/q1/eiq119-predicting-recessions.pdf?la=en) 
+
+
+
+_Academic Writing about Economics_
+
+[Thomson, W. (1999)](https://www.aeaweb.org/articles?id=10.1257/jel.37.1.157). The young person's guide to writing economic theory. Journal of Economic Literature, 37(1), 157-183.  
+[Reis, R. (2018)](https://doi.org/10.1093/oxrep/grx053). Is something really wrong with macroeconomics?. Oxford Review of Economic Policy, 34(1-2), 132-155.  
+[Blanchard, O. (2009)](https://doi.org/10.1146/annurev.economics.050708.142952). The state of macro. Annu. Rev. Econ., 1(1), 209-228.  
+[Mankiw, N. G., & Reis, R. (2018)](https://www.aeaweb.org/articles?id=10.1257/jep.32.1.81). Friedman's presidential address in the evolution of macroeconomic thought. Journal of Economic Perspectives, 32(1), 81-96.  
+[Snowdon, B. and Vane, H. R. (1998)](https://doi.org/10.1080/13501789800000005). Transforming macroeconomics: an interview with Robert E. Lucas Jr. Journal of Economic Methodology, 5(1):115–146.  
+Micro and Macro: The Economic Divide by [G. Chris Rodrigo](https://www.imf.org/external/pubs/ft/fandd/basics/bigsmall.htm).  
+
+
+_Lecture Notes Online_
+George Hall, Brandeis University, [Advanced Macroeconomics](http://people.brandeis.edu/~ghall/econ303/), Lecture Notes and Matlab codes from Fall 2006.
+
+
+
+__Using R for Macroeconomic Data__
 
 In the first module, we will set up our toolkit for being a macro-economist. You would need to download [R](https://cran.r-project.org/) and its GUI (graphical user interface) - the [R studio](https://rstudio.com/products/rstudio/download/). Both are required for reading data from Excel, doing simple analysis from the data and understand what we mean by short-run and long run in macroeconomics.
 
-- Roger Peng's installation video for [Windows](https://www.youtube.com/watch?v=hxj0UG4boGU) and [Mac](https://www.youtube.com/watch?v=_oRuJKIkPEM)
+Roger Peng's installation video for [Windows](https://www.youtube.com/watch?v=hxj0UG4boGU) and [Mac](https://www.youtube.com/watch?v=_oRuJKIkPEM)
 
-## Macroeconomics II, Lecture Notes, Spring, 2020 {.unnumbered .unlisted}
 
-### Student Responses from the Course 
-<p style="text-align: left"> "I really enjoyed learning from you and thank you for being patient with us this entire semester. I can only imagine the difficulty of teaching a computer screen! I enjoyed how you explained every topic with relevant real world examples, which really helped putting things in perspective. Even the assessments were exciting because of the way you structured them. For me personally, I learnt a lot from your detailed feedbacks on all the assessments highlighting even the smallest of things that can go unnoticed for very long. Thank you very much for teaching us this semester and I thoroughly enjoyed your course. I really hope you are offering electives next semester! " Kabir Aryan, JSGP, 2018.
- </p>
- <p style="text-align: left">
-"While we were struggling to get through every deadlines, your course provided us with a structured timeline for which we could plan ahead and manage the assignments well. It helped us a lot to have enough time and mental preparedness for each macro assignment that came our way...I appreciate the time and effort you put into the course website provided. It was a great way for us to keep track of the material and extra readings for the course. Having been our first experience of online classes in college, it gave us direction and made it relatively easy for us to keep up...The best part of the macroeconomics course that you taught this semester, for me, was the individual feedback on each assignment...This feedback not only helped us improve in your course but in other courses as well. Getting such individual attention pushed us to perform better with every passing assignment." Vidusshi Singh, JSGP, 2018. 
- </p>
+### Spring 2020 {#macro_spring_2020 .unnumbered .unlisted}
 
-<h2>  Problem Sets </h2>
-<p> We change the assessment to continuous take home assignments which would test your application and precise-ness associated with answering the given questions.</p>
-<p style="text-align: left">
-<ul>
-<li> <a href="https://www.dropbox.com/s/z0iudh25p01wodp/quiz-1-macro-II-spring2020.pdf?dl=0" target="_blank"> Problem Set 1:</a>  Modeling markets in macroeconomics.<br></li>
-<li> <a href="https://www.dropbox.com/s/zxvpfnj73vp00n8/quiz-2-macro-II-spring2020.pdf?dl=0", target="_blank"> Problem Set 2:</a> General features about business cycles and IS-LM mechanics. <br></li>
-<li> <a href="https://www.dropbox.com/s/euy4571mu5x6940/quiz-3-macro-II-spring2020.pdf?dl=0" target="_blank"> Problem Set 3:</a> Interepreting IS-LM by reading Hicks </li>
-<li> <a href="https://www.dropbox.com/s/lwwwh18dysasyue/Problem%20Set%204.pdf?dl=0" target="_blank"> Problem Set 4:</a> Summarizing discussion on unemployment and inflation  </li>
-<li>  <a href="https://www.dropbox.com/s/61tcmnnnkhih3ln/Problem%20Set%205.pdf?dl=0", target="_blank"> Problem Set 5:</a> Analyzing Macroeconomic Effects of COVID Shocks by examining <a href="https://voxeu.org/content/mitigating-covid-economic-crisis-act-fast-and-do-whatever-it-takes", target="_blank"> policy solutions extended </a> by leading economists around the globe through individual burst presentations of ten minute presentations. <br> <br> 
-<!-- additional readings required for economic policy solutions to the COVID-19 pandemic.
-<ul>
-<li> </li>
-</ul>
--->
-<br>
-</li>
-</ul>
-</p>
+[Problem Set 1](https://www.dropbox.com/s/z0iudh25p01wodp/quiz-1-macro-II-spring2020.pdf?dl=0), Modeling markets in macroeconomics.  
+[Problem Set 2](https://www.dropbox.com/s/zxvpfnj73vp00n8/quiz-2-macro-II-spring2020.pdf?dl=0): General features about business cycles and IS-LM mechanics.  
+[Problem Set 3](https://www.dropbox.com/s/euy4571mu5x6940/quiz-3-macro-II-spring2020.pdf?dl=0): Interepreting IS-LM by reading Hicks.  
+[Problem Set 4](https://www.dropbox.com/s/lwwwh18dysasyue/Problem%20Set%204.pdf?dl=0): Summarizing discussion on unemployment and inflation.  
+[Problem Set 5](https://www.dropbox.com/s/61tcmnnnkhih3ln/Problem%20Set%205.pdf?dl=0): Analyzing Macroeconomic Effects of COVID Shocks by examining [policy solutions](https://voxeu.org/content/mitigating-covid-economic-crisis-act-fast-and-do-whatever-it-takes) extended by leading economists around the globe through individual burst presentations of ten minute presentations.
 
-<h2> Course Synopsis </h2>
-<p style="text-align: left">
-This is the second course in macroeconomics at an undergraduate level. We presume a basic knowledge of the separate markets which comprise of a general equilibrium system from the previous course. We venture into an examination of macroeconomic policy in this model to shed light contemporary real world economic issues. Can the central bank help us get out of this slump? What are its limits? Is there a role for the government? Can government spending hurt us instead? What are the textbook answers and what do we observe in real life?<br> <br>
-In the first part of the course, we then initiate an analysis of short run economic fluctuations in output using a simple macroeconomic model. We examine a simple static model with product and factor markets and build a general equilibrium model with micro-foundations. This is a version of the textbook IS-LM model. We use this model to explore Classical and Keynesian explanations of output fluctuations and the differences therein. We look at the early chronological wave of explanations for temporary fluctuations in economic activity and gradually work towards a more realistic depiction of the world. We illustrate a possible mechanism of how our economies might work and what happens after it is hit by a shock.<br> <br>
-The second part focuses on what can policymakers do after they witness this shock. We introduce two policy institutions into our model who try to precariously balance and attain a level of employment and inflation. How and why do these institutions work? We understand the logic of government policy and of governance by analyzing issues of government spending, taxation and debt which come under the ambit of fiscal policy. We also examine the objectives of central bank and its policy options in printing money and managing its balance sheet.<br> <br>
-We conclude the course by taking a snapshot of what we have missed and where new directions of research is taking the analysis of macroeconomics. What are the missing pieces of the puzzle which makes policy making challenging. Why can't we answer old questions and why do we keep repeating our exercises to answer the same old questions in macroeconomics?<br> <br>
-</p>
-
-<h3> Course Goals (Learning Outcomes)</h3>
-<p> Participants who successfully complete the course are expected to:
-</p>
-<ol >
-<li> Build a basic model and understand its main mechanisms of transmission i.e. how macroeconomic variables are interconnected in the complex economic web,</li>
-<li> Distinguish between Classical and Keynesian interpretations of the model economy as parallel (not necessarily competing) strands of explanation, </li>
-<li> Integrate IS-LM and our basic model as two methods of formulating a model economy,</li>
-<li> Examine policy alternatives in the model and contrast it with the role of policymakers in the real world,</li>
-<li> Gain insights into functioning of the two key economic policy institutions i.e. the government and central bank,</li>
-<li> Understand common methods of policy stimulus to counteract temporary cyclical downturns and the need to do so.</li>
-</ol>
-<p> We will try and mix economic theories with empirical realities to understand how far can simple models explain what we as macro economists observe in any economy. At the end of this course, you should be able to start thinking like a macro economist, and even hopefully inch closer to being one.</p><br>
-
-<h3> Course Materials </h3>
-<ul>
-<li>Required Textbook: <a href="https://www.amazon.in/Macroeconomics-8e-Abel/dp/9332518246/ref=sr_1_2?ie=UTF8&qid=1533923451&sr=8-2&keywords=macroeconomics+abel" target="_blank"> Macroeconomics, </a>,Andrew B. Abel, Ben S. Bernanke, and Dean Croushore. Pearson Education India; 8 edition (2013), ISBN 10 - 9332518246.  </li>
-<li>Additional Text: <a href="https://www.amazon.in/Macroeconomics-6e-Olivier-Blanchard/dp/9332587604/ref=sr_1_2?dchild=1&keywords=macroeconomics&qid=1591763788&s=books&sr=1-2" , target="_blank"> Macroeconomics </a>, Olivier Blanchard [OB], Pearson; 6th edition (2017). This book has a recent 8th edition released on Feb 2020. </li>
-<li> Blogs and Popular Resources: There are plenty of Blogs/Popular writings which will help you understand and contribute to the in-class discussions. To simplify matters further, the American Economic Association has complied a <a href="https://www.aeaweb.org/rfe/"> list of resources available online</a> and updates this list frequently.</li>
-<li> <a href="http://library.jgu.edu.in/" target="_blank"> JGU Library </a>Students are encouraged to use library resources for the course which includes the required and suggested readings. Library will procure adequate copies of the required text, which would be made available prior to the beginning of the semester. The required text is priced at 410 INR.</li>
-</ul><br>
-
-<h2> Course Outline and Lecture Notes </h2>
-<p> <ins> Important:</ins> This <a href="https://www.dropbox.com/s/j796xtb58gs3x40/Syllabus%20Macroeconomics%20II%20Spring%202020.pdf?dl=0", target="_blank"> <em>syllabus</em> </a> is intended to give the student guidance in what may be covered during the semester and will be followed as closely as possible. However, the instructor reserves the right to modify, supplement and make changes as the course needs arise.<br> </p>
-
-<h2> Topic 1: Introduction to Short Run Macroeconomics </h2>
-<ul>
-<li> ABC, Chapter 8: Business Cycles <br> </li>
-<li> 8.1 Business Cycle <a href="https://www.dropbox.com/s/qdic53g8vwnbzj2/lec-01.pdf?dl=0", target="_blank"> Introduction </a> <br> </li>
-<ul> <li> India's Business Cycle History <br></li></ul>
-<li> 8.2 US Business Cycle History <br></li>
-<li> 8.3 Business Cycle Stylized Facts <br></li>
-<ul> <li>Static Toy RBC Model <a href="https://www.dropbox.com/s/i1lglbcgxdsrtvc/lec-02.pdf?dl=0", target="_blank">  (Lecture notes) </a> <br></li></ul>
-<li>8.4 Business Cycle Analysis:<a href="https://www.dropbox.com/s/v21b2c77q4gelda/lec-03.pdf?dl=0", target="_blank">  Preview </a> <br><br></li>
-<li>ABC, Chapter 9: <a href="https://www.dropbox.com/s/h1talmquo0wik6r/lec-04.pdf?dl=0", target="_blank"> The IS–LM/AD–AS Model: A General Framework for Macroeconomic Analysis </a>  <br></li>
-<li>9.1 The Full Employment Line: Labor Market Equilibrium <br></li>
-<li>9.2 The IS Curve: Goods Market Equilibrium <br></li>
-<li>9.3 The LM Curve: Asset Market Equilibrium<br></li>
-<ul>
-<li>Portfolio adjustment refresher<br></li>
-</ul>
-<li>9.4 General Equilibrium<br></li>
-<li>9.5 Price Adjustments in Attainment of General Equilibrium<br></li>
-<ul><li>Money Neutrality<br></li></ul>
-<li>9.6 Aggregate Demand and Supply as a version of IS-LM <br></li>
-<li> 9.A. <a href="https://www.dropbox.com/s/kg0bxl3ip4mwqsy/lec-05.pdf?dl=0", target="_blank">Numerical and Algebraic Versions of IS-LM/AD-AS models </a></li>
-<br> 
-<br>
-<b>Additional Reading</b> <br><br>
-<li> <a href="https://www.jstor.org/stable/1907242", target="_blank"> Hicks, J. R. (1937).</a> Mr. Keynes and the ”Classics”: A suggested interpretation. Econometrica, pages 147–159. A must read for all undergraduates who have taken a first course in macroeconomics. After reading this paper, solve problem set 3 to test whether you've got the crucial aspects of IS-LM economics. <br>
-<a href="https://doi.org/10.1080/01603477.1980.11489209", target="_blank"> Hicks, J. (1980).</a> IS-LM: an explanation. Journal of Post Keynesian Economics, 3(2), 139-154.<br>
-<a href="https://doi.org/10.1080/01603477.1982.11489307", target="_blank"> Weintraub, S. (1982).</a> Hicks on IS-LM: more explanation?. Journal of Post Keynesian Economics, 4(3), 445-452. <br>
-<a href="https://muse.jhu.edu/article/13222/pdf", target="_blank"> De Vroey, M. (2000).</a> IS-LM à la Hicks versus IS-LM à la Modigliani. History of Political Economy, 32(2), 293-316.<br><br>
-</li>
-<li> <a href="https://krugman.blogs.nytimes.com/2011/10/09/is-lmentary/", target="_blank"> Krugman's IS-LMentry </a>, NYT Blogs. Krugman writes: "<em> Economists who understand IS-LM have done vastly better in tracking our current crisis than people who don’t. </em>" That should at least tell you how important understanding IS-LM could be for a student of macroeconomics. <br>
-Krugman's What I Mean When I Talk About IS-LM Wonkish: A <a href="https://krugman.blogs.nytimes.com/2014/03/28/what-i-mean-when-i-talk-about-is-lm-wonkish/", target="_blank"> follow up </a> where readers of the blog challege the predictive power of IS-LM. </li>
-</ul>
-
-<h2> Topic 2: Classical Business Cycle Model under Flexible Prices </h2>
-<ul>
-<li> ABC, Chapter 10:  <a href="https://www.dropbox.com/s/jjfxgijkk9m39lg/lec-06.pdf?dl=0", target="_blank"> Classical Business Cycle Analysis: Market Clearing </a> </li>
-<li>10.1 Business cycles in classical model<br></li>
-<ul><li>Productivity shocks <br></li>
-<li>Solow Residual and Omitted Variable Bias<br></li></ul>
-<li>10.2 <a href="https://www.dropbox.com/s/ejlr4qnm7qog4il/lec-07.pdf?dl=0", target="_blank">Fiscal Shocks in Classical Model </a><br></li>
-<ul><li>Wealth Effects <br></li>
-<li>Crowding Out: A version<br></li></ul>
-<li>10.3 Unemployment in Classical Model<br></li>
-<li>10.4 Money in Classical Model<br></li>
-<ul><li>Non neutrality of money under flexible prices<br></li></ul>
-<li>10.5 Price Expectations and Money Non-neutrality<br></li>
-</ul>
-
-<h2> Topic 3: Keynesian Business Cycle Model under Sticky Prices</h2>
-<ul>
-<li>ABC Chapter 11: Keynesianism: The Macroeconomics of Wage and Price Rigidity</li>
-<li>11.1 <a href="https://www.dropbox.com/s/zw6m86zbfavnjg5/lec-08.pdf?dl=0", target="_blank"> Real Wage Rigidity</a> </li>
-<ul> 
-<li> Theory of Efficiency Wage and the effort curve </li> 
-</ul> 
-<li>11.2 <a href="https://www.dropbox.com/s/ngy40xvmo3iqwfl/lec-09.pdf?dl=0", target="_blank">Price Stickiness</a></li>
-<ul>   
-<li> Monopolistic competition </li>
-<li> Menu Cost </li>
-<li> Empirical evidence on sticky prices </li>
- <li> Theoretical implications of price-wage stickiness: How do firms under monopolisitic competition react to changes in demand? </li>
-</ul>
-<li>11.3 <a href="https://www.dropbox.com/s/vgv45rnziv8bjlr/lec-10.pdf?dl=0", target="_blank"> Monetary and Fiscal Policy  in Keynesian Model</a> </li>
-<ul> 
-<li> Short run non-neutrality in monetary expansions</li>
-<li> Government spending and short run expansions</li>
-<li> Tax cuts vs. government spending</li>
-</ul>
-<li>11.4 <a href="https://www.dropbox.com/s/2k3xhzh9auyzylg/lec-11.pdf?dl=0", target="_blank"> Keynesian theory of macroeconomic stabilization </a> </li>
-<ul>
-<li> Oil price shocks and stagflation </li>
-</ul>
-<li> 11.B and 11.C Keynesian multiplier <br>
-<li>  Introducing monopolistic competition in the static model (LN: excluded to simplify course structure for online delivery.) </li>
-<li> <b>Summary</b>: Make sure you understand and align your explanations with this <a href="https://www.dropbox.com/s/die7hirihb21xk0/lec-12.pdf?dl=0", target="_blank"> summary </a>. It is a good idea to practice writing summaries of chapters. </li>
-
-<br> <b>Additional Reading</b> <br><br>
-<img src = "../teaching/figures/fig-6.png" alt = "Monetary expansion for output growth", width="400" height="341", border="2"> <br><br>
-<li> <a href="https://blogs.imf.org/2020/04/06/an-early-view-of-the-economic-impact-of-the-pandemic-in-5-charts/", target="_blank">An explanation of the COVID Pandemic</a> in 5 Charts, IMF Blogs, April 6, alongwith a 11 minute video discussion with the economists.</li>
-<li> <a href="https://www.imf.org/en/Publications/WEO/Issues/2020/04/14/weo-april-2020", target="_blank"> World Economic Outlook, April 2020: The Great Lockdown: </a> IMF makes projections about GDP in its WEO reports. It uses data on various aspects and predicts the future of these economies. Why is it important for countries to feature in the IMFs positive economic outlook? </li>
-<li><a href="https://www.youtube.com/watch?v=XfYuA4OL82U", target="_blank"> Philadelphia Fed's 3:41 video on Stagflation of 1970s</a>: What does this video tell us about money neutrality during the 1970s? </li>
-<li><a href="https://www.jstor.org/stable/1816355", target="_blank"> Yellen, J. L. (1984). </a> Efficiency wage models of unemployment. The American Economic Review Papers and Proceedings, 74(2):200–205. </li>
-<li><a href="https://doi.org/10.1093/oxfordjournals.oep.a042015", target="_blank"> Wadhwani, S. B. and Wall, M. (1991).</a> A direct test of the efficiency wage model using uk micro-data. Oxford Economic Papers, 43(4):529–548. </li>
-</ul>
-
-<h2> Topic 4: Unemployment and Inflation </h2>
-<ul>
-<li>ABC Chapter 12: Unemployment and Inflation<br></li>
-<li>12.1 <a href="https://www.dropbox.com/s/lcm36gv5umtjdyj/lec-13.pdf?dl=0", target="_blank"> Phillips Curve Trade-off </a> </li>
-<ul><li>Friedman-Phelps Expectations Augmented Phillips Curve<br></li>
-<li>Shifts in Phillips curve</li>
-<li>  <a href="https://www.dropbox.com/s/af3h3ocl79q7omd/lec-14.pdf?dl=0", target="_blank">Reconciliation of Phillips curve</a> and post 1960 evidence</li>
-</ul>
-<li>12.2 Macroeconomic Policy and Phillips Curve<br></li>
-<ul>
-<li> Menu for policymakers </li>
-<li>Classical and Keynesian disagreements, and agreements<br></li></ul>
-<li>12.3 Problem  of <a href="https://www.dropbox.com/s/5oyt9c441bnabd2/lec-15.pdf?dl=0", target="_blank"> Unemployment </a> </li>
-<ul><li> Estimating the loss of output on account of unemployment (Okun's Law)<br></li>
-<li> Natural Rate and its measurement error<br></li></ul>
-<li>12.4 Problem of <a href="https://www.dropbox.com/s/s7ke9e0t8t0x0pp/lec-16.pdf?dl=0", target="_blank"> Inflation</a> </li>
-<ul><li>US Inflation Era and Oil Prices<br></li>
-<li>Cost of  anticipated inflation : Shoe Leather and Menu Cost<br></li>
-<li>Cost of unanticipated inflation<br></li>
-<li>Hyperinflation and Money<br></li></ul>
-<li>12.5 <a href="https://www.dropbox.com/s/25zo5es99it8ga1/lec-17.pdf?dl=0", target="_blank"> Inflationary Expectations </a> </li>
-<ul>
-<li> Managing inflationary expectations: Gradualism vs. Cold Turkey</li>
-<li> Institutional Measure to Inflationary expectations</li>
-<li> Credibility, Reputation and Monetary Policy</li>
-</ul>
-<li>Natural rate of unemployment (8.2--8.3, OB). <br></li>
-<li>India's unemployment problem (LN) </li>
-<li> <b>Summary</b><a href="", target="_blank"> on unemployment and inflation. </a></li>
-
-<br> <b>Additional Reading</b> <br>
-<li> <a href="https://www.dropbox.com/s/sc3jkw2mi9sa1lt/Economist-The-end-of-inflation-Oct-2019.pdf?dl=0", target="_blank">The end of inflation? A special report by  the Economist </a> and explain the key takeaways from this piece. Substantiate your piece with what is happening to the Indian economy. </li>
-<li> Compilation on Inflation and Unemployment <a href="https://www.dropbox.com/s/rxt2edboussq671/Unemployment%20and%20Inflation.docx?dl=0", target="_blank"> Can we tolerate some unemployment? </a></li>
-<li> <a href="https://doi.org/10.1111/j.1468-0335.1958.tb00003.x", target="_blank">Phillips, A. W. (1958).</a> The relation between unemployment and the rate of change of money wage rates in the united kingdom, 1861–1957 1. Economica, 25(100):283–299. </li>
-</ul>
-
-<h2> Topic 5: Monetary Policy and the Central Bank</h2>
-<ul>
-<li> ABC, Chapter 14: Monetary Policy and the Federal Reserve System</li>
-<li> 14.1 <a href="https://www.dropbox.com/s/dj7l5jgprug5x08/lec-19.pdf?dl=0", target="_blank">Principles of Money Supply determination</a> </li>
-<ul><li> Balance sheets of central and commercial banks</li>
-<li> Reserve deposts, monetary base and high powered money</li>
-<li> Open Market Operations</li>
-<li> The Money Multiplier Process</li>
-<li> Fractional reserve system and Bank Runs</li> </ul>
-<li> 14.2 <a href="https://www.dropbox.com/s/lnbricffkgdi0d4/lec-20.pdf?dl=0", target="_blank"> Monetary Control in India and the US </a></li>
-<ul> <li> The RBI History Project</li>
-<li> Fed Balance Sheet and Open Market Operations</li>
-<li> Other Ways of Controlling the Money Supply</li>
-<li> Discount Window Lending</li>
-<li> Reserve Requirements</li>
-<li> Fed Funds rate</li>
-<li> Interest on Reserves</li> </ul>
-<li>14.3 <a href="https://www.dropbox.com/s/g6zgesgtxdg9jhu/lec-21.pdf?dl=0", target="_blank"> Setting Monetary Policy Target through the Federal Funds Rate </a> </li>
-<li> 14.4 <a href="https://www.dropbox.com/s/n8yxmdmhb8q60em/lec-22.pdf?dl=0", target="_blank"> Making Monetary Policy in Practice</a> </li>
-<ul> <li> Lags in Monetary Policy Transmission</li>
-<li> Monetary Policy Under Uncertainty</li>
-<li> Monetary Policy and The Recent Recession</li>
-<ul><li>Zero Lower Bound and the Liquidity Trap</li>
-<li>Credit Easing</li>
-<li>Quantitative Easing  </li></ul></ul>
-<li> 14.5 <a href="https://www.dropbox.com/s/86oqqol90u1115p/lec-23.pdf?dl=0", target="_blank"> The Conduct of Monetary Policy: Rules Versus Discretion </a> </li>
-<ul> <li> The Monetarist Case for Rules</li>
-<li> Rules and Central Bank Credibility</li>
-<li> The Taylor Rule, The Taylor's principle (14.3, OB 23.2)</li> </ul>
-<li> Extending the basic model to include money in utility: money demand (LN)</li>
-<li> The optimal inflation (OB, 23.3) and Unconventional monetary policy (OB, 23.4) </li><br>
-
-<b>Additional Reading</b> <br><br>
-<li> Controlling Rates Is More Complicated Than You Think, <a href="https://www.dropbox.com/s/kazfymseu8lcwmb/Interest%20Rate%20Control%20Stephen%20Williamson.pdf?dl=0", target="_blank"> Stephen Williamson </a>, St Louis Fed.<a href="https://www.stlouisfed.org/publications/regional-economist/april-2016/interest-rate-control-is-more-complicated-than-you-thought", target="_blank"></a> </li>
-<li> <a href="https://www.financialexpress.com/what-is/repo-rate-meaning/1748807/", target="_blank" > What is Repo Rate? </a>: Repo rate, also known as policy rate or repurchase rate, is the rate at which RBI lends money to banks. When the central bank reduces the repo rate, banks get money at a cheaper rate, and in turn, they reduce interest rates for borrowers. This is similar to the Repo rate for US Treasury and primarily a short term lending instrument with the terms of repurchase decided at the time of borrowing. <br>
-RBI recently (October 1, 2019) announced a <a href="https://www.financialexpress.com/what-is/repo-linked-lending-rate-rllr-meaning/1715264/", target="_blank"> lending rate which would be linked to this repo rate</a>, and hence makes repo rate an active interest rate which could determine credit supply in the market. </li>
-<li> <a href="https://www.financialexpress.com/what-is/reverse-repo-rate-meaning/1769011/", target="_blank"> What is Reverse Repo Rate? </a>: is the rate at which RBI provides interest on deposits with the RBI to commercial banks. albeit for shorter duration of deposit. <br>
-How reverse repo rate became benchmark interest rate in the economy <a href="https://indianexpress.com/article/explained/coronavirus-rbi-how-reverse-repo-rate-became-benchmark-interest-rate-in-the-economy-6369999/", target="_blank"> Udit Mishra, Indian Express</a>. An important clarification is required - Reverse repo rate can only be maintained for short term, and hence it is different from Interest on Reserves for commercial banks by the Fed.</li>
-<li><a href="https://www.financialexpress.com/what-is/cash-reserve-ratio-crr-meaning/1783580/", target="_blank"> What is Cash Reserve Ratio (CRR)? </a>: Exploring India's monetary policy options, Financial Express, FE Knowledge Desk</li>
-<li> RBI's Brief History on The Quint, April 01, 2020 by <a href="https://www.thequint.com/voices/opinion/coronavirus-rbi-history-economy-challenges", target="_blank"> Aunindyo Chakravarty</a></li>
-</ul>
-
-<h2> Topic 6: Fiscal Policy: Source and Financing</h2>
-<ul>
-<li> ABC, Chapter 15: Government Spending and Its Financing <br> <br> 
-<img src = "../teaching/figures/deficit.jpeg" alt = "What about monetizing?", width="400" height="341", border="2">
-</li>
-<li> 15.1 <a href="https://www.dropbox.com/s/my97jjto60107p9/lec-24.pdf?dl=0", target="_blank"> The Government Budget: Some Facts and Figures</a> </li>
-<ul>
-<li> Components, Trends and Composition</li>
-<ul>
-<li> Government Spending Types </li>
-<li> Types of Taxes and Its Relative Importance </li>
-</ul>
-<li> Devolution and Federalism </li>
-<li> Deficit Definitions: Primary,Current and Total Decit </li>
-</ul>
-<li> 15.2 <a href="https://www.dropbox.com/s/moem06ic5s1qxw3/lec-25.pdf?dl=0", target="_blank">Macroeconomic Effects of Fiscal Policy</a> </li>
-<ul>
-<li> Automatic Stabilizers </li>
-<li> Full Employment Deficit </li>
-<li> Spending: consumption vs investment spending </li>
-<li> Average and Marginal Tax Rates </li>
-</ul>
-<li> 15.3 <a href="https://www.dropbox.com/s/wpbrlf7dfv326oo/lec-26.pdf?dl=0", target="_blank">Government Deficits and Debt </a></li>
-<ul>
-<li> Debt-GDP Ratio: How do we measure the relative scale of national borrowings? How much borrowing could be acceptable and how much would be hard to repay? Is there such a limit for perpetual governments?  </li>
-<li> Debt as burden on future generations: Fiscal profligacy could be a burden shared by the future generations if it is not budgeted correctly. When does it pose a risk?  </li>
-<li> Ricardian Equivalence: Can a debt be used to stimulate the economy? Will tax cuts help increase consumption and hence be a fiscal instrument in times of economic distress? </li>
-<ul> 
-<li> Barro (1974) Overlapping Generations Model and Ricardian Equivalence: <a href="https://www.jstor.org/stable/1830663", target="_blank"> Barro, R. J. (1974). Are government bonds net wealth? </a> Journal of political economy, 82(6):1095–1117. </li>
-</ul>
-</ul>
-<li> 15.4 <a href="https://www.dropbox.com/s/9p75205fikpa3lw/lec-27.pdf?dl=0", target="_blank">Deficits and Inflation </a></li>
-<ul>
-<li> Monetizing of Deficit and Seignorage Revenue: If Governments can finance their expenditures by printing money, why havent they done so consistently?  </li>
-<li> Is Monetizing Deficits Inflationary?: Does the frequent monetization of deficits create persistent inflation? </li>
-</ul>
-<br><br> 
-<b>Additional Reading</b> <br>
-<li> <a href="https://voxeu.org/article/growth-shadow-covid-19-debt", target="_blank"> Growth in the shadow of COVID-19 debt </a>: How does the public and private debts accumulated during COVID affect the growth of our economy? by Jamus Lim, VOX CEPR</li>
-<li> <a href="https://www.ft.com/content/68fbaf1e-e156-11df-90b7-00144feabdc0", target="_blank"> Reverse Ricardian Equivalence </a>: The idea that a government spending cut to curtain its deficit causes people to worry less about future tax increases. This certainty then fosters private spending. Ludicrous? Financial Times, October 27, 2010.  </li>
-<li> <a href="https://www.dropbox.com/s/8fjbwuj2z2pm6w0/helicopters%20can%20be%20dangerous%20%7C%20financial%20times.pdf?dl=0", target="_blank"> Helicopters can be dangerous </a>: Can central banks monetize deficits permanently? <a href="https://www.ft.com/content/ec128797-350c-3ca6-a8f3-6a577a6e1a1d", target="_blank"> Gavyn Davies</a> FEBRUARY 18 2013 </li>
-<li> <a href="https://www.nytimes.com/2010/11/01/opinion/01krugman.html?partner=rssnyt&emc=rss", target="_blank"> Is government debt a bad thing to sustain spending in times of recovery?</a> Krugman's Mugged by the Moralizers, Oct 31, 2010</li>
-</ul>
-<br>
-
-<h2> Interesting Reads for Undergraduates </h2>
-<ul>
-<li> <a href="https://doi.org/10.1093/oxrep/grx053" target="_blank"> Reis, R. (2018)</a>. Is something really wrong with macroeconomics?. Oxford Review of Economic Policy, 34(1-2), 132-155.<br></li>
-<li> <a href="https://doi.org/10.1146/annurev.economics.050708.142952" target="_blank"> Blanchard, O. (2009)</a>. The state of macro. Annu. Rev. Econ., 1(1), 209-228. <br></li>
-<li> <a href="https://www.aeaweb.org/articles?id=10.1257/jep.32.1.81" target="_blank"> Mankiw, N. G., & Reis, R. (2018)</a>. Friedman's presidential address in the evolution of macroeconomic thought. Journal of Economic Perspectives, 32(1), 81-96.<br></li>
-<li> <a href="https://www.timeshighereducation.com/student/subjects/what-can-you-do-economics-degree", target="_blank"> What can you do with an Economics degree? </a><br></li>
-<li> Snowdon, B. and Vane, H. R. (1998). Transforming macroeconomics: an inter- view with <a href="https://doi.org/10.1080/13501789800000005" target="_blank"> Robert E. Lucas Jr.</a> Journal of Economic Methodology, 5(1):115–146. </li>
-<li> <a href="https://www.philadelphiafed.org/-/media/research-and-data/publications/economic-insights/2019/q1/eiq119-predicting-recessions.pdf?la=en" target="_blank"> Why Are Recessions So Hard to Predict? </a><br></li>
-<li> <a href="https://www.imf.org/external/pubs/ft/fandd/basics/bigsmall.htm" target="_blank"> Micro and Macro:</a> The Economic Divide by G. Chris Rodrigo<br></li>
-</ul>
-<br><br> 
-
-<h2> Additional Macroeconomic Texts for Reference</h2>
-<ul>
-<li>Dornbusch, R., Fischer, S., and Startz, R. (2011). Macroeconomics. McGraw-Hill Education, 11th edition. </li>
-<li>Mankiw, N. (2016). Macroeconomics. Worth Publishers, 9th edition. </li>
-<li>D’Souza, E. (2009). Macroeconomics. Pearson Education. (Indian examples and institutional information)</li>
-<li>Williamson, S. (2017). Macroeconomics, volume ISBN 9781292215792. Pearson Education Limited, global edition.</li>
-<li>Jones, C. (2014). Macroeconomics. W.W. Norton, 3rd edition. </li>
-</ul>

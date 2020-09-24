@@ -24,7 +24,7 @@ Welcome to my webpage!
 Here is a [short introduction](bio.html) and here's my latest blog post. 
 
 
-### Research {.unlisted .unnumbered}
+<text class = red> __Research__ </text>
 
 My research focuses on transmission of economic policy across open economies.
 
@@ -33,14 +33,14 @@ I examine transmission in a variety of setting. I analyze regional economies whi
 In similar spirit, I examine transmission of Demonetization shock on the Indian economy in a paper "[Consumer Payment Choice and the Heterogeneous Impact of India's Demonetization](https://www.monash.edu/__data/assets/pdf_file/0005/2252795/07-20-Consumer-payment-choice-and-demonetizationedited-final.pdf)" in which we look at the disaggregate effects of India's demonetization through short payment choices for consumers. This is largely regional transmission of this monetary shock.
 
 
-### Teaching {.unlisted .unnumbered}
+<text class = red> __Teaching__ </text>
 
 I teach Macroeconomics I and II, International Trade, Mathematical Methods for Economics, Statistics II all of which are compulsary courses for BA.(Hons) Economics at O.P. Jindal Global University.
 
-__Ongoing courses__:
+_Ongoing courses_:
 
 EC 13: [Macroeconomics II](macro.html) -  Fall 2020 
 
-EC 01: [Mathematical Methods for Economics I](mathematical-methods.html), Fall 2020
+EC 01: [Mathematical Methods for Economics I](maths.html), Fall 2020
 
 

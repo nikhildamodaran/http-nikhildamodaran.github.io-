@@ -1,21 +1,16 @@
-# Research {#Research .unnumbered}
+# Research {.unnumbered}
 
-__Fiscal Policy and Transmission: The Case of India's States__
+<text class = red> __Fiscal Policy and Transmission: The Case of India's States__ </text>  
+_Abstract_: The magnitude of interstate trade in India adds a unique dimension to within and interstate transmission of fiscal policies. We exploit regional variations in fiscal policy to examine its local potency and spillover using a two country New Keynesian model. We find that an increase in spending generates larger domestic expansion than a reduction in excise or VAT cut. Although an increase in spending worsens home trade balance, it triggers a positive spillover on the trading partner thus contributing to regional stability. We also implement a fiscal devaluation through excise-VAT adjustments which rely on interstate trade to boost domestic output. 
 
-_Abstract_ 
-
-The magnitude of interstate trade in India adds a unique dimension to within and interstate transmission of fiscal policies. We exploit regional variations in fiscal policy to examine its local potency and spillover using a two country New Keynesian model. We find that an increase in spending generates larger domestic expansion than a reduction in excise or VAT cut. Although an increase in spending worsens home trade balance, it triggers a positive spillover on the trading partner thus contributing to regional stability. We also implement a fiscal devaluation through excise-VAT adjustments which rely on interstate trade to boost domestic output. 
-
-__Consumer Payment Choice and the Heterogeneous Impact of India’s Demonetization__ with [Ayushi Bajaj](https://sites.google.com/site/ayushibajaj/home)
-
+<text class = red> __Consumer Payment Choice and the Heterogeneous Impact of India’s Demonetization__ </text> with [Ayushi Bajaj](https://sites.google.com/site/ayushibajaj/home)  
 _Abstract_: Consumer payment choice is based on heterogeneous preferences, availability, usage costs, and effective taxes. We examine the consequences of this choice on consump- tion distribution, aggregate output, welfare and the shadow economy. We employ this framework to analyze India’s unexpected demonetization of 86% of its currency in cir- culation. We find that this shock to liquidity led to an immediate and temporary fall in aggregate output and welfare. Further, it led to disparate distributional effects as not all consumers could switch to non-cash payments. Using consumption distribu- tion data, we find the lower and middle deciles in rural areas were disproportionately affected. [Working Paper, May 2020](https://www.monash.edu/__data/assets/pdf_file/0005/2252795/07-20-Consumer-payment-choice-and-demonetizationedited-final.pdf)
 
-__Trade Transmission of Fiscal Policies in a Currency Union__
-
+<text class = red> __Trade Transmission of Fiscal Policies in a Currency Union__ </text>  
 _Presented at_: Econometric Society Australasian Meeting (July 2019), HenU / INFER Workshop on Applied Macroeconomics, China (May 2019), O. P. Jindal Global University, India (April 2018), Macro/Trade Seminar Series, Monash University, Australia (October 2017), Midwest Economic Theory, University of Kentucky, USA
 (May 2017), Eastern Economic Association Conference, USA (Feburary 2017), 12th Conference on Economic Growth, ISI, India (December 2016), Midwest Macro, Federal Reserve Bank of Kansas, USA (November 2016), Efferson Series Seminar, LSU, USA (October 2016), Agricultural and Applied Economics Annual Meeting, USA (July 2016)
 
-__Sectoral Effects of Fiscal Consolidation: A case of US-Mexico Agricultural Trade__ with [P. Lynn Kennedy](http://www.google.com/url?q=http%3A%2F%2Fwww.lsu.edu%2Fagriculture%2Fagecon%2Fpeople%2Ftemplate_pages%2Flkennedy.php&sa=D&sntz=1&usg=AFQjCNFkf7LUqlnGg1UaKYa26n7koYpKtA) 
+<text class = red> __Sectoral Effects of Fiscal Consolidation: A case of US-Mexico Agricultural Trade__ </text> with [P. Lynn Kennedy](http://www.google.com/url?q=http%3A%2F%2Fwww.lsu.edu%2Fagriculture%2Fagecon%2Fpeople%2Ftemplate_pages%2Flkennedy.php&sa=D&sntz=1&usg=AFQjCNFkf7LUqlnGg1UaKYa26n7koYpKtA) 
 
 _Abstract_: We examine the effects of Trump Tariffs on agricultural trade between US and Mexico using a calibrated sectoral New Keynesian model which focuses on policy transmissions under partial and complete exchange rate pass-through.
 

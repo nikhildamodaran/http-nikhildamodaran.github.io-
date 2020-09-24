@@ -2,11 +2,12 @@
 
 I completed my Ph.D. from the [Department of Agricultural Economics](https://www.lsu.edu/agriculture/agecon/index.php) at the Louisiana State University back in 2018. My dissertation research is on fiscal policy transmission in currency unions in which I study policy spillovers among countries in the European Monetary Union. Before graduate school at LSU, I completed M.Phil from the Center for Development Studies, Kerala, India and M.A. Economics from Center for Economic Studies and Planning, Jawaharlal Nehru University. I also had a short stint in mass-communication after my undergraduate studies from Delhi University, but returned to economics without much ado. My latest CV is here.
 
-## Blogs and More {.unlisted .unnumbered}
-Latest [Blog]() post <br>
+<text class = red> __Blogs and More__ </text>
+
+Latest [Blog](docs/articles.html) post <br>
 [On a Hike at Dandenong](), Tremont, VIC
 
-### Quotable Quotes {.unlisted .unnumbered}
+<text class = red> __Quotable Quotes__ </text>
 
 On writing in research [Thomson, W. (1999).](https://www.aeaweb.org/articles?id=10.1257/jel.37.1.157)
 
