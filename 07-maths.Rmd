@@ -6,5 +6,31 @@
 
 Fall 2020, [Syllabus](https://www.dropbox.com/s/wppoos8dusvkx5y/Syllabus%20Maths%20I%20Fall%202020.pdf?dl=0)
 
-__Topic 1: Basic Tools of Mathematical Economics__
+__Topic 1: Basic Tools of Mathematical Economics__  
+
+[Lecture notes]()
+Some functions relevant for economics and their shapes. 
+```{r rational-function}
+x = seq(-10,10, length.out = 25)
+y = (x^2 + 3)/(5*x + 7)
+plot(x,y, type = "l", col = "red")
+# when we obtain more values between -10 and 10,
+# the jump becomes smoother
+x = seq(-10,10, length.out = 2500)
+y = (x^2 + 3)/(5*x + 7)
+plot(x,y, type = "l")
+```
+
+```{r Cost-functions}
+# total cost function:
+L = seq(0,10, length.out = 2500)
+TC = 200 + 178 *L 
+plot(L, TC, type = "l")
+AFC = 2000/L
+plot(L, AFC, type = "l")
+TVC = 178 * L
+plot(L, TVC, type = "l")
+AVC = rep(178, 2500)
+plot(L, AVC, type = "l", col = "blue")
+```
 

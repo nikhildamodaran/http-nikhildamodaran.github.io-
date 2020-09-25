@@ -1,0 +1,118 @@
+# Extracting Business Cycles from Time Series Objects {.unnumbered .unlisted}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<p class="red"> __Getting Started__ </p>
+
+We start with the basics of R, exploring the memory and clearing out backlog from previous work.
+
+```{r, eval = FALSE}
+ls() # checking R's memory...
+list.files() # checking files in my working directory...
+# rm(list = ls()) # clearing all previously stored items...
+# import data from your excel sheet
+install.packages("readxl") # for importing from excel
+```
+
+Then we import the data from an excel sheet.
+
+```{r}
+library(readxl)
+gdp <- read_excel("/Users/nikhildamodaran/Dropbox/Teaching/Macroeconomics-II/Fall-2020/Teaching Resources/Exercise 1/GDP FRED USA.xlsx")
+
+# features of the data
+class(gdp) 
+str(gdp) # structure of the data
+head(gdp) # first 5 rows...
+```
+
+Tell me the features of the variable
+
+```{r}
+sapply(gdp, class)
+```
+
+Note that first variable is POSIXct - a time series object.
+
+```{r}
+ts.plot(gdp$gdp.usd)
+```
+
+<p class="red"> __Converting Variables into Time Series Objects__ </p>
+
+Problem: GDP variable is not time series but only a bunch of numbers
+
+```{r , eval = TRUE}
+# converting the vector into time series with a starting and ending time
+gdp$gdp.usd <- ts(data=gdp$gdp.usd, frequency = 4,start=c(1947,1), end=c(2020,2)) 
+
+# checking the class of variables in data
+sapply(gdp, class)
+
+class(gdp$gdp.usd)
+```
+
+Now plotting this in R again:
+
+```{r , eval = TRUE}
+ts.plot(gdp$gdp.usd)
+# tell me the difference between the first and the second plot
+```
+
+Problems remain: axis is not marked properly for reading.
+
+<p class="red"> __Removing Seasonality__ </p>
+
+We need to undergo seasonal transformation only if the data is not seasonalized. This is not a problem for annual data, but for lower frequencies we need to remove the effects of seasonal fluctuations. 
+
+```{r , eval = FALSE}
+# Lets extract business cycles from US data
+# Step 1: Remove seasonal effects:
+install.packages("seasonal") # for seasonal 
+```
+
+Remove seasonal effects such as diwali:
+
+```{r , eval = TRUE}
+library(seasonal)
+deseasonal.gdp <- seas(gdp$gdp.usd)
+```
+
+Check what are the results of seasonal adjustment and understand what you have done:
+
+```{r , eval = TRUE}
+summary(deseasonal.gdp) # you've done a regression
+attributes(deseasonal.gdp) # get the data 
+library(ggplot2)
+gdp$deseasonal <- deseasonal.gdp$data[,3] # store this data in your dataset
+ggplot(gdp, aes (y=gdp$gdp.usd, x = gdp$time)) + geom_line(colour=alpha('blue', 0.85)) + geom_line(aes(y=gdp$deseasonal, x = gdp$time), colour=alpha('red', 0.85) )  + theme_minimal() + xlab("Original (blue) and De-Seasonalized (red)") + ggtitle("Removing Seasonal Fluctuations from US GDP") + ylab("Bn. USD")
+```
+
+<p class="red"> __Isolating Business Cycles__ </p>
+
+Installing packages required for filtering
+
+```{r , eval = FALSE}
+# Step 2: Lets get the business cycles
+install.packages("mFilter")
+```
+
+Getting the business cycles:
+
+```{r , eval = TRUE}
+library(mFilter)
+usa.business.cycles <- hpfilter(log(gdp$deseasonal), freq = 1600)
+attributes(usa.business.cycles)
+ts.plot(usa.business.cycles$cycle, gpars = list(ylab ="US GDP Cycles"))
+```
+
+Obtaining the summary statistics for these business cycles
+
+```{r}
+summary(usa.business.cycles$cycle)
+sd(usa.business.cycles$cycle) # standard deviation of GDP cycles
+acf(usa.business.cycles$cycle) # auto-correlation function
+acf(usa.business.cycles$cycle, plot = FALSE)
+```

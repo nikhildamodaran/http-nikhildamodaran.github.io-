@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="macro.html"/>
-
+<link rel="next" href="extracting-business-cycles-from-time-series-objects.html"/>
 <script src="libs/header-attrs-2.3.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,6 +51,69 @@
 
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -98,6 +161,32 @@
 <p><text class = red> <strong>Lecture Notes</strong> </text></p>
 <p>Fall 2020, <a href="https://www.dropbox.com/s/wppoos8dusvkx5y/Syllabus%20Maths%20I%20Fall%202020.pdf?dl=0">Syllabus</a></p>
 <p><strong>Topic 1: Basic Tools of Mathematical Economics</strong></p>
+<p><a href="">Lecture notes</a>
+Some functions relevant for economics and their shapes.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="maths.html#cb1-1" aria-hidden="true"></a>x =<span class="st"> </span><span class="kw">seq</span>(<span class="op">-</span><span class="dv">10</span>,<span class="dv">10</span>, <span class="dt">length.out =</span> <span class="dv">25</span>)</span>
+<span id="cb1-2"><a href="maths.html#cb1-2" aria-hidden="true"></a>y =<span class="st"> </span>(x<span class="op">^</span><span class="dv">2</span> <span class="op">+</span><span class="st"> </span><span class="dv">3</span>)<span class="op">/</span>(<span class="dv">5</span><span class="op">*</span>x <span class="op">+</span><span class="st"> </span><span class="dv">7</span>)</span>
+<span id="cb1-3"><a href="maths.html#cb1-3" aria-hidden="true"></a><span class="kw">plot</span>(x,y, <span class="dt">type =</span> <span class="st">&quot;l&quot;</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
+<p><img src="wepage_files_files/figure-html/rational-function-1.png" width="672" /></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="maths.html#cb2-1" aria-hidden="true"></a><span class="co"># when we obtain more values between -10 and 10,</span></span>
+<span id="cb2-2"><a href="maths.html#cb2-2" aria-hidden="true"></a><span class="co"># the jump becomes smoother</span></span>
+<span id="cb2-3"><a href="maths.html#cb2-3" aria-hidden="true"></a>x =<span class="st"> </span><span class="kw">seq</span>(<span class="op">-</span><span class="dv">10</span>,<span class="dv">10</span>, <span class="dt">length.out =</span> <span class="dv">2500</span>)</span>
+<span id="cb2-4"><a href="maths.html#cb2-4" aria-hidden="true"></a>y =<span class="st"> </span>(x<span class="op">^</span><span class="dv">2</span> <span class="op">+</span><span class="st"> </span><span class="dv">3</span>)<span class="op">/</span>(<span class="dv">5</span><span class="op">*</span>x <span class="op">+</span><span class="st"> </span><span class="dv">7</span>)</span>
+<span id="cb2-5"><a href="maths.html#cb2-5" aria-hidden="true"></a><span class="kw">plot</span>(x,y, <span class="dt">type =</span> <span class="st">&quot;l&quot;</span>)</span></code></pre></div>
+<p><img src="wepage_files_files/figure-html/rational-function-2.png" width="672" /></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="maths.html#cb3-1" aria-hidden="true"></a><span class="co"># total cost function:</span></span>
+<span id="cb3-2"><a href="maths.html#cb3-2" aria-hidden="true"></a>L =<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>, <span class="dt">length.out =</span> <span class="dv">2500</span>)</span>
+<span id="cb3-3"><a href="maths.html#cb3-3" aria-hidden="true"></a>TC =<span class="st"> </span><span class="dv">200</span> <span class="op">+</span><span class="st"> </span><span class="dv">178</span> <span class="op">*</span>L </span>
+<span id="cb3-4"><a href="maths.html#cb3-4" aria-hidden="true"></a><span class="kw">plot</span>(L, TC, <span class="dt">type =</span> <span class="st">&quot;l&quot;</span>)</span></code></pre></div>
+<p><img src="wepage_files_files/figure-html/Cost-functions-1.png" width="672" /></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="maths.html#cb4-1" aria-hidden="true"></a>AFC =<span class="st"> </span><span class="dv">2000</span><span class="op">/</span>L</span>
+<span id="cb4-2"><a href="maths.html#cb4-2" aria-hidden="true"></a><span class="kw">plot</span>(L, AFC, <span class="dt">type =</span> <span class="st">&quot;l&quot;</span>)</span></code></pre></div>
+<p><img src="wepage_files_files/figure-html/Cost-functions-2.png" width="672" /></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="maths.html#cb5-1" aria-hidden="true"></a>TVC =<span class="st"> </span><span class="dv">178</span> <span class="op">*</span><span class="st"> </span>L</span>
+<span id="cb5-2"><a href="maths.html#cb5-2" aria-hidden="true"></a><span class="kw">plot</span>(L, TVC, <span class="dt">type =</span> <span class="st">&quot;l&quot;</span>)</span></code></pre></div>
+<p><img src="wepage_files_files/figure-html/Cost-functions-3.png" width="672" /></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="maths.html#cb6-1" aria-hidden="true"></a>AVC =<span class="st"> </span><span class="kw">rep</span>(<span class="dv">178</span>, <span class="dv">2500</span>)</span>
+<span id="cb6-2"><a href="maths.html#cb6-2" aria-hidden="true"></a><span class="kw">plot</span>(L, AVC, <span class="dt">type =</span> <span class="st">&quot;l&quot;</span>, <span class="dt">col =</span> <span class="st">&quot;blue&quot;</span>)</span></code></pre></div>
+<p><img src="wepage_files_files/figure-html/Cost-functions-4.png" width="672" /></p>
 
 </div>
             </section>
@@ -105,8 +194,8 @@
           </div>
         </div>
       </div>
-<a href="macro.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="macro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="extracting-business-cycles-from-time-series-objects.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -163,6 +252,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

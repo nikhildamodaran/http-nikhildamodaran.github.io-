@@ -1,6 +1,6 @@
 # Macroeconomics II {#macro .unnumbered .unlisted}
 
-### Lecture Notes {.unnumbered .unlisted}
+### Fall 2020 {.unnumbered .unlisted}
 [Syllabus,](https://www.dropbox.com/s/4pky154wdnyphoa/Syllabus%20Macroeconomics%20II%20Fall%202020.pdf?dl=0) Fall 2020
 
 __Topic 1: Introduction to Short Run Macroeconomics__
@@ -38,8 +38,8 @@ __Topic 2: Classical Business Cycle Model under Flexible Prices and Keynesian un
 
 _Additional Reading_
 
-```{r Image, echo=FALSE}
-knitr::include_graphics(rep('/Users/nikhildamodaran/Dropbox/Webpage/Old_HTML_Website/teaching/figures/fig-6.png', 1))
+```{r quantitative-easing-cartoon, echo=FALSE, fig.cap="QE and Money Supply", out.width = '100%'}
+knitr::include_graphics(rep('/Users/nikhildamodaran/Dropbox/Webpage/Old_HTML_Website/teaching/figures/qe.png', 1))
 ```
 
 [An explanation of the COVID Pandemic](https://blogs.imf.org/2020/04/06/an-early-view-of-the-economic-impact-of-the-pandemic-in-5-charts/) in 5 Charts, IMF Blogs, April 6, alongwith a 11 minute video discussion with the economists.
@@ -155,4 +155,9 @@ Roger Peng's installation video for [Windows](https://www.youtube.com/watch?v=hx
 [Problem Set 3](https://www.dropbox.com/s/euy4571mu5x6940/quiz-3-macro-II-spring2020.pdf?dl=0): Interepreting IS-LM by reading Hicks.  
 [Problem Set 4](https://www.dropbox.com/s/lwwwh18dysasyue/Problem%20Set%204.pdf?dl=0): Summarizing discussion on unemployment and inflation.  
 [Problem Set 5](https://www.dropbox.com/s/61tcmnnnkhih3ln/Problem%20Set%205.pdf?dl=0): Analyzing Macroeconomic Effects of COVID Shocks by examining [policy solutions](https://voxeu.org/content/mitigating-covid-economic-crisis-act-fast-and-do-whatever-it-takes) extended by leading economists around the globe through individual burst presentations of ten minute presentations.
+
+
+
+
+
 
