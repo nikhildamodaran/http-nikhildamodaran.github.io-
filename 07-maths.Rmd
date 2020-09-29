@@ -6,14 +6,27 @@
 
 Fall 2020, [Syllabus](https://www.dropbox.com/s/wppoos8dusvkx5y/Syllabus%20Maths%20I%20Fall%202020.pdf?dl=0)
 
-__Topic 1: Basic Tools of Mathematical Economics__  
+<p class = "red"> __Topic 1: Basic Tools of Mathematical Economics__ </p>
 
-[Lecture notes]()
-Some functions relevant for economics and their shapes. 
-```{r rational-function}
+[Lec 01](https://www.dropbox.com/s/0mzg5mfc9nrroag/lec01.pdf?dl=0): Introduction to Mathematical Economics  
+[Lec 02](https://www.dropbox.com/s/mhw57wk6ynef7d2/lec02.pdf?dl=0): Mathematical Models in Economics  
+[Lec 03](https://www.dropbox.com/s/guvq17e2nwkfk7g/lec03.pdf?dl=0): Introduction to Set Theory  
+[Lec 04](https://www.dropbox.com/s/7z2yf44qlppp0fm/lec04.pdf?dl=0): Relations, Functions and Economics 
+
+
+An example of a rational function used in class is 
+$$y = \frac{x^{2} +3}{5x + 7}$$
+While it is easier to imagine the shape of common mathematical functions in economics, it might get harder. For functions such as this, we rely on computer to give us an idea about its shape. For instance, we can simulate the shape of this function for 25 values of $x \in [-10, 10]$ to obtain the following:
+
+```{r rational-function, echo=FALSE}
 x = seq(-10,10, length.out = 25)
 y = (x^2 + 3)/(5*x + 7)
 plot(x,y, type = "l", col = "red")
+```
+
+What happens to this function when we get more values of $x$ in the same range?
+
+```{r rational-function-1, echo=FALSE}
 # when we obtain more values between -10 and 10,
 # the jump becomes smoother
 x = seq(-10,10, length.out = 2500)
@@ -21,16 +34,104 @@ y = (x^2 + 3)/(5*x + 7)
 plot(x,y, type = "l")
 ```
 
-```{r Cost-functions}
+Thus the computer can only help us approximate the shape of the function based on the kind of questions we ask. In order to inform ourselves about the shape, we can rely on the principles of differentiation which would be explored later in the course. 
+
+Remember that we used a linear total cost function to understand the application of linear functions in economics. This cost function is peculiar. One example is as follows:
+
+```{r Cost-functions, echo = FALSE}
 # total cost function:
 L = seq(0,10, length.out = 2500)
 TC = 200 + 178 *L 
-plot(L, TC, type = "l")
-AFC = 2000/L
-plot(L, AFC, type = "l")
+plot(L, TC, type = "l", col = "blue")
+```
+
+For a linear cost function we have a linear total variable cost too. 
+
+```{r Cost-functions-2, echo = FALSE}
+# total cost function:
+L = seq(0,10, length.out = 2500)
 TVC = 178 * L
 plot(L, TVC, type = "l")
+```
+
+Further, even our average variable cost is linear and more so horizontal as follows:
+
+```{r Cost-functions-3, echo = FALSE}
+# total cost function:
+L = seq(0,10, length.out = 2500)
 AVC = rep(178, 2500)
 plot(L, AVC, type = "l", col = "blue")
+```
+
+But for a linear total cost function, our average fixed cost is actually a hyperbola of the following form:
+
+```{r Cost-functions-4, echo = FALSE}
+L = seq(0,10, length.out = 2500)
+AFC = 2000/L
+plot(L, AFC, type = "l", col = "red")
+```
+
+Notice that in economics we will use a variety of rectangular and regular hyperbolas, esp. in microeconomics. 
+
+Plotting a 3D Cobb Douglas production function:
+
+```{r}
+CobbDouglas <- function (L, K) {
+   return (L^alpha * K^beta)
+}
+alpha = 0.3
+beta = 0.7
+L <- seq(0, 10, length= 300)
+K <- seq(0, 100, length= 300)
+Y <- outer(L, K, CobbDouglas)
+Y[is.na(Y)] <- 1
+op <- par(bg = "white")
+persp(L, K, Y, theta = 80, phi = 20, expand = 0.5, col = "red")
+
+```
+
+
+```{r}
+P = seq(-25, 50, length.out = 3000)
+Y = 0.14*P^2 + 1.89*P - 177.9
+plot(P,Y, type = "l", col = "red")
+abline(h=0, col="blue")
+
+quadraticRoots <- function(a, b, c) {
+
+  print(paste0("You have chosen the quadratic equation ", a, "x^2 + ", b, "x + ", c, "."))
+
+  discriminant <- (b^2) - (4*a*c)
+
+  if(discriminant < 0) {
+    return(paste0("This quadratic equation has no real numbered roots."))
+  }
+  else if(discriminant > 0) {
+    x_int_plus <- (-b + sqrt(discriminant)) / (2*a)
+    x_int_neg <- (-b - sqrt(discriminant)) / (2*a)
+
+    return(paste0("The two x-intercepts for the quadratic equation are ",
+                  format(round(x_int_plus, 5), nsmall = 5), " and ",
+                  format(round(x_int_neg, 5), nsmall = 5), "."))
+  }
+  else #discriminant = 0  case
+    x_int <- (-b) / (2*a)
+    return(paste0("The quadratic equation has only one root. This root is ",
+                  x_int))
+}
+
+quadraticRoots(1, 13.207, 1276)
+quadraticRoots(1, -40, -1200)
+quadraticRoots(10, -400, -21000)
+```
+
+
+
+```{r}
+A = 1.1
+N = seq(1, 50, length.out = 3000)
+MPN = 100 - A^2 * N
+plot(N,MPN, type = "l", col = "red")
+abline(h=0, col="blue")
 ```
 

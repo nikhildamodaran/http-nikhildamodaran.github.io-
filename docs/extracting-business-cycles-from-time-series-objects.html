@@ -162,23 +162,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <strong>Getting Started</strong>
 </p>
 <p>We start with the basics of R, exploring the memory and clearing out backlog from previous work.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb7-1" aria-hidden="true"></a><span class="kw">ls</span>() <span class="co"># checking R&#39;s memory...</span></span>
-<span id="cb7-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb7-2" aria-hidden="true"></a><span class="kw">list.files</span>() <span class="co"># checking files in my working directory...</span></span>
-<span id="cb7-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb7-3" aria-hidden="true"></a><span class="co"># rm(list = ls()) # clearing all previously stored items...</span></span>
-<span id="cb7-4"><a href="extracting-business-cycles-from-time-series-objects.html#cb7-4" aria-hidden="true"></a><span class="co"># import data from your excel sheet</span></span>
-<span id="cb7-5"><a href="extracting-business-cycles-from-time-series-objects.html#cb7-5" aria-hidden="true"></a><span class="kw">install.packages</span>(<span class="st">&quot;readxl&quot;</span>) <span class="co"># for importing from excel</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb13-1" aria-hidden="true"></a><span class="kw">ls</span>() <span class="co"># checking R&#39;s memory...</span></span>
+<span id="cb13-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb13-2" aria-hidden="true"></a><span class="kw">list.files</span>() <span class="co"># checking files in my working directory...</span></span>
+<span id="cb13-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb13-3" aria-hidden="true"></a><span class="co"># rm(list = ls()) # clearing all previously stored items...</span></span>
+<span id="cb13-4"><a href="extracting-business-cycles-from-time-series-objects.html#cb13-4" aria-hidden="true"></a><span class="co"># import data from your excel sheet</span></span>
+<span id="cb13-5"><a href="extracting-business-cycles-from-time-series-objects.html#cb13-5" aria-hidden="true"></a><span class="kw">install.packages</span>(<span class="st">&quot;readxl&quot;</span>) <span class="co"># for importing from excel</span></span></code></pre></div>
 <p>Then we import the data from an excel sheet.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb8-1" aria-hidden="true"></a><span class="kw">library</span>(readxl)</span>
-<span id="cb8-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb8-2" aria-hidden="true"></a>gdp &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;/Users/nikhildamodaran/Dropbox/Teaching/Macroeconomics-II/Fall-2020/Teaching Resources/Exercise 1/GDP FRED USA.xlsx&quot;</span>)</span>
-<span id="cb8-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb8-3" aria-hidden="true"></a></span>
-<span id="cb8-4"><a href="extracting-business-cycles-from-time-series-objects.html#cb8-4" aria-hidden="true"></a><span class="co"># features of the data</span></span>
-<span id="cb8-5"><a href="extracting-business-cycles-from-time-series-objects.html#cb8-5" aria-hidden="true"></a><span class="kw">class</span>(gdp) </span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb14-1" aria-hidden="true"></a><span class="kw">library</span>(readxl)</span>
+<span id="cb14-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb14-2" aria-hidden="true"></a>gdp &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;/Users/nikhildamodaran/Dropbox/Teaching/Macroeconomics-II/Fall-2020/Teaching Resources/Exercise 1/GDP FRED USA.xlsx&quot;</span>)</span>
+<span id="cb14-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb14-3" aria-hidden="true"></a></span>
+<span id="cb14-4"><a href="extracting-business-cycles-from-time-series-objects.html#cb14-4" aria-hidden="true"></a><span class="co"># features of the data</span></span>
+<span id="cb14-5"><a href="extracting-business-cycles-from-time-series-objects.html#cb14-5" aria-hidden="true"></a><span class="kw">class</span>(gdp) </span></code></pre></div>
 <pre><code>## [1] &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;</code></pre>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb10-1" aria-hidden="true"></a><span class="kw">str</span>(gdp) <span class="co"># structure of the data</span></span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb16-1" aria-hidden="true"></a><span class="kw">str</span>(gdp) <span class="co"># structure of the data</span></span></code></pre></div>
 <pre><code>## tibble [294 × 2] (S3: tbl_df/tbl/data.frame)
 ##  $ time   : POSIXct[1:294], format: &quot;1947-01-01&quot; &quot;1947-04-01&quot; ...
 ##  $ gdp.usd: num [1:294] 58497 60672 62196 68250 64258 ...</code></pre>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb12-1" aria-hidden="true"></a><span class="kw">head</span>(gdp) <span class="co"># first 5 rows...</span></span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb18-1" aria-hidden="true"></a><span class="kw">head</span>(gdp) <span class="co"># first 5 rows...</span></span></code></pre></div>
 <pre><code>## # A tibble: 6 x 2
 ##   time                gdp.usd
 ##   &lt;dttm&gt;                &lt;dbl&gt;
@@ -189,48 +189,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5 1948-01-01 00:00:00   64258
 ## 6 1948-04-01 00:00:00   66539</code></pre>
 <p>Tell me the features of the variable</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb14-1" aria-hidden="true"></a><span class="kw">sapply</span>(gdp, class)</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb20-1" aria-hidden="true"></a><span class="kw">sapply</span>(gdp, class)</span></code></pre></div>
 <pre><code>## $time
 ## [1] &quot;POSIXct&quot; &quot;POSIXt&quot; 
 ## 
 ## $gdp.usd
 ## [1] &quot;numeric&quot;</code></pre>
 <p>Note that first variable is POSIXct - a time series object.</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb16-1" aria-hidden="true"></a><span class="kw">ts.plot</span>(gdp<span class="op">$</span>gdp.usd)</span></code></pre></div>
-<p><img src="wepage_files_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb22-1" aria-hidden="true"></a><span class="kw">ts.plot</span>(gdp<span class="op">$</span>gdp.usd)</span></code></pre></div>
+<p><img src="wepage_files_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p class="red">
 <strong>Converting Variables into Time Series Objects</strong>
 </p>
 <p>Problem: GDP variable is not time series but only a bunch of numbers</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb17-1" aria-hidden="true"></a><span class="co"># converting the vector into time series with a starting and ending time</span></span>
-<span id="cb17-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb17-2" aria-hidden="true"></a>gdp<span class="op">$</span>gdp.usd &lt;-<span class="st"> </span><span class="kw">ts</span>(<span class="dt">data=</span>gdp<span class="op">$</span>gdp.usd, <span class="dt">frequency =</span> <span class="dv">4</span>,<span class="dt">start=</span><span class="kw">c</span>(<span class="dv">1947</span>,<span class="dv">1</span>), <span class="dt">end=</span><span class="kw">c</span>(<span class="dv">2020</span>,<span class="dv">2</span>)) </span>
-<span id="cb17-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb17-3" aria-hidden="true"></a></span>
-<span id="cb17-4"><a href="extracting-business-cycles-from-time-series-objects.html#cb17-4" aria-hidden="true"></a><span class="co"># checking the class of variables in data</span></span>
-<span id="cb17-5"><a href="extracting-business-cycles-from-time-series-objects.html#cb17-5" aria-hidden="true"></a><span class="kw">sapply</span>(gdp, class)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb23-1" aria-hidden="true"></a><span class="co"># converting the vector into time series with a starting and ending time</span></span>
+<span id="cb23-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb23-2" aria-hidden="true"></a>gdp<span class="op">$</span>gdp.usd &lt;-<span class="st"> </span><span class="kw">ts</span>(<span class="dt">data=</span>gdp<span class="op">$</span>gdp.usd, <span class="dt">frequency =</span> <span class="dv">4</span>,<span class="dt">start=</span><span class="kw">c</span>(<span class="dv">1947</span>,<span class="dv">1</span>), <span class="dt">end=</span><span class="kw">c</span>(<span class="dv">2020</span>,<span class="dv">2</span>)) </span>
+<span id="cb23-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb23-3" aria-hidden="true"></a></span>
+<span id="cb23-4"><a href="extracting-business-cycles-from-time-series-objects.html#cb23-4" aria-hidden="true"></a><span class="co"># checking the class of variables in data</span></span>
+<span id="cb23-5"><a href="extracting-business-cycles-from-time-series-objects.html#cb23-5" aria-hidden="true"></a><span class="kw">sapply</span>(gdp, class)</span></code></pre></div>
 <pre><code>## $time
 ## [1] &quot;POSIXct&quot; &quot;POSIXt&quot; 
 ## 
 ## $gdp.usd
 ## [1] &quot;ts&quot;</code></pre>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb19-1" aria-hidden="true"></a><span class="kw">class</span>(gdp<span class="op">$</span>gdp.usd)</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb25-1" aria-hidden="true"></a><span class="kw">class</span>(gdp<span class="op">$</span>gdp.usd)</span></code></pre></div>
 <pre><code>## [1] &quot;ts&quot;</code></pre>
 <p>Now plotting this in R again:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb21-1" aria-hidden="true"></a><span class="kw">ts.plot</span>(gdp<span class="op">$</span>gdp.usd)</span></code></pre></div>
-<p><img src="wepage_files_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb22-1" aria-hidden="true"></a><span class="co"># tell me the difference between the first and the second plot</span></span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb27-1" aria-hidden="true"></a><span class="kw">ts.plot</span>(gdp<span class="op">$</span>gdp.usd)</span></code></pre></div>
+<p><img src="wepage_files_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb28-1" aria-hidden="true"></a><span class="co"># tell me the difference between the first and the second plot</span></span></code></pre></div>
 <p>Problems remain: axis is not marked properly for reading.</p>
 <p class="red">
 <strong>Removing Seasonality</strong>
 </p>
 <p>We need to undergo seasonal transformation only if the data is not seasonalized. This is not a problem for annual data, but for lower frequencies we need to remove the effects of seasonal fluctuations.</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb23-1" aria-hidden="true"></a><span class="co"># Lets extract business cycles from US data</span></span>
-<span id="cb23-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb23-2" aria-hidden="true"></a><span class="co"># Step 1: Remove seasonal effects:</span></span>
-<span id="cb23-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb23-3" aria-hidden="true"></a><span class="kw">install.packages</span>(<span class="st">&quot;seasonal&quot;</span>) <span class="co"># for seasonal </span></span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb29-1" aria-hidden="true"></a><span class="co"># Lets extract business cycles from US data</span></span>
+<span id="cb29-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb29-2" aria-hidden="true"></a><span class="co"># Step 1: Remove seasonal effects:</span></span>
+<span id="cb29-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb29-3" aria-hidden="true"></a><span class="kw">install.packages</span>(<span class="st">&quot;seasonal&quot;</span>) <span class="co"># for seasonal </span></span></code></pre></div>
 <p>Remove seasonal effects such as diwali:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb24-1" aria-hidden="true"></a><span class="kw">library</span>(seasonal)</span>
-<span id="cb24-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb24-2" aria-hidden="true"></a>deseasonal.gdp &lt;-<span class="st"> </span><span class="kw">seas</span>(gdp<span class="op">$</span>gdp.usd)</span></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb30-1" aria-hidden="true"></a><span class="kw">library</span>(seasonal)</span>
+<span id="cb30-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb30-2" aria-hidden="true"></a>deseasonal.gdp &lt;-<span class="st"> </span><span class="kw">seas</span>(gdp<span class="op">$</span>gdp.usd)</span></code></pre></div>
 <p>Check what are the results of seasonal adjustment and understand what you have done:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb25-1" aria-hidden="true"></a><span class="kw">summary</span>(deseasonal.gdp) <span class="co"># you&#39;ve done a regression</span></span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb31-1" aria-hidden="true"></a><span class="kw">summary</span>(deseasonal.gdp) <span class="co"># you&#39;ve done a regression</span></span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## seas(x = gdp$gdp.usd)
@@ -256,7 +256,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## Notes:
 ## - Unable to test AO1949.1 due to regression matrix singularity.
 ## - Unable to test LS1981.1 due to regression matrix singularity.</code></pre>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb27-1" aria-hidden="true"></a><span class="kw">attributes</span>(deseasonal.gdp) <span class="co"># get the data </span></span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb33-1" aria-hidden="true"></a><span class="kw">attributes</span>(deseasonal.gdp) <span class="co"># get the data </span></span></code></pre></div>
 <pre><code>## $names
 ##  [1] &quot;call&quot;        &quot;list&quot;        &quot;series&quot;      &quot;data&quot;        &quot;err&quot;        
 ##  [6] &quot;udg&quot;         &quot;est&quot;         &quot;model&quot;       &quot;fivebestmdl&quot; &quot;x&quot;          
@@ -264,42 +264,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## $class
 ## [1] &quot;seas&quot;</code></pre>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb29-1" aria-hidden="true"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb29-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb29-2" aria-hidden="true"></a>gdp<span class="op">$</span>deseasonal &lt;-<span class="st"> </span>deseasonal.gdp<span class="op">$</span>data[,<span class="dv">3</span>] <span class="co"># store this data in your dataset</span></span>
-<span id="cb29-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb29-3" aria-hidden="true"></a><span class="kw">ggplot</span>(gdp, <span class="kw">aes</span> (<span class="dt">y=</span>gdp<span class="op">$</span>gdp.usd, <span class="dt">x =</span> gdp<span class="op">$</span>time)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>(<span class="dt">colour=</span><span class="kw">alpha</span>(<span class="st">&#39;blue&#39;</span>, <span class="fl">0.85</span>)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">y=</span>gdp<span class="op">$</span>deseasonal, <span class="dt">x =</span> gdp<span class="op">$</span>time), <span class="dt">colour=</span><span class="kw">alpha</span>(<span class="st">&#39;red&#39;</span>, <span class="fl">0.85</span>) )  <span class="op">+</span><span class="st"> </span><span class="kw">theme_minimal</span>() <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Original (blue) and De-Seasonalized (red)&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ggtitle</span>(<span class="st">&quot;Removing Seasonal Fluctuations from US GDP&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Bn. USD&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb35-1" aria-hidden="true"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb35-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb35-2" aria-hidden="true"></a>gdp<span class="op">$</span>deseasonal &lt;-<span class="st"> </span>deseasonal.gdp<span class="op">$</span>data[,<span class="dv">3</span>] <span class="co"># store this data in your dataset</span></span>
+<span id="cb35-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb35-3" aria-hidden="true"></a><span class="kw">ggplot</span>(gdp, <span class="kw">aes</span> (<span class="dt">y=</span>gdp<span class="op">$</span>gdp.usd, <span class="dt">x =</span> gdp<span class="op">$</span>time)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>(<span class="dt">colour=</span><span class="kw">alpha</span>(<span class="st">&#39;blue&#39;</span>, <span class="fl">0.85</span>)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">y=</span>gdp<span class="op">$</span>deseasonal, <span class="dt">x =</span> gdp<span class="op">$</span>time), <span class="dt">colour=</span><span class="kw">alpha</span>(<span class="st">&#39;red&#39;</span>, <span class="fl">0.85</span>) )  <span class="op">+</span><span class="st"> </span><span class="kw">theme_minimal</span>() <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Original (blue) and De-Seasonalized (red)&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ggtitle</span>(<span class="st">&quot;Removing Seasonal Fluctuations from US GDP&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Bn. USD&quot;</span>)</span></code></pre></div>
 <pre><code>## Don&#39;t know how to automatically pick scale for object of type ts. Defaulting to continuous.</code></pre>
 <pre><code>## Warning: Use of `gdp$time` is discouraged. Use `time` instead.</code></pre>
 <pre><code>## Warning: Use of `gdp$gdp.usd` is discouraged. Use `gdp.usd` instead.</code></pre>
 <pre><code>## Warning: Use of `gdp$time` is discouraged. Use `time` instead.</code></pre>
 <pre><code>## Warning: Use of `gdp$deseasonal` is discouraged. Use `deseasonal` instead.</code></pre>
-<p><img src="wepage_files_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="wepage_files_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p class="red">
 <strong>Isolating Business Cycles</strong>
 </p>
 <p>Installing packages required for filtering</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb35-1" aria-hidden="true"></a><span class="co"># Step 2: Lets get the business cycles</span></span>
-<span id="cb35-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb35-2" aria-hidden="true"></a><span class="kw">install.packages</span>(<span class="st">&quot;mFilter&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb41-1" aria-hidden="true"></a><span class="co"># Step 2: Lets get the business cycles</span></span>
+<span id="cb41-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb41-2" aria-hidden="true"></a><span class="kw">install.packages</span>(<span class="st">&quot;mFilter&quot;</span>)</span></code></pre></div>
 <p>Getting the business cycles:</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb36-1" aria-hidden="true"></a><span class="kw">library</span>(mFilter)</span>
-<span id="cb36-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb36-2" aria-hidden="true"></a>usa.business.cycles &lt;-<span class="st"> </span><span class="kw">hpfilter</span>(<span class="kw">log</span>(gdp<span class="op">$</span>deseasonal), <span class="dt">freq =</span> <span class="dv">1600</span>)</span>
-<span id="cb36-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb36-3" aria-hidden="true"></a><span class="kw">attributes</span>(usa.business.cycles)</span></code></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb42-1" aria-hidden="true"></a><span class="kw">library</span>(mFilter)</span>
+<span id="cb42-2"><a href="extracting-business-cycles-from-time-series-objects.html#cb42-2" aria-hidden="true"></a>usa.business.cycles &lt;-<span class="st"> </span><span class="kw">hpfilter</span>(<span class="kw">log</span>(gdp<span class="op">$</span>deseasonal), <span class="dt">freq =</span> <span class="dv">1600</span>)</span>
+<span id="cb42-3"><a href="extracting-business-cycles-from-time-series-objects.html#cb42-3" aria-hidden="true"></a><span class="kw">attributes</span>(usa.business.cycles)</span></code></pre></div>
 <pre><code>## $names
 ##  [1] &quot;cycle&quot;   &quot;trend&quot;   &quot;fmatrix&quot; &quot;title&quot;   &quot;xname&quot;   &quot;call&quot;    &quot;type&quot;   
 ##  [8] &quot;lambda&quot;  &quot;method&quot;  &quot;x&quot;      
 ## 
 ## $class
 ## [1] &quot;mFilter&quot;</code></pre>
-<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb38-1" aria-hidden="true"></a><span class="kw">ts.plot</span>(usa.business.cycles<span class="op">$</span>cycle, <span class="dt">gpars =</span> <span class="kw">list</span>(<span class="dt">ylab =</span><span class="st">&quot;US GDP Cycles&quot;</span>))</span></code></pre></div>
-<p><img src="wepage_files_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb44-1" aria-hidden="true"></a><span class="kw">ts.plot</span>(usa.business.cycles<span class="op">$</span>cycle, <span class="dt">gpars =</span> <span class="kw">list</span>(<span class="dt">ylab =</span><span class="st">&quot;US GDP Cycles&quot;</span>))</span></code></pre></div>
+<p><img src="wepage_files_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p>Obtaining the summary statistics for these business cycles</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb39-1" aria-hidden="true"></a><span class="kw">summary</span>(usa.business.cycles<span class="op">$</span>cycle)</span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb45-1" aria-hidden="true"></a><span class="kw">summary</span>(usa.business.cycles<span class="op">$</span>cycle)</span></code></pre></div>
 <pre><code>##       Min.    1st Qu.     Median       Mean    3rd Qu.       Max. 
 ## -0.1033967 -0.0083196 -0.0008513  0.0000000  0.0123782  0.0475003</code></pre>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb41-1" aria-hidden="true"></a><span class="kw">sd</span>(usa.business.cycles<span class="op">$</span>cycle) <span class="co"># standard deviation of GDP cycles</span></span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb47-1" aria-hidden="true"></a><span class="kw">sd</span>(usa.business.cycles<span class="op">$</span>cycle) <span class="co"># standard deviation of GDP cycles</span></span></code></pre></div>
 <pre><code>## [1] 0.01822255</code></pre>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb43-1" aria-hidden="true"></a><span class="kw">acf</span>(usa.business.cycles<span class="op">$</span>cycle) <span class="co"># auto-correlation function</span></span></code></pre></div>
-<p><img src="wepage_files_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
-<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb44-1" aria-hidden="true"></a><span class="kw">acf</span>(usa.business.cycles<span class="op">$</span>cycle, <span class="dt">plot =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb49-1" aria-hidden="true"></a><span class="kw">acf</span>(usa.business.cycles<span class="op">$</span>cycle) <span class="co"># auto-correlation function</span></span></code></pre></div>
+<p><img src="wepage_files_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="extracting-business-cycles-from-time-series-objects.html#cb50-1" aria-hidden="true"></a><span class="kw">acf</span>(usa.business.cycles<span class="op">$</span>cycle, <span class="dt">plot =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
 <pre><code>## 
 ## Autocorrelations of series &#39;usa.business.cycles$cycle&#39;, by lag
 ## 

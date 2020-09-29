@@ -769,6 +769,220 @@ Y^* & = \frac{\bar{M}}{\bar{P}} \frac{1}{l_r(\beta_{IS} + \beta_{LM})} - \frac{\
 \end{aligned}
 $$
 
+__Chapter 11: Numericals__
+
+```{r}
+P = seq(0, 100, length.out = 1000)
+AS = 10*P
+AD = (120/1.5) + (300/1.5) * (1/P)
+plot(P, AD, type = "l", col = "blue", main = "Equilibrium in AD and AS", ylab = "output, Y")
+lines(P, AS, type = "l", col = "red")
+
+quadraticRoots <- function(a, b, c) {
+
+  print(paste0("You have chosen the quadratic equation ", a, "x^2 + ", b, "x + ", c, "."))
+
+  discriminant <- (b^2) - (4*a*c)
+
+  if(discriminant < 0) {
+    return(paste0("This quadratic equation has no real numbered roots."))
+  }
+  else if(discriminant > 0) {
+    x_int_plus <- (-b + sqrt(discriminant)) / (2*a)
+    x_int_neg <- (-b - sqrt(discriminant)) / (2*a)
+
+    return(paste0("The two x-intercepts for the quadratic equation are ",
+                  format(round(x_int_plus, 5), nsmall = 5), " and ",
+                  format(round(x_int_neg, 5), nsmall = 5), "."))
+  }
+  else #discriminant = 0  case
+    x_int <- (-b) / (2*a)
+    return(paste0("The quadratic equation has only one root. This root is ",
+                  x_int))
+}
+
+quadraticRoots(1, -80, -2000)
+```
 
 
+__Practice Questions__
 
+A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:
+
+|  Real Wage|  Effort|
+|:--:|:--:|
+|  8|  7|
+|  10|  10|
+|  12|  15|
+|  14|  17|
+|  16|  19|
+|  18|  20|
+
+The marginal product of labor for this firm is
+
+$$ MPN = E(100-n)/15$$
+where E is the effort level and N is the number of workers employed. If the firm can pay only one of the six wage levels shown, which should it choose?
+
+(a) 8
+(b) 10
+(c) 12
+(d) 14
+
+A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:
+
+|  Real Wage|  Effort|
+|:--:|:--:|
+|  8|  7|
+|  10|  10|
+|  12|  15|
+|  14|  17|
+|  16|  19|
+|  18|  20|
+
+The marginal product of labor for this firm is
+
+$$ MPN = E(100-n)/15$$
+where E is the effort level and N is the number of workers employed.
+How many workers will it employ?
+
+A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:
+
+|  Real Wage|  Effort|
+|:--:|:--:|
+|  8|  7|
+|  10|  10|
+|  12|  15|
+|  14|  17|
+|  16|  19|
+|  18|  20|
+
+The marginal product of labor for this firm is
+
+$$ MPN = E(100-n)/15$$
+where E is the effort level and N is the number of workers employed. There are 200 workers in the town where the firm is located, all willing to work at a real wage of 8. How many workers will it employ?
+
+A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:
+
+|  Real Wage|  Effort|
+|:--:|:--:|
+|  8|  7|
+|  10|  10|
+|  12|  15|
+|  14|  17|
+|  16|  19|
+|  18|  20|
+
+The marginal product of labor for this firm is
+
+$$ MPN = E(100-n)/15$$
+where E is the effort level and N is the number of workers employed. There are 200 workers in the town where the firm is located, all willing to work at a real wage of 8. What happens to these firms if their optimal effort wage is 6?
+
+
+An economy is described by the following equations:
+
+$$
+\begin{aligned}
+C^d &= 130 + 0.5(Y - T) - 500 r \\
+I^d &= 100 - 500r \\
+G &= 100\\
+T &= 100\\
+L &= 0.5 Y - 1000 (r) \\
+M &= 1320 \\
+\bar{Y} &= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+$$
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. What is the expression for the IS curve for this economy?
+
+(a) $$Y = 280 - 1000 (r)$$
+(b) $$Y = 560 - 1000 (r)$$
+(c) $$Y = 560 - 2000 (r)$$
+(d) $$Y = 1320 - 2000 (r)$$
+
+
+An economy is described by the following equations:
+
+$$
+\begin{aligned}
+C^d &= 130 + 0.5(Y - T) - 500 r \\
+I^d &= 100 - 500r \\
+G &= 100\\
+T &= 100\\
+L &= 0.5 Y - 1000 (r) \\
+M &= 1320 \\
+\bar{Y} &= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+$$
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. What is the expression for the LM curve for this economy?
+
+(a) $$Y = \frac{280}{P} - 1000 (r)$$
+(b) $$Y = \frac{560}{P} + 1000 (r)$$
+(c) $$Y = \frac{2640}{P} + 2000 (r)$$
+(d) $$Y = \frac{1320}{0.5 P} - 2000 (r)$$
+
+An economy is described by the following equations:
+$$
+\begin{aligned}
+C^d &= 130 + 0.5(Y - T) - 500 r \\
+I^d &= 100 - 500r \\
+G &= 100\\
+T &= 100\\
+L &= 0.5 Y - 1000 (r) \\
+M &= 1320 \\
+\bar{Y} &= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+$$
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. What is the equilibrium output, interest rate and price for this economy?
+
+(a) 500, 3, 6
+
+An economy is described by the following equations:
+$$
+\begin{aligned}
+C^d &= 130 + 0.5(Y - T) - 500 r \\
+I^d &= 100 - 500r \\
+G &= 100\\
+T &= 100\\
+L &= 0.5 Y - 1000 (r) \\
+M &= 1320 \\
+\bar{Y} &= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+$$
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. Suppose that, because of investor optimism about the future marginal product of capital, the investment function becomes
+$$ I^d = 200 - 500r $$
+Assuming that the economy was initially at full employment. What are the equilibrium values of output and interest rate in the short run?
+
+(a) Y = 600, P = 6, r = 8%
+
+An economy is described by the following equations:
+$$
+\begin{aligned}
+C^d &= 130 + 0.5(Y - T) - 500 r \\
+I^d &= 100 - 500r \\
+G &= 100\\
+T &= 100\\
+L &= 0.5 Y - 1000 (r) \\
+M &= 1320 \\
+\bar{Y} &= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+$$
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. Suppose that, because of investor optimism about the future marginal product of capital, the investment function becomes
+$$ I^d = 200 - 500r $$
+Assuming that the economy was initially at full employment. What are the equilibrium values of output and interest rate in the long run?
+
+ANS: Y = 500, P = 11 and r = 0.13
+
+An economy is described by the following equations:
+$$
+\begin{aligned}
+C^d &= 130 + 0.5(Y - T) - 500 r \\
+I^d &= 100 - 500r \\
+G &= 100\\
+T &= 100\\
+L &= 0.5 Y - 1000 (r) \\
+M &= 1320 \\
+\bar{Y} &= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+$$
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. Suppose that, because of investor optimism about the future marginal product of capital, the investment function becomes
+$$ I^d = 200 - 500r $$
+Assuming that the economy was initially at full employment. How does this investor confidence affect long run prices?
