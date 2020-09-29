@@ -2,7 +2,13 @@
 
 ### Indian Section {.unlisted .unnumbered}
 
-<p class="red"> __Dalies__ </p>  
+<table>
+<tr>
+<td> <p class="red"> __Dalies__ </p>  </td>
+<td> <p class="red"> __Online__ </p>  </td>
+</tr>
+<tr>
+<td> 
 [The Hindu](https://www.thehindu.com/),1878 Chennai, India  
 [Hindustan Times](https://www.hindustantimes.com/), 1924 New Delhi, India  
 [The Free Press Journal](https://www.freepressjournal.in/), 1928 Mumbai, India  
@@ -14,32 +20,52 @@
 [Business Standard](https://www.business-standard.com/), 1975 New Delhi, India  
 [Asian Age](https://www.asianage.com), 1994 New Delhi, India  
 [Mint](https://www.livemint.com), 2007 New Delhi, India
-
-<p class="red"> __Television__ </p>  
-[NDTV](https://www.ndtv.com), 1988 New Delhi, India  
-[CNN News18](https://www.news18.com), 1995 Noida, India
-
-<p class="red"> __Magazines__ </p>  
-[India Today](https://www.indiatoday.in), 1975 Noida, India  
-[Frontline](https://frontline.thehindu.com), 1984 Chennai, India  
-[Outlook](https://www.outlookindia.com/), 1995 New Delhi, India  
-
-<p class="red"> __Online__ </p>  
+</td>
+<td> 
 [Press Information Bureau](https://pib.gov.in/indexd.aspx), GOI (1919)  
 [DNA](https://www.dnaindia.com), 2005-2019  
 [One India](https://www.oneindia.com), 2006  
 [Firstpost](https://www.firstpost.com), late 2010 in Mumbai, India  
 [Brookings India](https://www.brookings.edu/center/brookings-india/), 2013 India  
-[Scroll.in](https://scroll.in) 2014, Delaware, USA.  
+[Scroll.in](https://scroll.in), 2014 Delaware, USA.  
 [The Wire](https://thewire.in/), 2015 New Delhi, India  
 [The Quint](https://www.thequint.com), 2015 New Delhi, India  
 [The Ken](https://the-ken.com), 2016 Bangalore, India  
-[Bloomberg Quint](https://www.bloombergquint.com/),2016 India  
-[The Print](https://theprint.in),2017 New Delhi, India  
+[Bloomberg Quint](https://www.bloombergquint.com/), 2016 India  
+[The Print](https://theprint.in), 2017 New Delhi, India  
+</td>
+</tr>
+<tr>
+<td> <p class="red"> __Television__ </p> </td>
+<td> <p class="red"> __Magazines__ </p> </td>
+</tr>
+<tr>
+<td>
+[NDTV](https://www.ndtv.com), 1988 New Delhi, India  
+[CNN News18](https://www.news18.com), 1995 Noida, India
+</td>
+<td>
+[India Today](https://www.indiatoday.in), 1975 Noida, India  
+[Frontline](https://frontline.thehindu.com), 1984 Chennai, India  
+[Outlook](https://www.outlookindia.com/), 1995 New Delhi, India  
+</td>
+</tr>
+</table>
+ 
+
+
+
 
 
 ### International Section {.unlisted .unnumbered}
-<text class = red> __Dalies__ </text>  
+
+<table>
+<tr>
+<td> <p class="red"> __Dalies__ </p>  </td>
+<td> <p class="red"> __Magazines__ </p>  </td>
+</tr>
+<tr>
+<td> 
 [The Times](https://www.thetimes.co.uk/), 1788 London, UK.  
 [The Guardian](https://www.theguardian.com/uk), 1821 London, UK.  
 [The New York Times](https://www.nytimes.com/), 1851 New York City, USA.  
@@ -52,10 +78,8 @@
 [BBC](https://www.bbc.com/), 1922 London, UK.  
 [The Australian Financial Review](https://www.afr.com/), 1950 Sydney, Australia.  
 [USA Today](https://www.usatoday.com/), 1982 Virginia, USA.  
-
-
-<text class = red> __Magazines__ </text>
-
+</td>
+<td>
 [The Economist](https://www.economist.com/), 1843 London, UK.   
 [The Atlantic](https://www.theatlantic.com/world/), 1857 Washington D.C., USA.  
 [The Nation](https://www.thenation.com/), 1865 New York City, USA.  
@@ -72,9 +96,15 @@
 [The National Interest](https://nationalinterest.org), 1985  Washington D.C., USA.  
 [The Weekly Standard](https://www.weeklystandard.com/), 1995 Washington D.C., USA.  
 [Slate](https://slate.com/), 1996 New York City, USA.  
-[Politico](https://www.politico.com/), 2007 Virginia, USA.  
-
-<text class = red> __Television__ </text>  
+[Politico](https://www.politico.com/), 2007 Virginia, USA. 
+</td>
+</tr>
+<tr>
+<td> <p class="red"> __Television__ </p>  </td>
+<td> <p class="red"> __Online__ </p>  </td>
+</tr>
+<tr>
+<td>
 [Al-Jzeera](https://www.aljazeera.com/), 1996 Doha, Quatar.  
 [National Public Radio](https://www.npr.org/), 1970 NPR USA.  
 [CNN (Cable News Network)](https://edition.cnn.com/), 1980 Georgia, USA.  
@@ -82,10 +112,9 @@
 [CBS News](https://www.cbsnews.com/), 1927 New York City, USA.  
 [ABC](https://abcnews.go.com/) (American Broadcasting Company) News, 1943 California, USA.  
 [Australian Broadcasting Corporation](https://www.abc.net.au/), 1929 Sydney Australia.  
-[SBS](https://www.sbs.com.au) (Special Broadcasting Service), 1978 Australia.  
-
-
-<text class = red> __Online__ </text>  
+[SBS](https://www.sbs.com.au) (Special Broadcasting Service), 1978 Australia. 
+</td>
+<td>
 [The Brookings Institution](https://www.brookings.edu/), 1916 Washington D.C., USA.  
 [The Pew Research Center](https://www.pewresearch.org/), 1993 Washington D.C., USA.  
 [The Bureau of Investigative Journalism](https://www.thebureauinvestigates.com/), 2010 London, UK.  
@@ -96,17 +125,21 @@
 [Medium](https://medium.com/), 2012 USA.  
 [The Intercept](https://theintercept.com/), 2014 USA.  
 [Vox](https://www.vox.com/), 2014 New York, USA.  
+</td>
+</tr>
+</table>
 
 <text class = red> __News Agencies__ </text>  
 [The Associate Press Agency](https://www.ap.org/en-gb/), 1917 New York City, USA.  
 [The Associate Press News](https://apnews.com), 1917 New York City, USA.  
 [Reuters Agency](https://www.thomsonreuters.com/en.html), 1851 London, UK.  
 [Reuters News](https://www.reuters.com), 1851 London, UK.  
-[Bloomberg, L.P.](https://www.bloomberg.com) (Limited partnership), 1981 New York, USA.   
+[Bloomberg, L.P.](https://www.bloomberg.com) (Limited partnership), 1981 New York, USA. 
 
-### Economic Cornner {.unlisted .unnumbered}
+  
 
->Some of the above news sources are as much economics as any serious academic papers. Additionally there are some institutes which conduct their own research and give newsletters to your inbox which could be worth the watch. It also depends upon your area of interest within the broad platter of economics.
+### Economic Cornner {.unlisted .unnumbered}  
+Some of the above news sources are as much economics as any serious academic papers. Additionally there are some institutes which conduct their own research and give newsletters to your inbox which could be worth the watch. It also depends upon your area of interest within the broad platter of economics.
 
 <text class = red> __Blogosphere__ </text>  
 

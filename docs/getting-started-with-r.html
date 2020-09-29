@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Getting Started with R | Nikhil Damodaran</title>
+  <meta name="description" content="Getting Started with R | Nikhil Damodaran" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Getting Started with R | Nikhil Damodaran" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Getting Started with R | Nikhil Damodaran" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="understanding-is-lm-model-analytically.html"/>
+
+<script src="libs/header-attrs-2.3.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Welcome to my Webpage</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Home</a></li>
+<li class="chapter" data-level="" data-path="bio.html"><a href="bio.html"><i class="fa fa-check"></i>Bio</a></li>
+<li class="chapter" data-level="" data-path="Research.html"><a href="Research.html"><i class="fa fa-check"></i>Research</a></li>
+<li class="chapter" data-level="" data-path="Teaching.html"><a href="Teaching.html"><i class="fa fa-check"></i>Teaching</a></li>
+<li class="chapter" data-level="" data-path="articles.html"><a href="articles.html"><i class="fa fa-check"></i>Articles</a></li>
+<li class="divider"></li>
+<li><a href="https://twitter.com/nikhildamodaran" target="blank">My Twitter</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Nikhil Damodaran</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="getting-started-with-r" class="section level1 unnumbered unlisted">
+<h1>Getting Started with R</h1>
+<p>R is a statistical computing platform designed to make data analysis open and scientific. “Open” is for anyone to access understand and replicate. The functionalities of R are open so much so that you can even make your own version of R - though you would be wasting a lot of time!</p>
+<p>More importantly, open also implies there is no mystery in the job of a statistician or an economist. You can use the methods of hypothesis testing to provide inferences, extrapolate projections etc. as long as you are also following the procedures required by R - which isn’t that much to adhere to.</p>
+<p>“Scientific” is the approach - the objective of making research and data analysis accessible, replicable and verifiable. You know what you are dealing with at the outset. Work in R studio also makes it easier for others to understand and follow the data explorations of an accomplished statistician. Also, I strongly believe in verifiability of research. It does not matter who a person is, unless he or she gives you replicable research.</p>
+<div id="r-for-economists" class="section level2 unnumbered unlisted">
+<h2>R for Economists</h2>
+<p>I am an economist and it is fairly important for economists to have a head-start in data analytics. Sadly, we are not taught a lot of practical aspects of data analysis. For eg: which data processing platform should I invest my time during grad school? and why? The fact is that you spend most of your productive time in grad school. If you spend time ineffectively, then it becomes a steeper learning curve later on.</p>
+<p>Most empirically minded economists use <a href="https://www.stata.com/">STATA</a>. It is a statistical and data analytics platform which is improving their versatility now with Python integration in Stata 16. As a data analyst, it does makes things a bit easier since you have most of the commands at your menu tabs. It also has strong documentation for its commands and procedures. However, it is not open access platform. More importantly, you start doing data analysis mechanically since you are not hard-coding the commands. Following the data analytics revolution would imply that you follow, get in line, and start learning readable code and use them to write programs which do the same thing as a STATA command.</p>
+<p>For economists who are used to Stata, switching into R might be a pain but it is worth the transition. First, you would be able to replicate what you read in a textbook to actual readable codes - R codes are as readable as python. Second, you would know the underlying mechanics of your problem and hence be able to communicate research better. Third, with the advent of data science revolution, knowing scientific methods which are closer to modern approach to data science is going to be important. R follows that, and STATA does not.</p>
+<p>However, your transition to R and your entry into data analytics would be smoother than you imagine. It is also going to take you closer to the idea that <a href="https://medium.com/swlh/anyone-can-code-1b5dee812658">everybody can code</a>. And if you have the nerd bone to code, then you are going to get addicted to it. These blogs are part of my efforts to communicate to my students the importance of understanding these data structures.</p>
+</div>
+<div id="what-is-r-and-what-is-r-studio" class="section level2 unnumbered unlisted">
+<h2>What is R and what is R-studio?</h2>
+<p>R is the original open source platform which helps you practice data science. R is written on C++ and is a higher level programming language with data science functionality added into it. To keep the base lite, R comes with a default platform conducive for analysis. There are purists who practice data science without any additional packages, so that their work remains open source. If you are one of those, then you already know your stuff and you do not have to go through the rest. If not, proceed.</p>
+<p>R-studio is more of a reception to the data science factory of R. It helps you use R and gives you a more comfortable platform to interact, doing the exact same thing. So all you have to do before beginning with R is to make sure you install <a href="https://www.r-project.org/">R</a> and <a href="https://rstudio.com/products/rstudio/download/">R-studio</a> separately.</p>
+<p>Now, you are ready for your revolution into data science.</p>
+</div>
+<div id="the-first-step" class="section level2 unnumbered unlisted">
+<h2>The First Step</h2>
+<p>In this section we will just understand the console space in R-studio; though all these commands will work with R and you do not need R-studio.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The first command you would learn is dedicated to the first men of programming:</p>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="getting-started-with-r.html#cb77-1" aria-hidden="true"></a><span class="kw">print</span>(<span class="st">&quot;hello world&quot;</span>)</span></code></pre></div>
+<p>This is a function - yes the kind you and I were really lazy to learn in our 101 mathematics courses in school and college. It just asks R to print a sentence. Since the sentence is a language and nothing else we needs double quotes to contain a sentence. The sentence is called string of characters in the language of computer programming. So even a space between hello and world is a string which denotes space.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> Notice that print does nothing but reproduces whatever is inside it. Consider another version:</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="getting-started-with-r.html#cb78-1" aria-hidden="true"></a><span class="kw">print</span>(<span class="dv">4</span><span class="op">+</span><span class="dv">6</span>)</span></code></pre></div>
+<p>This returns 10, but that does not come from the function print itself. It comes from the summation property of numbers pre-coded into R. Hence R can be your basic calculator too!</p>
+<p>So, now you are starting to get the hang of things. Lets proceed.</p>
+</div>
+<div id="the-second-step" class="section level2 unnumbered unlisted">
+<h2>The Second Step</h2>
+<p>Imagine yourself as a data scientist for a giant conglomerate or a researcher understanding the effects of these conglomerates on global warming. You have churned out a lot of analysis, but forgot to remove them from your computers RAM. You begin the next day and you write this command in the following:</p>
+<!-- # Clear all + memory space  -->
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="getting-started-with-r.html#cb79-1" aria-hidden="true"></a><span class="kw">rm</span>(<span class="dt">list=</span><span class="kw">ls</span>())            </span></code></pre></div>
+<p>This just clears everything in the global environment.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>Now, working directory is the folder in your computer where you want R to store its files. R is installed in your program files / applications folder. But it needs a working directory where it stores its script files. By default R chooses documents. Let us check the working directory from where R is operating.</p>
+<!-- # Identify the working dir  -->
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="getting-started-with-r.html#cb80-1" aria-hidden="true"></a><span class="kw">getwd</span>()</span></code></pre></div>
+<p>If its not the same as the one you expected, you would like to change it. This can happen most likely because, you are working on a paper/assignment/project and the data and other details are together in one folder. It is only logical that you also ask R to work from that folder on that project. I usually work from Dropbox and once am finished with a project, either upload it in my website or save it in an external hard drive.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="getting-started-with-r.html#cb81-1" aria-hidden="true"></a><span class="kw">setwd</span>(<span class="st">&quot;~/Dropbox/your_data_analysis_folder&quot;</span>)</span></code></pre></div>
+<p>So you have changed your working directory to align with your project requirements. Let us list the files in working directory.</p>
+<!-- # list files in working dir -->
+<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="getting-started-with-r.html#cb82-1" aria-hidden="true"></a><span class="kw">list.files</span>()</span></code></pre></div>
+<p>To list all the elements in your global environment we run the following command. Again just to caution you to the idea underlying these commands - ls() is actually a function which has certain functions. If you leave it blank and do not provide it any input, its default is to provide you with a list of elements in your global environment. For those who work on R, this is of great help. But R-studio has the global environment on display.
+<!-- # list variables in global environ. --></p>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="getting-started-with-r.html#cb83-1" aria-hidden="true"></a><span class="kw">ls</span>()</span></code></pre></div>
+<p>You would be wondering, what other inputs can you give the list environment? A simple help command will show you the possibilities.</p>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="getting-started-with-r.html#cb84-1" aria-hidden="true"></a>?<span class="kw">ls</span>()</span></code></pre></div>
+<p>More basic commands to examine R’s working directory. Go ahead and explore the output.</p>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="getting-started-with-r.html#cb85-1" aria-hidden="true"></a><span class="kw">objects</span>()                 <span class="co"># Lists the objects in the workspace</span></span>
+<span id="cb85-2"><a href="getting-started-with-r.html#cb85-2" aria-hidden="true"></a><span class="kw">search</span>()                  <span class="co"># Shows the loaded packages</span></span>
+<span id="cb85-3"><a href="getting-started-with-r.html#cb85-3" aria-hidden="true"></a>??detrend                 <span class="co"># search keyword</span></span>
+<span id="cb85-4"><a href="getting-started-with-r.html#cb85-4" aria-hidden="true"></a><span class="kw">dir</span>()                     <span class="co"># show files in the working directory</span></span>
+<span id="cb85-5"><a href="getting-started-with-r.html#cb85-5" aria-hidden="true"></a><span class="kw">remove</span>()                  <span class="co"># Remove objects from the workspace</span></span></code></pre></div>
+</div>
+<div id="working-of-rpython" class="section level2 unnumbered unlisted">
+<h2>Working of R/Python</h2>
+<p>R and Python are base lines of code which have already set up some instructions for us, which makes our life simple. In an era before these higher language programs, we worked with C or C++, in which if you have to define a variable, you had to tell the machine what do you mean by a variable. So you are fundamentally basing off first principles. But for both R and python, basic elements which are common to programming are pre-defined. You can start R and type 2+2 and get the correct answer. It already knows how to do basic math.</p>
+<p>For more complex tasks, programmers, statisticians, economists, data-analysts and sometimes enthusiastic students such as you have contributed packages. Packages work on top of the base R/python. They extend the capabilities of R. Instead of re-writing R entirely, if I need to code a new Bayesian estimation routine, I just create a package which does that. Lucky for us that most of the common statistical and econometric analysis already has well established package. A collection of packages is called a library. To check which package are installed in our system which came with R-studio, run the following code.</p>
+<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="getting-started-with-r.html#cb86-1" aria-hidden="true"></a><span class="kw">library</span>()                 <span class="co"># Shows the installed packages</span></span>
+<span id="cb86-2"><a href="getting-started-with-r.html#cb86-2" aria-hidden="true"></a><span class="kw">detach</span>()                  <span class="co"># Detached packages when no longer need them</span></span></code></pre></div>
+<p>Once you load a package during a routine analysis, the contents of the package are in the RAM of your computer, which means it slows down your computer. So if you do not need a package, make sure to detach it from the RAM. R says that both these commands are not regularly used. They just give you more information about how R functions with the help of packages saved in its system library.</p>
+</div>
+<div id="resources" class="section level2 unnumbered unlisted">
+<h2>Resources</h2>
+<p>Here are a few good references to begin with:</p>
+<ul>
+<li><a href="https://anomaly.io/seasonal-trend-decomposition-in-r/">Seasonal Decomposition in R</a></li>
+<li><a href="https://lectures.quantecon.org/jl/arma.html">Quant Econ with covariance stationary processes</a></li>
+<li><a href="https://anomaly.io/seasonal-trend-decomposition-in-r/">Additive functionals</a></li>
+<li><a href="https://lectures.quantecon.org/jl/multiplicative_functionals.html">Multiplicative functionals</a></li>
+</ul>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>In case you have troubles installing R-studio, go to the many online platforms which tell you how to do so - <span class="math inline">\(\infty\)</span> you tube videos exist.<a href="getting-started-with-r.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>more on data types in another blog.<a href="getting-started-with-r.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>more on this later.<a href="getting-started-with-r.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Though am still figuring out the most optimal and cheapest way to store data. I am sure cloud storage and computing are the future.<a href="getting-started-with-r.html#fnref4" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="understanding-is-lm-model-analytically.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"],
+"Facebook": true,
+"GitHub": true,
+"Twitter": true,
+"Linkedin": true
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"search": true,
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

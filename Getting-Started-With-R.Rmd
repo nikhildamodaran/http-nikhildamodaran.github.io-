@@ -1,0 +1,122 @@
+
+# Getting Started with R {.unnumbered .unlisted}
+
+R is a statistical computing platform designed to make data analysis open and scientific. "Open" is for anyone to access understand and replicate. The functionalities of R are open so much so that you can even make your own version of R - though you would be wasting a lot of time! 
+
+More importantly, open also implies there is no mystery in the job of a statistician or an economist. You can use the methods of hypothesis testing to provide inferences, extrapolate projections etc. as long as you are also following the procedures required by R - which isn't that much to adhere to. 
+
+"Scientific" is the approach -  the objective of making research and data analysis accessible, replicable and verifiable. You know what you are dealing with at the outset. Work in R studio also makes it easier for others to understand and follow the data explorations of an accomplished statistician. Also, I strongly believe in verifiability of research. It does not matter who a person is, unless he or she gives you replicable research. 
+
+## R for Economists {.unnumbered .unlisted}
+
+I am an economist and it is fairly important for economists to have a head-start in data analytics. Sadly, we are not taught a lot of practical aspects of data analysis. For eg: which data processing platform should I invest my time during grad school? and why? The fact is that you spend most of your productive time in grad school. If you spend time ineffectively, then it becomes a steeper learning curve later on. 
+
+Most empirically minded economists use [STATA](https://www.stata.com/). It is a statistical and data analytics platform which is improving their versatility now with Python integration in Stata 16. As a data analyst, it does makes things a bit easier since you have most of the commands at your menu tabs. It also has strong documentation for its commands and procedures. However, it is not open access platform. More importantly, you start doing data analysis mechanically since you are not hard-coding the commands. Following the data analytics revolution would imply that you follow, get in line, and start learning readable code and use them to write programs which do the same thing as a STATA command.
+
+For economists who are used to Stata, switching into R might be a pain but it is worth the transition. First, you would be able to replicate what you read in a textbook to actual readable codes - R codes are as readable as python. Second, you would know the underlying mechanics of your problem and hence be able to communicate research better. Third, with the advent of data science revolution, knowing scientific methods which are closer to modern approach to data science is going to be important. R follows that, and STATA does not.
+
+However, your transition to R and your entry into data analytics would be smoother than you imagine. It is also going to take you closer to the idea that [everybody can code](https://medium.com/swlh/anyone-can-code-1b5dee812658). And if you have the nerd bone to code, then you are going to get addicted to it. These blogs are part of my efforts to communicate to my students the importance of understanding these data structures.
+
+
+## What is R and what is R-studio? {.unnumbered .unlisted}
+
+R is the original open source platform which helps you practice data science. R is written on C++ and is a higher level programming language with data science functionality added into it. To keep the base lite, R comes with a default platform conducive for analysis. There are purists who practice data science without any additional packages, so that their work remains open source. If you are one of those, then you already know your stuff and you do not have to go through the rest. If not, proceed. 
+
+R-studio is more of a reception to the data science factory of R. It helps you use R and gives you a more comfortable platform to interact, doing the exact same thing. So all you have to do before beginning with R is to make sure you install [R](https://www.r-project.org/) and [R-studio](https://rstudio.com/products/rstudio/download/) separately. 
+
+Now, you are ready for your revolution into data science. 
+
+
+## The First Step {.unnumbered .unlisted}
+
+In this section we will just understand the console space in R-studio; though all these commands will work with R and you do not need R-studio.^[In case you have troubles installing R-studio, go to the many online platforms which tell you how to do so - $\infty$ you tube videos exist.] The first command you would learn is dedicated to the first men of programming:
+
+```{r eval=FALSE}
+print("hello world")
+```
+This is a function - yes the kind you and I were really lazy to learn in our 101 mathematics courses in school and college. It just asks R to print a sentence. Since the sentence is a language and nothing else we needs double quotes to contain a sentence.  The sentence is called string of characters in the language of computer programming. So even a space between hello and world is a string which denotes space.^[more on data types in another blog.] Notice that print does nothing but reproduces whatever is inside it. Consider another version:
+
+```{r eval=FALSE}
+print(4+6)
+```
+This returns 10, but that does not come from the function print itself. It comes from the summation property of numbers pre-coded into R. Hence R can be your basic calculator too!
+
+So, now you are starting to get the hang of things. Lets proceed.
+
+## The Second Step {.unnumbered .unlisted}
+
+Imagine yourself as a data scientist for a giant conglomerate or a researcher understanding the effects of these conglomerates on global warming. You have churned out a lot of analysis, but forgot to remove them from your computers RAM. You begin the next day and you write this command in the following:
+
+<!-- # Clear all + memory space  -->
+```{r eval=FALSE}
+rm(list=ls())            
+```
+
+This just clears everything in the global environment.^[more on this later.] 
+
+Now, working directory is the folder in your computer where you want R to store its files. R is installed in your program files / applications folder. But it needs a working directory where it stores its script files. By default R chooses documents. Let us check the working directory from where R is operating.
+
+<!-- # Identify the working dir  -->
+```{r eval=FALSE}
+getwd()
+```
+
+If its not the same as the one you expected, you would like to change it. This can happen most likely because, you are working on a paper/assignment/project and the data and other details are together in one folder. It is only logical that you also ask R to work from that folder on that project. I usually work from Dropbox and once am finished with a project, either upload it in my website or save it in an external hard drive. ^[Though am still figuring out the most optimal and cheapest way to store data. I am sure cloud storage and computing are the future.]
+
+```{r eval=FALSE}
+setwd("~/Dropbox/your_data_analysis_folder")
+```
+
+So you have changed your working directory to align with your project requirements. Let us list the files in working directory.
+
+<!-- # list files in working dir -->
+```{r eval=FALSE}
+list.files()
+```
+
+To list all the elements in your global environment we run the following command. Again just to caution you to the idea underlying these commands - ls() is actually a function which has certain functions. If you leave it blank and do not provide it any input, its default is to provide you with a list of elements in your global environment. For those who work on R, this is of great help. But R-studio has the global environment on display. 
+<!-- # list variables in global environ. -->
+```{r eval=FALSE}
+ls()
+```
+
+You would be wondering, what other inputs can you give the list environment? A simple help command will show you the possibilities.
+
+```{r eval=FALSE}
+?ls()
+```
+   
+   
+More basic commands to examine R's working directory. Go ahead and explore the output. 
+
+```   {r eval=FALSE}
+objects()                 # Lists the objects in the workspace
+search()                  # Shows the loaded packages
+??detrend                 # search keyword
+dir()                     # show files in the working directory
+remove()                  # Remove objects from the workspace
+```
+
+
+## Working of R/Python  {.unnumbered .unlisted}
+
+R and Python are base lines of code which have already set up some instructions for us, which makes our life simple. In an era before these higher language programs, we worked with C or C++, in which if you have to define a variable, you had to tell the machine what do you mean by a variable. So you are fundamentally basing off first principles. But for both R and python, basic elements which are common to programming are pre-defined. You can start R and type 2+2 and get the correct answer. It already knows how to do basic math. 
+
+For more complex tasks, programmers, statisticians, economists, data-analysts and sometimes enthusiastic students such as you have contributed packages. Packages work on top of the base R/python. They extend the capabilities of R. Instead of re-writing R entirely, if I need to code a new Bayesian estimation routine, I just create a package which does that. Lucky for us that most of the common statistical and econometric analysis already has well established package. A collection of packages is called a library. To check which package are installed in our system which came with R-studio, run the following code. 
+
+```{r eval=FALSE}
+library()                 # Shows the installed packages
+detach()                  # Detached packages when no longer need them
+```
+
+Once you load a package during a routine analysis, the contents of the package are in the RAM of your computer, which means it slows down your computer. So if you do not need a package, make sure to detach it from the RAM. R says that both these commands are not regularly used. They just give you more information about how R functions with the help of packages saved in its system library.
+
+## Resources {.unnumbered .unlisted}
+
+Here are a few good references to begin with:
+
+* [Seasonal Decomposition in R](https://anomaly.io/seasonal-trend-decomposition-in-r/)
+* [Quant Econ with covariance stationary processes](https://lectures.quantecon.org/jl/arma.html)
+* [Additive functionals](https://anomaly.io/seasonal-trend-decomposition-in-r/)
+* [Multiplicative functionals](https://lectures.quantecon.org/jl/multiplicative_functionals.html) 
+

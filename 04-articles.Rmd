@@ -9,13 +9,14 @@ __COVID-19__
 
 <p class="red"> __Unpublished__ </p>  
 __R Blogs__  
-[On a Data Analytics sequence: Getting started with R for Data Science]()  
+[On a Data Analytics sequence: Getting started with R for Data Science](getting-started-with-r.html)  
 [Exploring Time Series Data in R]()  
+[Extracting Business Cycles from Time Series](extracting-business-cycles-from-time-series-objects.html)
 
 __Leisure__  
-Movie reviews: [Certified Copy]()   
+Movie reviews: [Certified Copy](https://www.dropbox.com/s/tj0eyuurhvdoh10/Movie%20Review%20Certified%20Copy.pdf?dl=0)   
 [Calvin and Hobbes, 1985, Nov 18]()  
 
 __Student Resources__  
-[Bookmarks](docs/bookmarks.html)
+[Bookmarks](Bookmarks.html)
 
