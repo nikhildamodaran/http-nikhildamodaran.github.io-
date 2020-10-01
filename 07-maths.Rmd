@@ -135,3 +135,36 @@ plot(N,MPN, type = "l", col = "red")
 abline(h=0, col="blue")
 ```
 
+```{r}
+P = seq(-20, 20, length.out = 3000)
+Y = P^2 + 10*P - 7
+plot(P, Y, type = "l", col = "red")
+grid (10,10, lty = 6, col = "cornsilk2")
+abline(h=0, col="blue")
+```
+
+
+```{r}
+P = seq(-10, 10, length.out = 300000)
+Y = (P^2) + (2*P) - 10
+plot(P, Y, type = "l", col = "red")
+grid (NULL,NULL, lty = 6, col = "cornsilk2")
+abline(h=0, col="blue")
+```
+
+
+```{r}
+P = seq(-10, 1000, length.out = 300000)
+Y = log(P)
+plot(P, Y, type = "l", col = "red", main = "Natural Log Function")
+grid (NULL,NULL, lty = 6, col = "cornsilk2")
+abline(h=0, col="blue")
+```
+
+
+```{r}
+eq = function(x){exp(x)}
+plot(eq(seq(1,10, length.out = 300)), type='l', col="red", main = "Exponential Function", ylab = "exp(x)")
+grid (NULL,NULL, lty = 6, col = "cornsilk2")
+abline(h=0, col="blue")
+```

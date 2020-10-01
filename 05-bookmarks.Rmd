@@ -9,30 +9,37 @@
 </tr>
 <tr>
 <td> 
-[The Hindu](https://www.thehindu.com/),1878 Chennai, India  
-[Hindustan Times](https://www.hindustantimes.com/), 1924 New Delhi, India  
-[The Free Press Journal](https://www.freepressjournal.in/), 1928 Mumbai, India  
-[The Indian Express](https://indianexpress.com), 1932 Noida, India  
-[The New Indian Express](https://www.newindianexpress.com) 1932, 1999 Chennai, India  
-[Deccan Chronicle](https://www.deccanchronicle.com), 1938 Hyderabad, India  
-[The Economic Times](https://economictimes.indiatimes.com), 1961 Mumbai, India  
-[The Financial Express](https://www.financialexpress.com), 1961 Noida, India  
-[Business Standard](https://www.business-standard.com/), 1975 New Delhi, India  
-[Asian Age](https://www.asianage.com), 1994 New Delhi, India  
-[Mint](https://www.livemint.com), 2007 New Delhi, India
+  
+[The Times of India](https://timesofindia.indiatimes.com), 1838  
+[The Pioneer](https://www.dailypioneer.com), 1865  
+[The Hindu](https://www.thehindu.com/),1878  
+[Hindustan Times](https://www.hindustantimes.com/), 1924   
+[The Free Press Journal](https://www.freepressjournal.in/), 1928  
+[The Indian Express](https://indianexpress.com), 1932  
+[The New Indian Express](https://www.newindianexpress.com) 1932, 1999  
+[Deccan Chronicle](https://www.deccanchronicle.com), 1938  
+[Deccan Herald](https://www.deccanherald.com), 1948  
+[The Economic Times](https://economictimes.indiatimes.com), 1961  
+[The Financial Express](https://www.financialexpress.com), 1961  
+[Business Standard](https://www.business-standard.com/), 1975  
+[Asian Age](https://www.asianage.com), 1994    
+[Mint](https://www.livemint.com), 2007  
+
 </td>
-<td> 
-[Press Information Bureau](https://pib.gov.in/indexd.aspx), GOI (1919)  
+<td>  
+
+[Press Information Bureau](https://pib.gov.in/indexd.aspx), 1919  
 [DNA](https://www.dnaindia.com), 2005-2019  
 [One India](https://www.oneindia.com), 2006  
-[Firstpost](https://www.firstpost.com), late 2010 in Mumbai, India  
-[Brookings India](https://www.brookings.edu/center/brookings-india/), 2013 India  
-[Scroll.in](https://scroll.in), 2014 Delaware, USA.  
-[The Wire](https://thewire.in/), 2015 New Delhi, India  
-[The Quint](https://www.thequint.com), 2015 New Delhi, India  
-[The Ken](https://the-ken.com), 2016 Bangalore, India  
-[Bloomberg Quint](https://www.bloombergquint.com/), 2016 India  
-[The Print](https://theprint.in), 2017 New Delhi, India  
+[Firstpost](https://www.firstpost.com), 2012     
+[Brookings India](https://www.brookings.edu/center/brookings-india/), 2013  
+[Scroll.in](https://scroll.in), 2014  
+[The Wire](https://thewire.in/), 2015   
+[The Quint](https://www.thequint.com), 2015  
+[The Ken](https://the-ken.com), 2016  
+[Bloomberg Quint](https://www.bloombergquint.com/), 2016  
+[The Print](https://theprint.in), 2017  
+
 </td>
 </tr>
 <tr>
@@ -41,13 +48,17 @@
 </tr>
 <tr>
 <td>
-[NDTV](https://www.ndtv.com), 1988 New Delhi, India  
-[CNN News18](https://www.news18.com), 1995 Noida, India
+
+[NDTV](https://www.ndtv.com), 1988    
+[CNN News18](https://www.news18.com), 1995  
+
 </td>
-<td>
-[India Today](https://www.indiatoday.in), 1975 Noida, India  
-[Frontline](https://frontline.thehindu.com), 1984 Chennai, India  
-[Outlook](https://www.outlookindia.com/), 1995 New Delhi, India  
+<td>  
+
+[India Today](https://www.indiatoday.in), 1975  
+[Frontline](https://frontline.thehindu.com), 1984    
+[Outlook](https://www.outlookindia.com/), 1995  
+
 </td>
 </tr>
 </table>
@@ -61,67 +72,83 @@
 
 <table>
 <tr>
-<td> <p class="red"> __Dalies__ </p>  </td>
-<td> <p class="red"> __Magazines__ </p>  </td>
+<td> <text class="red"> __Dalies__ </text>  </td>
+<td> <text class="red"> __Magazines__ </text>  </td>
 </tr>
 <tr>
 <td>
-__USA__  
-[The Times](https://www.thetimes.co.uk/), 1788 London, UK.  
-[The Guardian](https://www.theguardian.com/uk), 1821 London, UK.  
-[The Telegraph](https://www.telegraph.co.uk/), 1855 London, UK.  
-[Financial Times](https://www.ft.com/), 1888 London, UK.  
-[BBC](https://www.bbc.com/), 1922 London, UK.  
-  
+
 __UK__  
-[The New York Times](https://www.nytimes.com/), 1851 New York City, USA.  
-[The Washington Post](https://www.washingtonpost.com), 1877 Washington D.C., USA.  
-[Los Angeles Times](https://www.latimes.com/), 1881 Los Angeles, USA.  
-[The Wall Street Journal](https://www.wsj.com/), 1889 New York City, USA.  
-[The Christian Science Monitor](https://www.csmonitor.com/), 1908 Boston, USA.  
-[USA Today](https://www.usatoday.com/), 1982 Virginia, USA.  
+[The Times](https://www.thetimes.co.uk/), 1788  
+[The Guardian](https://www.theguardian.com/uk), 1821  
+[The Telegraph](https://www.telegraph.co.uk/), 1855   
+[Financial Times](https://www.ft.com/), 1888  
+[BBC](https://www.bbc.com/), 1922  
+  
+  
+__USA__  
+[The New York Times](https://www.nytimes.com/), 1851  
+[The Washington Post](https://www.washingtonpost.com), 1877  
+[Los Angeles Times](https://www.latimes.com/), 1881  
+[The Wall Street Journal](https://www.wsj.com/), 1889  
+[The Christian Science Monitor](https://www.csmonitor.com/), 1908   
+[USA Today](https://www.usatoday.com/), 1982  
+    
   
 __AUS__  
-[Sydney Morning Herald](https://www.smh.com.au), 1831 Sydney Aus.  
-[The Age](https://www.theage.com.au), 1854 Melbourne, Aus.  
-[Australian Financial Review](https://www.afr.com/), 1950 Sydney, Aus.  
-[Herald Sun](https://www.heraldsun.com.au), 1990 Melbourne Aus.  
+[Sydney Morning Herald](https://www.smh.com.au), 1831  
+[The Age](https://www.theage.com.au), 1854  
+[Australian Financial Review](https://www.afr.com/), 1950  
+[Herald Sun](https://www.heraldsun.com.au), 1990  
+
 </td>
 
 <td>
-[The Economist](https://www.economist.com/), 1843 London, UK.   
-[The Atlantic](https://www.theatlantic.com/world/), 1857 Washington D.C., USA.  
-[The Nation](https://www.thenation.com/), 1865 New York City, USA.  
-[Los Angeles Daily News](https://www.dailynews.com/), 1911 Los Angeles, USA.  
-[The New Republic](https://newrepublic.com/), 1914 New York City, USA.  
-[FORBES](https://www.forbes.com/), 1917 New Jersey, USA.  
-[Foreign Affairs](https://www.foreignaffairs.com/), 1922 USA.  
-[Time](https://time.com/), 1923 New York City, USA.  
-[The New Yorker](https://www.newyorker.com/), 1925 New York City, USA.  
-[Fortune](https://fortune.com/), 1929 New York City, USA.  
-[The Progressive](https://progressive.org/), 1929 Wisconsin, USA.  
-[Businessweek](https://www.bloomberg.com/businessweek), 1929 New York City, USA.  
-[National Review](https://www.nationalreview.com/), 1955 New York City, USA.  
-[The National Interest](https://nationalinterest.org), 1985  Washington D.C., USA.  
-[The Weekly Standard](https://www.weeklystandard.com/), 1995 Washington D.C., USA.  
-[Slate](https://slate.com/), 1996 New York City, USA.  
-[Politico](https://www.politico.com/), 2007 Virginia, USA. 
+
+__UK__  
+[The Economist](https://www.economist.com/), 1843  
+
+__USA__  
+[The Atlantic](https://www.theatlantic.com/world/), 1857  
+[The Nation](https://www.thenation.com/), 1865    
+[Los Angeles Daily News](https://www.dailynews.com/), 1911    
+[The New Republic](https://newrepublic.com/), 1914   
+[FORBES](https://www.forbes.com/), 1917   
+[Foreign Affairs](https://www.foreignaffairs.com/), 1922  
+[Time](https://time.com/), 1923   
+[The New Yorker](https://www.newyorker.com/), 1925    
+[Fortune](https://fortune.com/), 1929  
+[The Progressive](https://progressive.org/), 1929  
+[Businessweek](https://www.bloomberg.com/businessweek), 1929   
+[National Review](https://www.nationalreview.com/), 1955  
+[The National Interest](https://nationalinterest.org), 1985  
+[The Weekly Standard](https://www.weeklystandard.com/), 1995   
+[Slate](https://slate.com/), 1996    
+[Politico](https://www.politico.com/), 2007  
+
 </td>
 </tr>
 <tr>
-<td> <p class="red"> __Television__ </p>  </td>
-<td> <p class="red"> __Online__ </p>  </td>
+<td> <text class="red"> __Television__ </text>  </td>
+<td> <text class="red"> __Online__ </text>  </td>
 </tr>
 <tr>
 <td>
-[Al-Jzeera](https://www.aljazeera.com/), 1996 Doha, Quatar.  
-[National Public Radio](https://www.npr.org/), 1970 NPR USA.  
-[CNN (Cable News Network)](https://edition.cnn.com/), 1980 Georgia, USA.  
-[NBC News](https://www.nbcnews.com/), 1940 New York City, USA.  
-[CBS News](https://www.cbsnews.com/), 1927 New York City, USA.  
-[ABC](https://abcnews.go.com/) (American Broadcasting Company) News, 1943 California, USA.  
-[Australian Broadcasting Corporation](https://www.abc.net.au/), 1929 Sydney Australia.  
-[SBS](https://www.sbs.com.au) (Special Broadcasting Service), 1978 Australia. 
+
+__USA__  
+
+[CBS News](https://www.cbsnews.com/), 1927  
+[NBC News](https://www.nbcnews.com/), 1940  
+[ABC](https://abcnews.go.com/) News, 1943  
+[National Public Radio](https://www.npr.org/), 1970   
+[CNN (Cable News Network)](https://edition.cnn.com/), 1980  
+[Al-Jzeera](https://www.aljazeera.com/), 1996  
+
+__AUS__  
+
+[ABC](https://www.abc.net.au/), 1929  
+[SBS](https://www.sbs.com.au), 1978  
+
 </td>
 
 <td>
