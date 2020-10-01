@@ -21,14 +21,21 @@ line-height: 1.5;
 h1 {
 color: rgb(213,94,0);
 font-weight: 700;
-text-align: center;
+text-align: left;
 display: block;
+margin-left: 1%;
 }
 
-h2,h3, h4, h5, h6 {
+h2 {
 color: rgb(213,94,0);
 text-align: left;
 font-weight: 500;
+margin-left: 1%;
+}
+
+h3, h4, h5, h6 {
+color: rgb(213,94,0);
+text-align: left;
 margin-left: 1%;
 }
 
@@ -42,9 +49,9 @@ hr{
 border: 1px solid black; 
 }
 
-a {
-color: rgb(50,70,190);
-background-color: transparent;
+ a.hover {
+color: blue;
+background-color: yellow;
 text-decoration: none;
 }
 

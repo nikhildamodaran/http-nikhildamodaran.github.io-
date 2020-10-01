@@ -65,20 +65,29 @@
 <td> <p class="red"> __Magazines__ </p>  </td>
 </tr>
 <tr>
-<td> 
+<td>
+__USA__  
 [The Times](https://www.thetimes.co.uk/), 1788 London, UK.  
 [The Guardian](https://www.theguardian.com/uk), 1821 London, UK.  
+[The Telegraph](https://www.telegraph.co.uk/), 1855 London, UK.  
+[Financial Times](https://www.ft.com/), 1888 London, UK.  
+[BBC](https://www.bbc.com/), 1922 London, UK.  
+  
+__UK__  
 [The New York Times](https://www.nytimes.com/), 1851 New York City, USA.  
-[The Telegraph](https://www.telegraph.co.uk/) or The Daily Telegraph (1855), London, UK.  
 [The Washington Post](https://www.washingtonpost.com), 1877 Washington D.C., USA.  
 [Los Angeles Times](https://www.latimes.com/), 1881 Los Angeles, USA.  
-[Financial Times](https://www.ft.com/), 1888 London, UK.  
 [The Wall Street Journal](https://www.wsj.com/), 1889 New York City, USA.  
 [The Christian Science Monitor](https://www.csmonitor.com/), 1908 Boston, USA.  
-[BBC](https://www.bbc.com/), 1922 London, UK.  
-[The Australian Financial Review](https://www.afr.com/), 1950 Sydney, Australia.  
 [USA Today](https://www.usatoday.com/), 1982 Virginia, USA.  
+  
+__AUS__  
+[Sydney Morning Herald](https://www.smh.com.au), 1831 Sydney Aus.  
+[The Age](https://www.theage.com.au), 1854 Melbourne, Aus.  
+[Australian Financial Review](https://www.afr.com/), 1950 Sydney, Aus.  
+[Herald Sun](https://www.heraldsun.com.au), 1990 Melbourne Aus.  
 </td>
+
 <td>
 [The Economist](https://www.economist.com/), 1843 London, UK.   
 [The Atlantic](https://www.theatlantic.com/world/), 1857 Washington D.C., USA.  
@@ -91,8 +100,8 @@
 [The New Yorker](https://www.newyorker.com/), 1925 New York City, USA.  
 [Fortune](https://fortune.com/), 1929 New York City, USA.  
 [The Progressive](https://progressive.org/), 1929 Wisconsin, USA.  
-[Businessweek](https://www.bloomberg.com/businessweek), 1929 originated independently, later acquired by Bloomberg, New York City, USA.  
-[National Review](https://www.nationalreview.com/), 1955 New York City, USA. 
+[Businessweek](https://www.bloomberg.com/businessweek), 1929 New York City, USA.  
+[National Review](https://www.nationalreview.com/), 1955 New York City, USA.  
 [The National Interest](https://nationalinterest.org), 1985  Washington D.C., USA.  
 [The Weekly Standard](https://www.weeklystandard.com/), 1995 Washington D.C., USA.  
 [Slate](https://slate.com/), 1996 New York City, USA.  
@@ -114,6 +123,7 @@
 [Australian Broadcasting Corporation](https://www.abc.net.au/), 1929 Sydney Australia.  
 [SBS](https://www.sbs.com.au) (Special Broadcasting Service), 1978 Australia. 
 </td>
+
 <td>
 [The Brookings Institution](https://www.brookings.edu/), 1916 Washington D.C., USA.  
 [The Pew Research Center](https://www.pewresearch.org/), 1993 Washington D.C., USA.  
@@ -125,7 +135,9 @@
 [Medium](https://medium.com/), 2012 USA.  
 [The Intercept](https://theintercept.com/), 2014 USA.  
 [Vox](https://www.vox.com/), 2014 New York, USA.  
+[Newspapers, AU](http://www.newspapers.com.au), 
 </td>
+
 </tr>
 </table>
 
