@@ -2,15 +2,13 @@
 title: Certified Copy
 author: Nikhil Damodaran
 date: '2019-02-12'
-slug: certified-copy
 categories:
   - leisure
 tags:
-  - movies
   - movie review
-Description: ''
-Tags: []
-Categories: []
+  - movies
+slug: certified-copy
+Description: a movie review
 DisableComments: no
 ---
 
@@ -30,7 +28,8 @@ The ease of coming out to an environment which is not confined like Iran, makes 
 
 The movie is what I call a 'mind mirage'. It is intended to be a demonstration of the concept of a ‘Certified Copy’: which means that it is a replica which is certified to not be the original. The concept and the debate itself is started and brought to forefront by Shimell who plays an author in the movie who is being taken to a tour of Tuscany by Binoche.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=w4nWgtXB51o" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=w4nWgtXB51o" frameborder="0" allowfullscreen> -->
+<!-- </iframe> -->
 
 He plays along with Binoche’s inquisitive and intriguing character, who is stunned by this author and has millions of questions for him. The film starts with a question - How good is an original and what's wrong with a copy? 
 

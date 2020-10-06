@@ -1,6 +1,6 @@
 ---
 title: Mathematical Methods for Economics
-author: Hugo Authors
+author: Nikhil Damodaran
 date: '2020-08-17'
 categories:
   - lecture notes
@@ -11,7 +11,8 @@ tags:
   - lecture notes
   - mathematical methods
   - markdown
-description: A brief description of Hugo Shortcodes
+description: Lecture notes for Mathematical Methods in Economics
+math: true
 ---
 
 Lectures notes from my course on mathematical methods for economics at the OP Jindal Global University's School of Government and Public Policy. Check out examples of mathematical methods in economics and its implementation in R.
