@@ -144,6 +144,16 @@ __USA__
 [CNN (Cable News Network)](https://edition.cnn.com/), 1980  
 [Al-Jzeera](https://www.aljazeera.com/), 1996  
 
+<text class = red> __News Agencies__ </text>  
+[The Associate Press Agency](https://www.ap.org/en-gb/), 1917  
+[The Associate Press News](https://apnews.com), 1917  
+[Bloomberg, L.P.](https://www.bloomberg.com) (Limited partnership), 1981  
+
+__UK__  
+<text class = red> __News Agencies__ </text>  
+[Reuters Agency](https://www.thomsonreuters.com/en.html), 1851
+[Reuters News](https://www.reuters.com), 1851
+
 __AUS__  
 
 [ABC](https://www.abc.net.au/), 1929  
@@ -152,28 +162,32 @@ __AUS__
 </td>
 
 <td>
-[The Brookings Institution](https://www.brookings.edu/), 1916 Washington D.C., USA.  
-[The Pew Research Center](https://www.pewresearch.org/), 1993 Washington D.C., USA.  
-[The Bureau of Investigative Journalism](https://www.thebureauinvestigates.com/), 2010 London, UK.  
-[Project Syndicate](https://www.project-syndicate.org), late 2000.  
-[Vox Media](https://www.voxmedia.com/a/vm), 2011 New York, USA.  
-[The Conversation](https://theconversation.com/au), 2011 Australia.  
-[Quartz](https://qz.com/) Media, 2012 New York City, USA.  
-[Medium](https://medium.com/), 2012 USA.  
-[The Intercept](https://theintercept.com/), 2014 USA.  
-[Vox](https://www.vox.com/), 2014 New York, USA.  
-[Newspapers, AU](http://www.newspapers.com.au), 
+
+__USA__  
+
+[The Brookings Institution](https://www.brookings.edu/), 1916  
+[The Pew Research Center](https://www.pewresearch.org/), 1993   
+[Project Syndicate](https://www.project-syndicate.org), 2000s    
+[Vox Media](https://www.voxmedia.com/a/vm), 2011  
+[Quartz](https://qz.com/) Media, 2012   
+[Medium](https://medium.com/), 2012  
+[The Intercept](https://theintercept.com/), 2014  
+[Vox](https://www.vox.com/), 2014  
+
+__UK__  
+[The Bureau of Investigative Journalism](https://www.thebureauinvestigates.com/), 2010    
+
+
+__AUS__  
+[The Conversation](https://theconversation.com/au), 2011  
+[Newspapers, AU](http://www.newspapers.com.au)  
+
 </td>
 
 </tr>
 </table>
 
-<text class = red> __News Agencies__ </text>  
-[The Associate Press Agency](https://www.ap.org/en-gb/), 1917 New York City, USA.  
-[The Associate Press News](https://apnews.com), 1917 New York City, USA.  
-[Reuters Agency](https://www.thomsonreuters.com/en.html), 1851 London, UK.  
-[Reuters News](https://www.reuters.com), 1851 London, UK.  
-[Bloomberg, L.P.](https://www.bloomberg.com) (Limited partnership), 1981 New York, USA. 
+ 
 
   
 

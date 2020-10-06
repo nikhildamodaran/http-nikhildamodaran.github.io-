@@ -1,13 +1,15 @@
+
 # Understanding IS-LM Model Analytically {.unlisted .unnumbered}
 
-<span style="color:rgb(213,94,0)"> __Introduction__ </span>
+## Introduction 
 
 After a  preview of AD-AS  we move onto a bit more detailed model using IS-LM. Note that the AD-AS model gave us $(P,Y)$ ordered pair in which $P$ is the price which clears the goods market and $Y$ is the level of output at which aggregate demand equals aggregate supply. In order to understand the model you need to understand three markets - the labor market, the goods market and the asset market and their interaction. Each market in turn requires you to focus on:  
+
 (a) The demand and supply forces in these markets.   
 (b) Their equilibrium condition which is when demand in these markets eqates with their supplies.  
 (c) The resultant ordered pair of (price, quantity) in each of these markets.
 
-<p class = "red"> __Labor Market Equilibrium__ </p>
+## Labor Market Equilibrium 
 
 Consumers supply labor while firms demand labor. Operate under perfectly competitive markets i.e. do not have the power to set prices (wages) in the market or supply output which could drive down prices. Labor Demand is obtained by profit maximizing producers choosing how much to produce based on the following production funciton: 
 
@@ -23,7 +25,9 @@ where $y$ is the output produced, $N$ is the labor supply, $K$ is the capital re
 y = A \Big( \gamma_1 N - \frac{1}{2} \gamma_2 N^2 \Big)\Bigg|_{K \; \text{constant}}
 \end{gather}
 
-Notice that this is essentially a function of one variable $y=f(N)$ with parameters i.e. $A, \gamma_1, \gamma_2$. Recall the profit maximization problem from Micro courses. We have two questions to answer  
+Notice that this is essentially a function of one variable $y=f(N)$ with parameters i.e. $A, \gamma_1, \gamma_2$. Recall the profit maximization problem from Micro courses.
+
+We have two questions to answer  
 
 (a) How is the profit maximization problem affect the level of labor employed by firms?  
 (b) How does the marginal product of labor help us analyze the firm's choice?  
@@ -31,22 +35,17 @@ Notice that this is essentially a function of one variable $y=f(N)$ with paramet
 <span style="color:rgb(213,94,0)"> Marginal productivity of Labor (MPL) </span> is the partial derivative of output on labor i.e. 
 $$ \frac{\partial y}{\partial N} = A \Big( \gamma_1 - \gamma_2 N \Big) $$
 
-- Interpretation: The Marginal Product of Labor (MPL) determines the additional output produced by additional labor employed, and helps firms decide how much labor hours should it hire to remain profitable.
-
-
-- Given this marginal product, under perfect competition we obtain the following condition 
+Interpretation: The Marginal Product of Labor (MPL) determines the additional output produced by additional labor employed, and helps firms decide how much labor hours should it hire to remain profitable. Given this marginal product, under perfect competition we obtain the following condition 
 
 $$ w = \text{MPL} = A \Big( \gamma_1 - \gamma_2 N \Big) $$
 
-- Rearranging this gives us labor demand as a function of real wage:
+Rearranging this gives us labor demand as a function of real wage:
 
 $$ N = \overbrace{\frac{\gamma_1}{\gamma_2}}^{intercept} - \underbrace{\frac{1}{A \gamma_2}}_{slope} w $$
 
-- This is only labor demand and does not complete the market equilibirum.
+This is only labor demand and does not complete the market equilibirum. Labor supply on the other hand is determined by consumers who are also suppliers of labor.
 
-- Labor supply on the other hand is determined by consumers who are also suppliers of labor.
-
-__Ad-Hoc Labor Supply__
+### Ad-Hoc Labor Supply
 
 - Let us assume a linear upward sloping labor supply of the following form:
 
