@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macroeconomics on Website of Nikhil Damodaran</title>
+    <link>/tags/macroeconomics/</link>
+    <description>Recent content in macroeconomics on Website of Nikhil Damodaran</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/macroeconomics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Understanding IS-LM Models</title>
+      <link>/post/analytics-is-lm/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/analytics-is-lm/</guid>
+      <description>Introduction After a preview of AD-AS we move onto a bit more detailed model using IS-LM.</description>
+    </item>
+    
+    <item>
+      <title>Extracting Business Cycles from Time Series Data</title>
+      <link>/post/extracting-business-cycles/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/extracting-business-cycles/</guid>
+      <description>Getting Started We start with the basics of R, exploring the memory and clearing out backlog from previous work.</description>
+    </item>
+    
+    <item>
+      <title>Macroeconomics II</title>
+      <link>/post/macro/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/macro/</guid>
+      <description>&lt;p&gt;Lectures notes from my course on macroeconomics at the OP Jindal Global University&amp;rsquo;s School of Government and Public Policy. Check out the latest debate about India&amp;rsquo;s macroeconomic policy in my lecture notes.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

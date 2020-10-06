@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>text on Website of Nikhil Damodaran</title>
+    <link>/tags/text/</link>
+    <description>Recent content in text on Website of Nikhil Damodaran</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Extracting Business Cycles from Time Series Objects</title>
+      <link>/post/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/placeholder-text/</guid>
+      <description>knitr::opts_chunk$set(echo = TRUE) We start with the basics of R, exploring the memory and clearing out backlog from previous work.</description>
+    </item>
+    
+  </channel>
+</rss>

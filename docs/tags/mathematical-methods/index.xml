@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mathematical methods on Website of Nikhil Damodaran</title>
+    <link>/tags/mathematical-methods/</link>
+    <description>Recent content in mathematical methods on Website of Nikhil Damodaran</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mathematical-methods/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mathematical Methods for Economics</title>
+      <link>/post/maths/</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/maths/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lectures notes from my course on mathematical methods for economics at the OP Jindal Global University’s School of Government and Public Policy. Check out examples of mathematical methods in economics and its implementation in R.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

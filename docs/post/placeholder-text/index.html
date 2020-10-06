@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Nikhil Damodaran | Extracting Business Cycles from Time Series Objects </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.65.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="">
+    
+    <link rel="stylesheet"
+          href="/css/style.min.ec15cff0912041d0dce3a88999b9424990bd24473761645397583776684cdc3b.css"
+          integrity="sha256-7BXP8JEgQdDc46iJmblCSZC9JEc3YWRTl1g3dmhM3Ds="
+          crossorigin="anonymous"
+          type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    
+    <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="/post/placeholder-text/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/profile.jpg"/>
+
+<meta name="twitter:title" content="Extracting Business Cycles from Time Series Objects"/>
+<meta name="twitter:description" content="a blog which discusses extraction of business cycles from time series data"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Nikhil Damodaran</a></h3>
+            <div class="description">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://de.linkedin.com/" rel="me" aria-label="Linkedin">
+                    <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/lxndrblz/anatole/" rel="me" aria-label="GitHub">
+                    <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
+                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:ndamodaran@jgu.edu.in" rel="me" aria-label="e-mail">
+                    <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Nikhil Damodaran 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/research/"
+                        
+                   title="">Research</a></li>
+        
+            
+            <li><a 
+                   href="/teaching/"
+                        
+                   title="">Teaching</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Blogs</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Extracting Business Cycles from Time Series Objects</h3>
+                
+                    <div class="info">
+                        <em class="fa fa-sun-o"></em>
+                        <span class="date">Mon, Aug 10, 2020</span>
+                        <em class="fa fa-clock-o"></em>
+                        <span class="reading-time">2-minute read</span>
+                    </div>
+                
+            </div>
+
+            <pre><code class="language-{r" data-lang="{r">knitr::opts_chunk$set(echo = TRUE)
+</code></pre><!-- raw HTML omitted -->
+<p>We start with the basics of R, exploring the memory and clearing out backlog from previous work.</p>
+<pre><code class="language-{r," data-lang="{r,">ls() # checking R's memory...
+list.files() # checking files in my working directory...
+# rm(list = ls()) # clearing all previously stored items...
+# import data from your excel sheet
+install.packages(&quot;readxl&quot;) # for importing from excel
+</code></pre><p>Then we import the data from an excel sheet.</p>
+<pre><code class="language-{r}" data-lang="{r}">library(readxl)
+gdp &lt;- read_excel(&quot;/Users/nikhildamodaran/Dropbox/Teaching/Macroeconomics-II/Fall-2020/Teaching Resources/Exercise 1/GDP FRED USA.xlsx&quot;)
+
+# features of the data
+class(gdp) 
+str(gdp) # structure of the data
+head(gdp) # first 5 rows...
+</code></pre><p>Tell me the features of the variable</p>
+<pre><code class="language-{r}" data-lang="{r}">sapply(gdp, class)
+</code></pre><p>Note that first variable is POSIXct - a time series object.</p>
+<pre><code class="language-{r}" data-lang="{r}">ts.plot(gdp$gdp.usd)
+</code></pre><!-- raw HTML omitted -->
+<p>Problem: GDP variable is not time series but only a bunch of numbers</p>
+<pre><code class="language-{r" data-lang="{r"># converting the vector into time series with a starting and ending time
+gdp$gdp.usd &lt;- ts(data=gdp$gdp.usd, frequency = 4,start=c(1947,1), end=c(2020,2)) 
+
+# checking the class of variables in data
+sapply(gdp, class)
+
+class(gdp$gdp.usd)
+</code></pre><p>Now plotting this in R again:</p>
+<pre><code class="language-{r" data-lang="{r">ts.plot(gdp$gdp.usd)
+# tell me the difference between the first and the second plot
+</code></pre><p>Problems remain: axis is not marked properly for reading.</p>
+<!-- raw HTML omitted -->
+<p>We need to undergo seasonal transformation only if the data is not seasonalized. This is not a problem for annual data, but for lower frequencies we need to remove the effects of seasonal fluctuations.</p>
+<pre><code class="language-{r" data-lang="{r"># Lets extract business cycles from US data
+# Step 1: Remove seasonal effects:
+install.packages(&quot;seasonal&quot;) # for seasonal 
+</code></pre><p>Remove seasonal effects such as diwali:</p>
+<pre><code class="language-{r" data-lang="{r">library(seasonal)
+deseasonal.gdp &lt;- seas(gdp$gdp.usd)
+</code></pre><p>Check what are the results of seasonal adjustment and understand what you have done:</p>
+<pre><code class="language-{r" data-lang="{r">summary(deseasonal.gdp) # you've done a regression
+attributes(deseasonal.gdp) # get the data 
+library(ggplot2)
+gdp$deseasonal &lt;- deseasonal.gdp$data[,3] # store this data in your dataset
+ggplot(gdp, aes (y=gdp$gdp.usd, x = gdp$time)) + geom_line(colour=alpha('blue', 0.85)) + geom_line(aes(y=gdp$deseasonal, x = gdp$time), colour=alpha('red', 0.85) )  + theme_minimal() + xlab(&quot;Original (blue) and De-Seasonalized (red)&quot;) + ggtitle(&quot;Removing Seasonal Fluctuations from US GDP&quot;) + ylab(&quot;Bn. USD&quot;)
+</code></pre><!-- raw HTML omitted -->
+<p>Installing packages required for filtering</p>
+<pre><code class="language-{r" data-lang="{r"># Step 2: Lets get the business cycles
+install.packages(&quot;mFilter&quot;)
+</code></pre><p>Getting the business cycles:</p>
+<pre><code class="language-{r" data-lang="{r">library(mFilter)
+usa.business.cycles &lt;- hpfilter(log(gdp$deseasonal), freq = 1600)
+attributes(usa.business.cycles)
+ts.plot(usa.business.cycles$cycle, gpars = list(ylab =&quot;US GDP Cycles&quot;))
+</code></pre><p>Obtaining the summary statistics for these business cycles</p>
+<pre><code class="language-{r}" data-lang="{r}">summary(usa.business.cycles$cycle)
+sd(usa.business.cycles$cycle) # standard deviation of GDP cycles
+acf(usa.business.cycles$cycle) # auto-correlation function
+acf(usa.business.cycles$cycle, plot = FALSE)
+</code></pre>
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/lecture-notes/">lecture notes</a><a class="category" href="/categories/resources/">resources</a><a class="category" href="/categories/r-notes/">r notes</a><a class="category" href="/categories/time-series/">time series</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/business-cycles/">business cycles</a><a class="tag" href="/tags/markdown/">markdown</a><a class="tag" href="/tags/r/">r</a><a class="tag" href="/tags/economics/">economics</a><a class="tag" href="/tags/macroeconomics/">macroeconomics</a><a class="tag" href="/tags/computational-methods/">computational methods</a></span>
+
+            </div>
+        </div>
+
+        
+            
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

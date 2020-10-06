@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Nikhil Damodaran | Getting Started with R </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.65.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="">
+    
+    <link rel="stylesheet"
+          href="/css/style.min.ec15cff0912041d0dce3a88999b9424990bd24473761645397583776684cdc3b.css"
+          integrity="sha256-7BXP8JEgQdDc46iJmblCSZC9JEc3YWRTl1g3dmhM3Ds="
+          crossorigin="anonymous"
+          type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    
+    <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="/post/getting-started-with-r/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/profile.jpg"/>
+
+<meta name="twitter:title" content="Getting Started with R"/>
+<meta name="twitter:description" content="A brief guide to setup KaTeX"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Nikhil Damodaran</a></h3>
+            <div class="description">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://de.linkedin.com/" rel="me" aria-label="Linkedin">
+                    <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/lxndrblz/anatole/" rel="me" aria-label="GitHub">
+                    <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
+                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:ndamodaran@jgu.edu.in" rel="me" aria-label="e-mail">
+                    <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Nikhil Damodaran 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/research/"
+                        
+                   title="">Research</a></li>
+        
+            
+            <li><a 
+                   href="/teaching/"
+                        
+                   title="">Teaching</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Blogs</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Getting Started with R</h3>
+                
+                    <div class="info">
+                        <em class="fa fa-sun-o"></em>
+                        <span class="date">Sat, Jan 25, 2020</span>
+                        <em class="fa fa-clock-o"></em>
+                        <span class="reading-time">8-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p>R is a statistical computing platform designed to make data analysis open and scientific. &ldquo;Open&rdquo; is for anyone to access understand and replicate. The functionalities of R are open so much so that you can even make your own version of R - though you would be wasting a lot of time!</p>
+<p>More importantly, open also implies there is no mystery in the job of a statistician or an economist. You can use the methods of hypothesis testing to provide inferences, extrapolate projections etc. as long as you are also following the procedures required by R - which isn&rsquo;t that much to adhere to.</p>
+<p>&ldquo;Scientific&rdquo; is the approach -  the objective of making research and data analysis accessible, replicable and verifiable. You know what you are dealing with at the outset. Work in R studio also makes it easier for others to understand and follow the data explorations of an accomplished statistician. Also, I strongly believe in verifiability of research. It does not matter who a person is, unless he or she gives you replicable research.</p>
+<h2 class="unnumbered unlisted" id="r-for-economists-">R for Economists</h2>
+<p>I am an economist and it is fairly important for economists to have a head-start in data analytics. Sadly, we are not taught a lot of practical aspects of data analysis. For eg: which data processing platform should I invest my time during grad school? and why? The fact is that you spend most of your productive time in grad school. If you spend time ineffectively, then it becomes a steeper learning curve later on.</p>
+<p>Most empirically minded economists use <a href="https://www.stata.com/">STATA</a>. It is a statistical and data analytics platform which is improving their versatility now with Python integration in Stata 16. As a data analyst, it does makes things a bit easier since you have most of the commands at your menu tabs. It also has strong documentation for its commands and procedures. However, it is not open access platform. More importantly, you start doing data analysis mechanically since you are not hard-coding the commands. Following the data analytics revolution would imply that you follow, get in line, and start learning readable code and use them to write programs which do the same thing as a STATA command.</p>
+<p>For economists who are used to Stata, switching into R might be a pain but it is worth the transition. First, you would be able to replicate what you read in a textbook to actual readable codes - R codes are as readable as python. Second, you would know the underlying mechanics of your problem and hence be able to communicate research better. Third, with the advent of data science revolution, knowing scientific methods which are closer to modern approach to data science is going to be important. R follows that, and STATA does not.</p>
+<p>However, your transition to R and your entry into data analytics would be smoother than you imagine. It is also going to take you closer to the idea that <a href="https://medium.com/swlh/anyone-can-code-1b5dee812658">everybody can code</a>. And if you have the nerd bone to code, then you are going to get addicted to it. These blogs are part of my efforts to communicate to my students the importance of understanding these data structures.</p>
+<h2 class="unnumbered unlisted" id="what-is-r-and-what-is-r-studio-">What is R and what is R-studio?</h2>
+<p>R is the original open source platform which helps you practice data science. R is written on C++ and is a higher level programming language with data science functionality added into it. To keep the base lite, R comes with a default platform conducive for analysis. There are purists who practice data science without any additional packages, so that their work remains open source. If you are one of those, then you already know your stuff and you do not have to go through the rest. If not, proceed.</p>
+<p>R-studio is more of a reception to the data science factory of R. It helps you use R and gives you a more comfortable platform to interact, doing the exact same thing. So all you have to do before beginning with R is to make sure you install <a href="https://www.r-project.org/">R</a> and <a href="https://rstudio.com/products/rstudio/download/">R-studio</a> separately.</p>
+<p>Now, you are ready for your revolution into data science.</p>
+<h2 class="unnumbered unlisted" id="the-first-step-">The First Step</h2>
+<p>In this section we will just understand the console space in R-studio; though all these commands will work with R and you do not need R-studio.^[In case you have troubles installing R-studio, go to the many online platforms which tell you how to do so - $\infty$ you tube videos exist.] The first command you would learn is dedicated to the first men of programming:</p>
+<pre><code class="language-{r" data-lang="{r">print(&quot;hello world&quot;)
+</code></pre><p>This is a function - yes the kind you and I were really lazy to learn in our 101 mathematics courses in school and college. It just asks R to print a sentence. Since the sentence is a language and nothing else we needs double quotes to contain a sentence.  The sentence is called string of characters in the language of computer programming. So even a space between hello and world is a string which denotes space.^[more on data types in another blog.] Notice that print does nothing but reproduces whatever is inside it. Consider another version:</p>
+<pre><code class="language-{r" data-lang="{r">print(4+6)
+</code></pre><p>This returns 10, but that does not come from the function print itself. It comes from the summation property of numbers pre-coded into R. Hence R can be your basic calculator too!</p>
+<p>So, now you are starting to get the hang of things. Lets proceed.</p>
+<h2 class="unnumbered unlisted" id="the-second-step-">The Second Step</h2>
+<p>Imagine yourself as a data scientist for a giant conglomerate or a researcher understanding the effects of these conglomerates on global warming. You have churned out a lot of analysis, but forgot to remove them from your computers RAM. You begin the next day and you write this command in the following:</p>
+<!-- raw HTML omitted -->
+<pre><code class="language-{r" data-lang="{r">rm(list=ls())            
+</code></pre><p>This just clears everything in the global environment.^[more on this later.]</p>
+<p>Now, working directory is the folder in your computer where you want R to store its files. R is installed in your program files / applications folder. But it needs a working directory where it stores its script files. By default R chooses documents. Let us check the working directory from where R is operating.</p>
+<!-- raw HTML omitted -->
+<pre><code class="language-{r" data-lang="{r">getwd()
+</code></pre><p>If its not the same as the one you expected, you would like to change it. This can happen most likely because, you are working on a paper/assignment/project and the data and other details are together in one folder. It is only logical that you also ask R to work from that folder on that project. I usually work from Dropbox and once am finished with a project, either upload it in my website or save it in an external hard drive. ^[Though am still figuring out the most optimal and cheapest way to store data. I am sure cloud storage and computing are the future.]</p>
+<pre><code class="language-{r" data-lang="{r">setwd(&quot;~/Dropbox/your_data_analysis_folder&quot;)
+</code></pre><p>So you have changed your working directory to align with your project requirements. Let us list the files in working directory.</p>
+<!-- raw HTML omitted -->
+<pre><code class="language-{r" data-lang="{r">list.files()
+</code></pre><p>To list all the elements in your global environment we run the following command. Again just to caution you to the idea underlying these commands - ls() is actually a function which has certain functions. If you leave it blank and do not provide it any input, its default is to provide you with a list of elements in your global environment. For those who work on R, this is of great help. But R-studio has the global environment on display.</p>
+<!-- raw HTML omitted -->
+<pre><code class="language-{r" data-lang="{r">ls()
+</code></pre><p>You would be wondering, what other inputs can you give the list environment? A simple help command will show you the possibilities.</p>
+<pre><code class="language-{r" data-lang="{r">?ls()
+</code></pre><p>More basic commands to examine R&rsquo;s working directory. Go ahead and explore the output.</p>
+<pre><code class="language-{r" data-lang="{r">objects()                 # Lists the objects in the workspace
+search()                  # Shows the loaded packages
+??detrend                 # search keyword
+dir()                     # show files in the working directory
+remove()                  # Remove objects from the workspace
+</code></pre><h2 class="unnumbered unlisted" id="working-of-rpython--">Working of R/Python </h2>
+<p>R and Python are base lines of code which have already set up some instructions for us, which makes our life simple. In an era before these higher language programs, we worked with C or C++, in which if you have to define a variable, you had to tell the machine what do you mean by a variable. So you are fundamentally basing off first principles. But for both R and python, basic elements which are common to programming are pre-defined. You can start R and type 2+2 and get the correct answer. It already knows how to do basic math.</p>
+<p>For more complex tasks, programmers, statisticians, economists, data-analysts and sometimes enthusiastic students such as you have contributed packages. Packages work on top of the base R/python. They extend the capabilities of R. Instead of re-writing R entirely, if I need to code a new Bayesian estimation routine, I just create a package which does that. Lucky for us that most of the common statistical and econometric analysis already has well established package. A collection of packages is called a library. To check which package are installed in our system which came with R-studio, run the following code.</p>
+<pre><code class="language-{r" data-lang="{r">library()                 # Shows the installed packages
+detach()                  # Detached packages when no longer need them
+</code></pre><p>Once you load a package during a routine analysis, the contents of the package are in the RAM of your computer, which means it slows down your computer. So if you do not need a package, make sure to detach it from the RAM. R says that both these commands are not regularly used. They just give you more information about how R functions with the help of packages saved in its system library.</p>
+<h2 class="unnumbered unlisted" id="resources-">Resources</h2>
+<p>Here are a few good references to begin with:</p>
+<ul>
+<li><a href="https://anomaly.io/seasonal-trend-decomposition-in-r/">Seasonal Decomposition in R</a></li>
+<li><a href="https://lectures.quantecon.org/jl/arma.html">Quant Econ with covariance stationary processes</a></li>
+<li><a href="https://anomaly.io/seasonal-trend-decomposition-in-r/">Additive functionals</a></li>
+<li><a href="https://lectures.quantecon.org/jl/multiplicative_functionals.html">Multiplicative functionals</a></li>
+</ul>
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+            
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+<link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+              integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/&#43;DiW/UqRcLbRjq"
+              crossorigin="anonymous"><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+                integrity="sha384-y23I5Q6l&#43;B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd&#43;qj&#43;o24G5ZU2zJz"
+                crossorigin="anonymous"></script><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+                integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+                crossorigin="anonymous"
+                onload="renderMathInElement(document.body);"></script></body>
+
+</html>

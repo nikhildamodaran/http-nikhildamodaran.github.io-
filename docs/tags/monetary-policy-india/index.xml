@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>monetary policy india on Website of Nikhil Damodaran</title>
+    <link>/tags/monetary-policy-india/</link>
+    <description>Recent content in monetary policy india on Website of Nikhil Damodaran</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/monetary-policy-india/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Macroeconomics II</title>
+      <link>/post/macro/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/macro/</guid>
+      <description>&lt;p&gt;Lectures notes from my course on macroeconomics at the OP Jindal Global University&amp;rsquo;s School of Government and Public Policy. Check out the latest debate about India&amp;rsquo;s macroeconomic policy in my lecture notes.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

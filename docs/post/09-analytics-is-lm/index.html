@@ -1,0 +1,929 @@
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="understanding-is-lm-model-analytically" class="section level1 unlisted unnumbered">
+<h1>Understanding IS-LM Model Analytically</h1>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>After a preview of AD-AS we move onto a bit more detailed model using IS-LM. Note that the AD-AS model gave us <span class="math inline">\((P,Y)\)</span> ordered pair in which <span class="math inline">\(P\)</span> is the price which clears the goods market and <span class="math inline">\(Y\)</span> is the level of output at which aggregate demand equals aggregate supply. In order to understand the model you need to understand three markets - the labor market, the goods market and the asset market and their interaction. Each market in turn requires you to focus on:</p>
+<ol style="list-style-type: lower-alpha">
+<li>The demand and supply forces in these markets.<br />
+</li>
+<li>Their equilibrium condition which is when demand in these markets eqates with their supplies.<br />
+</li>
+<li>The resultant ordered pair of (price, quantity) in each of these markets.</li>
+</ol>
+</div>
+<div id="labor-market-equilibrium" class="section level2">
+<h2>Labor Market Equilibrium</h2>
+<p>Consumers supply labor while firms demand labor. Operate under perfectly competitive markets i.e. do not have the power to set prices (wages) in the market or supply output which could drive down prices. Labor Demand is obtained by profit maximizing producers choosing how much to produce based on the following production funciton:</p>
+<p><span class="math display">\[
+y = f(N,K, A, X&#39;_{s}) + \varepsilon_{s},
+\]</span></p>
+<p>where <span class="math inline">\(y\)</span> is the output produced, <span class="math inline">\(N\)</span> is the labor supply, <span class="math inline">\(K\)</span> is the capital required, <span class="math inline">\(A\)</span> is a metric of productivity and <span class="math inline">\(X_{s}&#39;\)</span> are other factors which could potentially affect production function. We ignore <span class="math inline">\(\varepsilon_{s}\)</span> unobserved factors which affect business cycle movements in production for the remaining analysis.</p>
+<p><span style="color:rgb(0,114,178)"> Production function </span> under the assumption that capital or other factors are not constrained and</p>
+<p><span class="math display">\[\begin{gather}
+y = A \Big( \gamma_1 N - \frac{1}{2} \gamma_2 N^2 \Big)\Bigg|_{K \; \text{constant}}
+\end{gather}\]</span></p>
+<p>Notice that this is essentially a function of one variable <span class="math inline">\(y=f(N)\)</span> with parameters i.e. <span class="math inline">\(A, \gamma_1, \gamma_2\)</span>. Recall the profit maximization problem from Micro courses.</p>
+<p>We have two questions to answer</p>
+<ol style="list-style-type: lower-alpha">
+<li>How is the profit maximization problem affect the level of labor employed by firms?<br />
+</li>
+<li>How does the marginal product of labor help us analyze the firm’s choice?</li>
+</ol>
+<p><span style="color:rgb(213,94,0)"> Marginal productivity of Labor (MPL) </span> is the partial derivative of output on labor i.e. 
+<span class="math display">\[ \frac{\partial y}{\partial N} = A \Big( \gamma_1 - \gamma_2 N \Big) \]</span></p>
+<p>Interpretation: The Marginal Product of Labor (MPL) determines the additional output produced by additional labor employed, and helps firms decide how much labor hours should it hire to remain profitable. Given this marginal product, under perfect competition we obtain the following condition</p>
+<p><span class="math display">\[ w = \text{MPL} = A \Big( \gamma_1 - \gamma_2 N \Big) \]</span></p>
+<p>Rearranging this gives us labor demand as a function of real wage:</p>
+<p><span class="math display">\[ N = \overbrace{\frac{\gamma_1}{\gamma_2}}^{intercept} - \underbrace{\frac{1}{A \gamma_2}}_{slope} w \]</span></p>
+<p>This is only labor demand and does not complete the market equilibirum. Labor supply on the other hand is determined by consumers who are also suppliers of labor.</p>
+<div id="ad-hoc-labor-supply" class="section level3">
+<h3>Ad-Hoc Labor Supply</h3>
+<ul>
+<li>Let us assume a linear upward sloping labor supply of the following form:</li>
+</ul>
+<p><span class="math display">\[ N = \underbrace{n_{0}}_{\text{intercept}} + \overbrace{n_1 (1-t)}^{\text{slope}} w \]</span></p>
+<ul>
+<li><p>Notice that the slope is variable here and depends upon the <span style="color:rgb(213,94,0)"> rate of taxation </span>. Does this make sense to you?</p></li>
+<li><p>Lets understand how the rate of taxation affects labor supply decision. Consider two types of individuals. The rich gets taxed at 40% i.e. <span class="math inline">\(t_r = 0.40\)</span> while the poor gets taxed at 15% i.e. <span class="math inline">\(t_p = 0.15\)</span>.</p></li>
+<li><p>Let us assume that <span class="math inline">\(n_1\)</span> for both is identical and is 1. Let us assume <span class="math inline">\(n_0 = 6\)</span> for both and only tax rates differ for them.</p></li>
+<li><p>Which individual responds more to wages and why?</p></li>
+</ul>
+<pre class="r"><code># simulating 100 values of wages from 0 to 1
+w = seq(0,1, length = 100) 
+n_0 = 6
+n_1 = 1
+t_p = 0.15
+t_r = 0.40
+Np = n_0 + n_1 * (1-0.15) * w
+Nr = n_0 + n_1 * (1-0.40) * w</code></pre>
+<pre class="r"><code># Rich individual&#39;s slope is flatter.
+plot( w, Nr, type = &quot;l&quot;, 
+      main = &quot;Comparing Two Tax Rates and Labor Supply&quot;) 
+# Poor individual&#39;s slope is steeper
+lines( w, Np, col = &quot;red&quot;) </code></pre>
+<p><img src="/post/09-analytics-IS-LM_files/figure-html/unnamed-chunk-2-1.png" width="70%" /></p>
+<ul>
+<li><p>Once we have both labor demand and supply, we can obtain the labor market equilibrum as a pair of price, output i.e. <span class="math inline">\((N, w)\)</span> so that labor demanded by the firm exactly equals labor supplied by the consumers.</p></li>
+<li><p>When both are acting optimally on their own accord the equilibrium implies the following equality</p></li>
+</ul>
+<p><span class="math display">\[ \frac{\gamma_1}{\gamma_2} - \frac{1}{A \gamma_2} w \equiv n_{0} + n_1 (1-t) w \]</span></p>
+<ul>
+<li>This implies the following equilibrium wage:</li>
+</ul>
+<p><span class="math display">\[ w = \frac{A (\gamma_1 - n_0 \gamma_2)}{A \gamma_2 n_2 (1-t) + 1} \]</span></p>
+<ul>
+<li><p>Equilibrium price for the labor market is thus dependent upon the model paramters and we can understand how equilibrium wage changes when any of these variables change.</p></li>
+<li><p>Equilibrium output can be obtained by substituting the above in either labor demand or labor supply to obtain</p></li>
+</ul>
+<p><span class="math display">\[ N = \frac{n_0 + n_1 \gamma_1 A (1-t)}{1 + n_1 \gamma_2 A (1-t)}\]</span></p>
+<ul>
+<li>We can also understand this equilibirum graphically using our labor supply and following labor demand:</li>
+</ul>
+<pre class="r"><code># generating random wage numbers
+w = seq(0,1, length = 100) 
+# parameter values
+gamma1 = 2
+gamma2 = 0.5
+A = 3
+n_0 = 6
+n_1 = 1
+t = 0.35
+# labor demand equation
+Nd = (gamma1/gamma2) - (1/(A*gamma2)) * w
+# labor supply equation
+Ns = n_0 + n_1 * (1-t) * w</code></pre>
+<pre class="r"><code># examining equilibrium graphically
+plot( w, Nd, type = &quot;l&quot;, 
+      main = &quot;Graphical Analysis of Labor Market Equilibrium&quot;)
+abline( w, Ns, col = &quot;red&quot;)</code></pre>
+<p><img src="/post/09-analytics-IS-LM_files/figure-html/unnamed-chunk-4-1.png" width="70%" /></p>
+<p class="red">
+<strong>Connecting Labor and Goods Market(s)</strong>
+</p>
+<ul>
+<li><p>There are two interactions between goods and labor markets.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Consumer earns wages in labor market and buys goods in the goods market.</li>
+<li>Firm produces goods in the goods market with the labor it hired in the labor market.</li>
+</ol></li>
+<li><p>We can use either of these linkages to go to the goods market and evaluate its status. We use the second.</p></li>
+<li><p>When we substitute employment obtained previously in the production function, we get the total production in the goods market.</p></li>
+</ul>
+<p><span class="math display">\[ y = A \Big( \gamma_1 N - \frac{1}{2} \gamma_2 N^2 \Big) \]</span>
+<span class="math display">\[N = \frac{n_0 + n_1 \gamma_1 A (1-t)}{1 + n_1 \gamma_2 A (1-t)} \]</span>
+<span class="math display">\[Y_{FE} = A \Bigg[ \gamma_1 \bigg(\frac{n_0 + n_1 \gamma_1 A (1-t)}{1 + n_1 \gamma_2 A (1-t)} \bigg) - \frac{1}{2} \gamma_2 \bigg(\frac{n_0 + n_1 \gamma_1 A (1-t)}{1 + n_1 \gamma_2 A (1-t)} \bigg)^2 \Bigg]\]</span></p>
+<ul>
+<li>Using the above expression for our parameter values we can obtain the full employment equilibrium as</li>
+</ul>
+<pre class="r"><code># parameter values
+gamma1 = 2
+gamma2 = 0.5
+A = 3
+n0 = 6
+n1 = 1
+t = 0.35
+Y = A * ( gamma1 * ((n0 + n1 * gamma1 * A * (1-t))
+                    /(1+n1 * gamma2 * A * (1-t))) - (1/2) 
+          * gamma2 * ((n0 + n1 * gamma1 * A * (1-t))/
+                          (1+n1 * gamma2 * A * (1-t)))^2)
+Y # our full employment output for given parameter values</code></pre>
+<pre><code>## [1] 11.23089</code></pre>
+<ul>
+<li>Plotting full employment output and examining the effect of change in parameters</li>
+</ul>
+<pre class="r"><code>i = seq(0,10, length = 100)
+Y = A * ( gamma1 * ((n0 + n1 * gamma1 * A * (1-t))/
+            (1+n1 * gamma2 * A * (1-t))) - (1/2) *
+            gamma2 * ((n0 + n1 * gamma1 * A * (1-t))/
+            (1+n1 * gamma2 * A * (1-t)))^2) + 0*i</code></pre>
+<pre class="r"><code>plot(Y,i, type = &quot;l&quot;, 
+     xlab = &quot;Equilibrium Output&quot;, 
+     ylab = &quot;Real Interest Rate&quot;, ylim = c(1,8))
+abline(h=0, col=&quot;blue&quot;)</code></pre>
+<p><img src="/post/09-analytics-IS-LM_files/figure-html/unnamed-chunk-7-1.png" width="70%" /></p>
+<ul>
+<li><p>Use the discussion in text chapter 9 to understand effect of an increase in productivity on full employment output.</p></li>
+<li><p>Lets understand the effect of a reduction in tax.</p></li>
+</ul>
+<pre class="r"><code># parameter values
+gamma1 = 2
+gamma2 = 0.5
+A = 3
+n0 = 6
+n1 = 1
+t = 0.35</code></pre>
+<pre class="r"><code>Y_old = A * ( gamma1 * ((n0 + n1 * gamma1 * A * (1-t))
+            /(1+n1 * gamma2 * A * (1-t))) - (1/2) 
+              * gamma2 * ((n0 + n1 * gamma1 * A * (1-t))/
+            (1+n1 * gamma2 * A * (1-t)))^2)
+t1 = 0.25 # lower taxes
+Y_new = A * ( gamma1 * ((n0 + n1 * gamma1 * A * (1-t1))/
+            (1+n1 * gamma2 * A * (1-t1))) - (1/2) 
+              * gamma2 * ((n0 + n1 * gamma1 * A * (1-t1))/
+            (1+n1 * gamma2 * A * (1-t1)))^2)
+print(paste(Y_old, &quot;  &quot;, Y_new))</code></pre>
+<pre><code>## [1] &quot;11.2308924851787    11.3356401384083&quot;</code></pre>
+<ul>
+<li>Full employment output increases. What happens to labor supply and labor demand as a result of tax?</li>
+</ul>
+<pre class="r"><code>i = seq(0,10, length = 100)
+Y_old = A * ( gamma1 * ((n0 + n1 * gamma1 * A * (1-t))/
+            (1+n1 * gamma2 * A * (1-t))) - (1/2) 
+              * gamma2 * ((n0 + n1 * gamma1 * A * (1-t))/
+            (1+n1 * gamma2 * A * (1-t)))^2) + 0*i
+Y_new = A * ( gamma1 * ((n0 + n1 * gamma1 * A * (1-t1))/
+            (1+n1 * gamma2 * A * (1-t1))) - (1/2) 
+              * gamma2 * ((n0 + n1 * gamma1 * A * (1-t1))/
+            (1+n1 * gamma2 * A * (1-t1)))^2) + 0*i</code></pre>
+<pre class="r"><code>plot(Y_old,i, type = &quot;l&quot;, xlab = &quot;Equilibrium Output&quot;, 
+     ylab = &quot;Real Interest Rate&quot;, 
+     ylim = c(1,8), xlim = c(10,12), 
+     main = &quot;Full Employment shifts 
+     rightwards on a tax reduction&quot;)
+lines(Y_new, i, col=&quot;blue&quot;)</code></pre>
+<p><img src="/post/09-analytics-IS-LM_files/figure-html/unnamed-chunk-11-1.png" width="70%" /></p>
+<p class="red">
+<strong>Goods Market Equilibirum in a Macroeconomic Model</strong>
+</p>
+<ul>
+<li><p>Notice that we have partly moved onto the labor market already. We have the full employment aggregate supply by firms so that <span class="math inline">\(Y^* = Y_{FE}\)</span></p></li>
+<li><p>In order to understand the goods market equilibirum, we start with the main components of aggregate demand in a closed economy.</p></li>
+</ul>
+<p><span class="math display">\[Y = C^d + I^d + G \]</span></p>
+<ul>
+<li><span class="math inline">\(C^d\)</span> is the desired consumption demand by individuals in an economy. We assume that a maximixing agent chooses consumption and labor supply such that his resultant consumption demand looks like the following:</li>
+</ul>
+<p><span class="math display">\[C^d = c_0 + c_y (Y-T) - c_r r ,\]</span></p>
+<ul>
+<li><p>where <span class="math inline">\(c_0 &gt; 0, c_y \in (0,1)\)</span> and <span class="math inline">\(c_r \geq 0\)</span> are parameters representing intercept, marginal propensity to consume and marginal propensity to consume based on rate of interest changes respectively.</p></li>
+<li><p>(Y - T) is disposable income and <span class="math inline">\(r\)</span> is the real interest rate.</p></li>
+</ul>
+<p><strong>Consumption Function</strong></p>
+<pre class="r"><code>c0 = 50
+cy = 0.6
+T = 20
+cr = 0.2
+r = seq(0,10, length = 100)
+Y = seq(-50, 500, length = 100)
+C = c0 + cy * ( Y-T) - cr * r</code></pre>
+<pre class="r"><code>plot(Y,C, type = &quot;l&quot;, xlab = &quot;Output&quot;, 
+     ylab = &quot;Consumption&quot;, ylim = c(-5,400),
+     xlim = c(-5,400), 
+     main = &quot;Aggregate Consumption Function&quot;, col = &quot;blue&quot;)
+abline(v = 0, h=0, col=&quot;black&quot;)</code></pre>
+<p><img src="/post/09-analytics-IS-LM_files/figure-html/unnamed-chunk-13-1.png" width="70%" /></p>
+<ul>
+<li>T, denotes total tax revenue obtained from consumers, out of which a part is lumpsum taxes <span class="math inline">\(t_0\)</span> and the remaining depends on a consumer’s income such that:</li>
+</ul>
+<p><span class="math display">\[ T = t_0 + tY \]</span></p>
+<p><strong>Investment Function</strong></p>
+<ul>
+<li><span class="math inline">\(I^d\)</span> is the desired investment similar to desired consumption. Similar to taxes, investment is assumed to have a lumpsum component as well as a component which responds to rate of interest such that:</li>
+</ul>
+<p><span class="math display">\[ I^d = i_0 + i_r r ,\]</span></p>
+<ul>
+<li><p>where <span class="math inline">\(i_0,i_r &gt; 0\)</span>. Why do we call <span class="math inline">\(I^d\)</span> and <span class="math inline">\(C^d\)</span> desired investment and consumption?</p></li>
+<li><p>Finally, <span class="math inline">\(G\)</span> is assumed to be government spending exogenous i.e. we do not explicitly specify G and treat it as a parameter.</p></li>
+<li><p>We can simplify the expression of demand by substituting the definitions of <span class="math inline">\(C^d, I^d\)</span> and <span class="math inline">\(G\)</span> to obtain</p></li>
+</ul>
+<p><span class="math display">\[ Y = \frac{c_0 + c_y t_0 + i_0 + G}{1-c_y (1-t)} - \frac{c_r + i_r}{1-c_y (1-t)} r \]</span></p>
+<ul>
+<li><p>This is the analytical expression for <span style="color:rgb(213,94,0)"> IS curve </span> in which savings equals investment which implies <span class="math inline">\(Y = C^d + I^d + G\)</span>.</p></li>
+<li><p>We can write the expression as:</p></li>
+</ul>
+<p><span class="math display">\[ Y = \beta_0 - \beta_1 r,\]</span>
+<span class="math display">\[\text{where}\; \beta_0 = \frac{c_0 + c_y t_0 + i_0 + G}{1-c_y (1-t)} \]</span>
+<span class="math display">\[\beta_1 = \frac{c_r + i_r}{1-c_y (1-t)} \]</span></p>
+<ul>
+<li>Infering from a goods market equilibrium tells us (a) it is linear in (Y,r) space and (b) has a slope <span class="math inline">\(\beta_1\)</span> and intercept <span class="math inline">\(\beta_0\)</span></li>
+</ul>
+<pre class="r"><code>c0 = 50
+cy = 0.6
+i0 = 30
+G = 20
+t0 = 5
+t = 0.35
+cr = 0.2
+ir = 0.4
+beta0 = (c0 + cy* t0 + i0 + G)/(1-cy *(1-t))
+beta1 = (cr + ir)/(1-cy * (1-t))
+r = seq(0,10, length = 100)
+Y = beta0 - beta1 * r</code></pre>
+<pre class="r"><code>plot(Y, r, type = &quot;l&quot;, xlab = &quot;Output&quot;, 
+     ylab = &quot;Real interest rate&quot;, 
+     ylim = c(-2,10), 
+     main = &quot;IS Curve&quot;, col = &quot;blue&quot;)</code></pre>
+<p><img src="/post/09-analytics-IS-LM_files/figure-html/unnamed-chunk-15-1.png" width="70%" /></p>
+<p><strong>Regression and Goods Market Equilibrium</strong></p>
+<ul>
+<li><p>We obtain goods market equilibirum which represents the following structure:
+<span class="math display">\[ y = \beta_{0}^{IS} + \beta_{1}^{IS} r \]</span></p></li>
+<li><p>Mathematically, what does this tell you? (Hint: Think about the functional form)</p></li>
+<li><p>Can you infer the responsiveness of interest rate on output from this expression?</p></li>
+<li><p>We regress GDP (<span class="math inline">\(y\)</span>) on real interest rate (<span class="math inline">\(r\)</span>) with a constant.</p></li>
+<li><p>We obtain <span class="math inline">\(\hat{\beta_{0}}\)</span> and <span class="math inline">\(\hat{\beta_{1}}\)</span>.</p></li>
+<li><p>Do you think these would represent <span class="math inline">\(\beta_{0}\)</span> and <span class="math inline">\(\beta_{1}\)</span> shown analytically above?</p></li>
+<li><p>No, because <span class="math inline">\(r\)</span> is influenced by factors in the money market, so what appears as the causal impact of <span class="math inline">\(r\)</span> on <span class="math inline">\(y\)</span> is partly influenced by interactions in the money market too.</p></li>
+<li><p>So regressing <span class="math inline">\(y\)</span> on <span class="math inline">\(r\)</span> would provide you a biased estimate of <span class="math inline">\(\beta_1^{IS}\)</span>.</p></li>
+<li><p><span style="color:rgb(213,94,0)"> Theory </span>: To complete the picture of our model economy, we venture into the third market.</p></li>
+</ul>
+<p class="red">
+<strong>Asset Market Equilibirum in a Macroeconomic Model</strong>
+</p>
+<ul>
+<li><p><span style="color:blue"> Recap </span> : We have discussed the demand and supply in two markets. Similarly the demand and supply in money market should be identified in order to understand its equilibirum.</p></li>
+<li><p>Note : ABC uses a convention of talking about asset markets in general. That is a broader approach and should be followed.</p></li>
+<li><p>Money Demand (Real) : is represented by the following relation:</p></li>
+</ul>
+<p><span class="math display">\[ \frac{M^d}{P} = l_{0} + l_y Y - l_r (r+\pi^e),\]</span></p>
+<ul>
+<li><p>where <span class="math inline">\(M^d\)</span> is the nominal money demand, <span class="math inline">\(P\)</span> is a price index, <span class="math inline">\(l_0, l_y, l_r &gt;0\)</span> are parameters, <span class="math inline">\(\pi^e\)</span> is the expected inflation rate.</p></li>
+<li><p>Notice that <span class="math inline">\(l_0\)</span> is the demand for money which is not dependent upon income or interest rate. It could be concieved as minimum transactions demand.</p></li>
+<li><p><span class="math inline">\(l_y\)</span> measures the responsiveness of money demand to output and <span class="math inline">\(l_r\)</span> to nominal rate of interest.</p></li>
+<li><p>Notice that <a href="https://en.wikipedia.org/wiki/Fisher_equation">Fisher’s Rule</a> gives us the relation between nominal and real interest rate which is used here.</p></li>
+<li><p>Money Supply : is according to what we call the <a href="https://www.brookings.edu/blog/ben-bernanke/2015/04/28/the-taylor-rule-a-benchmark-for-monetary-policy/">Taylor’s rule</a>. It implies controlling money such that the equilibrium real interest rate is within the bounds decided by the RBI.</p></li>
+<li><p>Let us assume the equilibirum rate of interest is within these bounds such that money supply is given by <span class="math inline">\(M^s\)</span>.</p></li>
+<li><p>Equilibirum in the money market implies:</p></li>
+</ul>
+<p><span class="math display">\[ \frac{M^s}{P} \equiv l_{0} + l_y Y - l_r (r+\pi^e)\]</span></p>
+<ul>
+<li><p>Notice here that we have additional parameters- <span class="math inline">\(M,\pi^e\)</span> for the model which feature just like <span class="math inline">\(A\)</span>, or <span class="math inline">\(G\)</span> previously.</p></li>
+<li><p>Another important thing to notice is that these are differet from <span class="math inline">\(\gamma_1, \gamma_2, n_0, n_1, c_0, c_y, c_r, t_0, t, i_0, i_r\)</span> and now <span class="math inline">\(l_0, l_y, l_r\)</span>. Why?</p></li>
+<li><p>Simplifying equilibrium implies a relation between output and real interest rate depicting <span style="color:rgb(213,94,0)"> the LM curve </span> of the form:</p></li>
+</ul>
+<p><span class="math display">\[ Y = \frac{M P^{-1} + l_0 + l_r \pi^e}{l_y} + \frac{l_r}{l_y} r \]</span></p>
+<ul>
+<li>Mathematically, structure is similar to the IS-curve and could be represented as:</li>
+</ul>
+<p><span class="math display">\[ 
+\begin{aligned}
+Y &amp;= \beta_2 + \beta_3 r, \\
+\beta_2 &amp;= \frac{M P^{-1} + l_0 + l_r \pi^e}{l_y} \\
+\beta_3 &amp;= \frac{l_r}{l_y}
+\end{aligned}
+\]</span></p>
+<ul>
+<li>Read chapter 9 and understand the factors which shift LM curve contained in <span class="math inline">\(\beta_2\)</span> and the factors which cause a movement along an existing curve.</li>
+</ul>
+<p class="red">
+<strong>Practice Question</strong>
+</p>
+<p>Q1. We work through the labor market for this question. Consider the following production function</p>
+<p><span class="math display">\[ Y = A L^\alpha K^\beta \]</span></p>
+<p>Notice that even though there is capital in the production function, we assume that the firm does not get constrained by capital. (Hint: You can assume it to be a parameter just like <span class="math inline">\(A\)</span>.)</p>
+<p>What is the expression for labor demand for this economy?</p>
+<ul>
+<li><p>Labor demand is obtained by first finding out the marginal productivity of labor and then equating it with the real wages faced by producer.</p></li>
+<li><p>Producer: cannot set real wages as he is in perfectly competitive market</p></li>
+</ul>
+<p><span class="math display">\[
+\frac{\partial Y}{\partial L} = A \alpha L^{\alpha-1}K^{\beta} = w
+\]</span>
+Rearraning we get:</p>
+<p><span class="math display">\[
+L = \bigg( \frac{w}{\alpha A K^{\beta}}\bigg)^{\frac{1}{\alpha - 1}}
+\]</span></p>
+<p>Correct option was (c)</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[ L = \frac{\alpha K^\beta A}{w L^{\alpha-1}}\]</span></li>
+<li><span class="math display">\[ L = \frac{w \alpha K^\beta A}{L^{\alpha-1}}\]</span></li>
+<li><span class="math display">\[ L = \bigg(\frac{w}{\alpha K^\beta A}\bigg)^{\frac{1}{\alpha - 1}}\]</span></li>
+<li><span class="math display">\[ L = \bigg(\frac{w}{K^\beta A}\bigg)^{\frac{1}{\alpha - 1}}\]</span></li>
+</ol>
+<p>Q2. Now assume that the labor supply by consumers in this economy is of the following form:</p>
+<p><span class="math display">\[ L = \Big[ K^{-\beta} n_0 + n_1 (1-t) w K^{-\beta}  \Big]^{\frac{1}{\alpha-1}} \]</span></p>
+<ul>
+<li><p>In equilibrium for the labor market, you know that the demand for labor by firms is exactly met my the supply of such labor by these consumers. Notice that consumers are also owners of capital. The amount of capital they own affects their labor supply. How does it affect a consumer’s labor supply and which could be the associated reasons?</p></li>
+<li><p>Slight re-write implies the following form:</p></li>
+</ul>
+<p><span class="math display">\[ L = K^{\frac{-\beta}{\alpha - 1}} \Big[ n_0 + n_1 (1-t) w   \Big]^{\frac{1}{\alpha-1}} \]</span>
+- Note that <span class="math inline">\(1 &gt; \beta &gt; 0\)</span> and <span class="math inline">\(\alpha \in (0,1)\)</span> implies that <span class="math inline">\(K^{\frac{\beta}{1-\alpha} &gt; 0}\)</span>. Thus when K increases, L also increases.</p>
+<ul>
+<li>The correct answer is (a). And the practice quiz answer was incorrect. The reasoning could be one of the many reasons you can think of, but the relation is obtained from mathematical formaulation.</li>
+</ul>
+<ol style="list-style-type: lower-alpha">
+<li>If a consumer owns more capital, he supplies more labor because he wants to use his capital.</li>
+<li>If a consumer owns more capital, he supplies less labor because he prefers leisure over labor.</li>
+<li>If a consumer owns more capital, he supplies less labor because he earns rents from owning the capital.</li>
+<li>If a consumer owns more capital, he supplies more labor because his real wages are more than the rents on capital.</li>
+</ol>
+<p>Q3. With the labor demand corresponding to the following production function
+<span class="math display">\[ Y = A L^\alpha K^\beta \]</span></p>
+<ul>
+<li>And the labor supply corresponding to the following:</li>
+</ul>
+<p><span class="math display">\[ L = \Big[ K^{-\beta} n_0 + n_1 (1-t) w K^{-\beta}  \Big]^{\frac{1}{\alpha-1}} \]</span>
+What is the equilibrium real wage for this model economy?</p>
+<p>From earlier <span class="math inline">\(L = \Big( \frac{w}{\alpha A K^{\beta}} \Big)^{\frac{1}{\alpha - 1}}\)</span> from labor demand and above labor supply, we equate the RHS to obtain</p>
+<p><span class="math display">\[ w = \frac{\alpha A n_0}{1-\alpha  n_1 A (1-t)} \]</span></p>
+<p>Option (a) was correct.</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[ w = \frac{\alpha A n_0}{1-n_1 (1-t) \alpha A} \]</span></li>
+<li><span class="math display">\[ w = \frac{\alpha}{1-n_1 (1-t) \alpha A} \]</span></li>
+<li><span class="math display">\[ w = \frac{\alpha A n_0}{1-n_1 (1-t) A} \]</span></li>
+<li><span class="math display">\[ w = \frac{1-n_1 (1-t) \alpha A}{\alpha A n_0} \]</span></li>
+</ol>
+<p>Q4. With the labor demand corresponding to the following production function
+<span class="math display">\[ Y = A L^\alpha K^\beta \]</span>
+with an equilibrium employment as follows:
+<span class="math display">\[ L = \bigg[ \frac{n_0}{K^\beta \big[ 1 - n_1 (1-t) \alpha A \big]} \bigg]^{\frac{1}{\alpha - 1}} \]</span></p>
+<p>What is the full employment equilibirum output?</p>
+<p>Simple careful substitution would give you the following answer. Note that the quiz again had incorrect equilibrium employment which led to incorrect full employment output. The correct answer is:</p>
+<p><span class="math display">\[ Y = \frac{A n_0^{\frac{\alpha}{\alpha - 1}}}{ \Big[ 1-\alpha  n_1 A (1-t)\Big]^{\frac{\alpha}{\alpha - 1}}} K^{\frac{\beta (\alpha - 2)}{\alpha-1}} \]</span></p>
+<p>Check and let me know if there is any error.</p>
+<p>Your options were the following and none of which was correct. For future quizzes, you would get double the points if you point out algebraic errors.</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[ Y_{FE} = \frac{A n_0^{1-\alpha}}{K^\alpha \Big[ 1 - n_1 (1-t) \alpha A \Big]}\]</span></li>
+<li><span class="math display">\[ Y_{FE} = \frac{A n_0^{\alpha}}{K^{\alpha - 1} \Big[ 1 - n_1 (1-t) \alpha A \Big]}\]</span></li>
+<li><span class="math display">\[ Y_{FE} = \frac{A n_0^{\alpha}}{K^\alpha \Big[ 1 - n_1 (1-t) \alpha A \Big]}\]</span></li>
+<li><span class="math display">\[ Y_{FE} = \frac{A n_0^{1-\alpha}}{K^{\alpha-1} \Big[ 1 - n_1 (1-t) \alpha A \Big]}\]</span></li>
+</ol>
+<p>Q5. Consider the following model economy with a production function
+<span class="math display">\[ Y = A L^\alpha K^\beta \]</span>
+an equilibrium employment:
+<span class="math display">\[ L = \bigg[ \frac{n_0}{K^\beta \big[ 1 - n_1 (1-t) \alpha A \big]} \bigg]^{\frac{1}{\alpha - 1}}\]</span></p>
+<p>Assume the following parameter values and evaluate the full employment output for this economy.
+<span class="math display">\[ n_0 = A = \alpha = 1\]</span>
+<span class="math display">\[K = 2\]</span>
+<span class="math display">\[t = 0.5\]</span>
+<span class="math display">\[n_1 = 0.5\]</span></p>
+<pre class="r"><code># specify the parameter values in R
+n0 = 1
+A = 1
+alpha = 0.3
+K = 2
+t = 0.5
+n1 = 0.2
+beta = 1</code></pre>
+<p>How am I solving this? Simply telling R to calculate Y_fe for these parameter values using the following code:</p>
+<pre class="r"><code># write the expression in R
+Yfe = (A * n0^(alpha/(alpha-1)) * 
+           K^(beta*(alpha-2)/(alpha-1))) /
+    (1 - alpha * n1 * A * (1-t))^(alpha/(alpha-1))
+# remember to put brackets properly
+cat(c(&quot;Your full employment output is &quot;, Yfe))</code></pre>
+<pre><code>## Your full employment output is  5.31378024460662</code></pre>
+<p>All the options which followed were incorrect due to mistake in equilibrium employment. Again, its best to check your calculations (even for an instructor!!)</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(Y_{FE} = 0.50\)</span></li>
+<li><span class="math inline">\(Y_{FE} = 0.66\)</span></li>
+<li><span class="math inline">\(Y_{FE} = 0.75\)</span></li>
+<li><span class="math inline">\(Y_{FE} = 1.00\)</span></li>
+</ol>
+<p>Q5. In this exercise, we explore the IS-curve. We have the consumption function of the following form:
+<span class="math display">\[ C^d = c_0 + c_y (Y-T) - c_r r \]</span></p>
+<ul>
+<li>However, let us assume that there are no taxes in this economy i.e. <span class="math inline">\(T = 0\)</span> and let us assume government spending in this economy reduces private consumption. Think of public health. When government gives you good health care facilities as in Sweden or Norway, you do not spend out of your own pocket on health care. This could be represented as follows:</li>
+</ul>
+<p><span class="math display">\[ C^d = c_0 + c_y Y - c_r r - c_g G \]</span>
+We have investment in this economy as follows:</p>
+<p><span class="math display">\[ I^d = i_0 - i_r r\]</span></p>
+<p>For the following parameter values, find the equation of the IS curve for this economy.</p>
+<pre class="r"><code>variables &lt;- c(&quot;c_0&quot;, &quot;c_y&quot;, &quot;c_r&quot;, &quot;c_g&quot;, &quot;i_0&quot; ,&quot;i_r&quot;, &quot;G&quot;)
+values &lt;- c(100, 0.8, 500, 0.5, 100, 500, 200)
+x &lt;- data.frame(variables, values)</code></pre>
+
+
+<table>
+<thead>
+<tr class="header">
+<th align="left">Parameter</th>
+<th align="left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(c_0\)</span></td>
+<td align="left">100</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(c_y\)</span></td>
+<td align="left">0.8</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(c_r\)</span></td>
+<td align="left">500</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(c_g\)</span></td>
+<td align="left">0.5</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(i_0\)</span></td>
+<td align="left">100</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(i_r\)</span></td>
+<td align="left">500</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(G\)</span></td>
+<td align="left">200</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Start with the goods market equilibrium condition:</li>
+</ul>
+<p><span class="math display">\[ Y = C^d + I^d + G\]</span></p>
+<ul>
+<li>Simplifying and collecting terms give you:</li>
+</ul>
+<p><span class="math display">\[ Y ( 1-c_y) = c_0 + i_0 - c_g \bar{G} + \bar{G} - (c_r + i_r) r \]</span>
+- Further simplify and substitute parameter values:
+<span class="math display">\[
+\begin{aligned}
+Y = \frac{300}{0.2} - \frac{1000}{0.2} r \\
+Y = 1500 - 5000 r
+\end{aligned}
+\]</span></p>
+<p>The correct answer was (a)</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[ Y = 1500 - 5000 r \]</span></li>
+<li><span class="math display">\[ Y = \frac{300}{0.2} - \frac{1000}{0.5} r \]</span></li>
+<li><span class="math display">\[ Y = \frac{300}{0.5} - \frac{1000}{0.2} r \]</span></li>
+<li><span class="math display">\[ Y = 600 - 10000 r \]</span></li>
+</ol>
+<p>Q6. If the full employment equilibirum for this economy is 1000, what are the equilibrium values for desired consumption and investment?</p>
+<ul>
+<li><p>This was a matter of simple substitution after you found equilibrium rate of interest.</p></li>
+<li><p>Consider Desired consumtpion after you solve for equilibrium rate of interest <span class="math inline">\(r^*\)</span>
+<span class="math display">\[ C^d = 100 + 0.8 ( 1000) - 500(0.1) - 0.5(200) \]</span></p></li>
+<li><p>Similarly for Investment</p></li>
+</ul>
+<p>The correct answer was (b)</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[ C^d = 750, I^d = 250 \]</span></li>
+<li><span class="math display">\[ C^d = 750, I^d = 50 \]</span></li>
+<li><span class="math display">\[ C^d = 550, I^d = 150 \]</span></li>
+<li><span class="math display">\[ C^d = 500, I^d = 250 \]</span></li>
+</ol>
+<p class="red">
+<strong>General Equilibirum in a Macroeconomic Model</strong>
+</p>
+<ul>
+<li><p>Recap: We have all the markets in equilibrium individually. Naturally, the way we have modeled these markets includes specifying their linkages, though we did not explicitly talk about it.</p></li>
+<li><p><strong>Note</strong>: Skip this section if you have understood the Lecture on Monday, September 7,2020.</p></li>
+<li><p>To understand this clearly we can write all the equilibrium conditions of the markets and the resultant interlinkages. When we do so, we obtain a complete macroeconomic system. Let us examine the system.</p></li>
+</ul>
+<ol style="list-style-type: lower-alpha">
+<li><p>The first three expressions are the labor market conditions starting with labor demand <span class="math inline">\(N^d\)</span>, labor supply <span class="math inline">\(N^s\)</span> and equilibrium employment <span class="math inline">\(N\)</span>. They provide independent pieces of information for solving the model. First tells us the behaior of the firms when the are optimizing agents, Second, tells us the behavior of consumers when they are optimizing their labor supply to maximize their utility. Third tells us about their equilibrium interaction in the market.</p></li>
+<li><p>Similarly the next three equations tell us about the goods market. Notice that the <span class="math inline">\(Y^s\)</span> is the long run supply at full employment. The demand is a resultant of the components demand in the goods market. The third equation tells us that we have IS and FE interaction in equilibrium.</p></li>
+<li><p>The last three equations describe the asset (or money market) in similar fasion.</p></li>
+</ol>
+<p><span class="math display">\[
+\begin{aligned}
+N^d &amp; = \frac{\gamma_1}{\gamma_2} - \frac{1}{A \gamma_2} w \\
+N^s &amp; = n_{0} + n_1 (1-t) w \\
+N^d &amp; = N^s = N \\
+Y^d &amp; = \frac{c_0 + c_y t_0 + i_0 + G}{1-c_y (1-t)} - \frac{c_r + i_r}{1-c_y (1-t)} r \\
+Y^s &amp; = Y_{FE} = A \Bigg[ \gamma_1 \bigg(\frac{n_0 + n_1 \gamma_1 A (1-t)}{1 + n_1 \gamma_2 A (1-t)} \bigg) - \frac{1}{2} \gamma_2 \bigg(\frac{n_0 + n_1 \gamma_1 A (1-t)}{1 + n_1 \gamma_2 A (1-t)} \bigg)^2 \Bigg] \\
+Y^d &amp; = Y^s \\
+M^d &amp; = l_{0} P + l_y P Y - l_r P (r+\pi^e) \\
+M^s &amp; = \bar{M} \\
+M^d &amp; = M^s
+\end{aligned}
+\]</span></p>
+<ul>
+<li>We could simplify this system by substituting <span class="math inline">\(N^d\)</span> and <span class="math inline">\(N^s\)</span> as <span class="math inline">\(N\)</span>, <span class="math inline">\(Y^d\)</span>, <span class="math inline">\(Y^s\)</span> as <span class="math inline">\(Y_{FE}\)</span>, and <span class="math inline">\(M^d, M^s\)</span> as <span class="math inline">\(\bar{M}\)</span>. We are doing so to reduce as many varaibles as possible and simplify the system. We are interested in (Y, P and r) in order to draw equivalence between IS-LM and AD-AS equations.</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+N &amp; = \frac{\gamma_1}{\gamma_2} - \frac{1}{A \gamma_2} w \\
+N &amp; = n_{0} + n_1 (1-t) w \\
+Y_{FE} &amp; = \frac{c_0 + c_y t_0 + i_0 + G}{1-c_y (1-t)} - \frac{c_r + i_r}{1-c_y (1-t)} r \\
+Y_{FE} &amp; = A \Bigg[ \gamma_1 \bigg(\frac{n_0 + n_1 \gamma_1 A (1-t)}{1 + n_1 \gamma_2 A (1-t)} \bigg) - \frac{1}{2} \gamma_2 \bigg(\frac{n_0 + n_1 \gamma_1 A (1-t)}{1 + n_1 \gamma_2 A (1-t)} \bigg)^2 \Bigg] \\
+\bar{M} &amp; = l_{0} P + l_y P Y - l_r P (r+\pi^e) \\
+M^s &amp; = \bar{M} \\
+\end{aligned}
+\]</span></p>
+<ul>
+<li>Since there are 6 equations, there are 6 variables which could be solved within the model. They are <span class="math inline">\(N, w, r, Y_{FE}, P, M^s\)</span>. The remaining are parameters for the model. We can further reduce this system eliminating <span class="math inline">\(N, w\)</span> and <span class="math inline">\(M^s\)</span> to obtain:</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+Y_{FE} &amp; = A \Bigg[ \gamma_1 \bigg(\frac{n_0 + n_1 \gamma_1 A (1-t)}{1 + n_1 \gamma_2 A (1-t)} \bigg) - \frac{1}{2} \gamma_2 \bigg(\frac{n_0 + n_1 \gamma_1 A (1-t)}{1 + n_1 \gamma_2 A (1-t)} \bigg)^2 \Bigg] \\
+Y_{IS} &amp; = \frac{c_0 + c_y t_0 + i_0 + G}{1-c_y (1-t)} - \frac{c_r + i_r}{1-c_y (1-t)} r \\
+Y_{LM} &amp; = \bigg( \pi^e - \frac{l_0}{l_r}\bigg) \bigg(\frac{l_r}{l_y}\bigg) + \bigg( \frac{1}{l_y} \bigg) \frac{\bar{M}}{P} + \bigg(\frac{l_r}{l_y}\bigg) r
+\end{aligned}
+\]</span></p>
+<ul>
+<li><p>These equations can be solved for three endogenous variables namely - <span class="math inline">\(Y, P\)</span> and <span class="math inline">\(r\)</span>, where all other variables are either parameters or exogenous variables treated as “pseudo parameters”</p></li>
+<li><p>Pseudo Parameters: are variables whose values are determined or derived from data. These characterize the economy (<span class="math inline">\(A, \pi^e\)</span>) and the stance of policy (<span class="math inline">\(\bar{M}, G, t\)</span>).</p>
+<ol style="list-style-type: lower-alpha">
+<li>A: denotes the productivity shock which measures the technological capacity of an economy.</li>
+<li><span class="math inline">\(\pi^e\)</span>: denotes the expected inflation</li>
+<li><span class="math inline">\(\bar{M}\)</span> denotes the supply of money by a central bank</li>
+<li>G denotes total government spending on transfer of ration (provision), building of roads, bridges as well as the money spend paying government employeer.</li>
+<li>t denotes the average rate of income tax</li>
+</ol></li>
+<li><p>Parameters: are the remaining variables which are neither pseudo parameters nor endogenous variables.</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\gamma_1, \gamma_2\)</span> are production function of labor demand parameters</li>
+<li><span class="math inline">\(n_0, n_1\)</span> represent aspects of labor supply function</li>
+<li><span class="math inline">\(c_0, c_y\)</span> and <span class="math inline">\(c_r\)</span> represent consumption function parameters</li>
+<li><span class="math inline">\(i_0, i_r\)</span> are investment function parameters</li>
+<li><span class="math inline">\(l_0, l_y, l_r\)</span> are money demand function parameters.</li>
+</ol></li>
+<li><p>Solution of a model implies finding values of endogenous variables in terms of exogenous variables or parameters.</p></li>
+<li><p>We can use the full employment equilibrium derived earlier (<span class="math inline">\(Y_{FE}\)</span>) in terms as a solution in itself. It only depends upon exogenous variables and parameters. We use this to substitute in the IS curve to obtain equilibrium real interest rate as follows:</p></li>
+</ul>
+<p><span class="math display">\[
+Y^* = Y_{FE}
+\]</span></p>
+<ul>
+<li>Using this to simplify IS curve we obtain <span class="math inline">\(r^*\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+Y_{FE} (1-c_y (1-t)) &amp; = (c_0 + c_y t_0 + i_0 + G) - (c_r + i_r) r \\
+r^{*} &amp; = \underbrace{\frac{(c_0 + c_y t_0 + i_0 + G)}{(c_r + i_r)}}_{\alpha_{IS}} - \overbrace{\frac{(1-c_y (1-t))}{(c_r + i_r)}}^{\beta_{IS}} Y_{FE}
+\end{aligned}
+\]</span></p>
+<ul>
+<li>We can use this and <span class="math inline">\(Y^*\)</span> to solve for <span class="math inline">\(P^*\)</span> in the LM curve as:</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+P^* = \frac{\bar{M}}{l_y Y_{FE} + l_0 - l_r ( \pi^e + \alpha_{IS} - \beta_{IS} Y_{FE})} 
+\end{aligned}
+\]</span></p>
+<ul>
+<li>From the LM equation obtained above:</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+Y_{LM} &amp; = \bigg( \pi^e - \frac{l_0}{l_r}\bigg) \bigg(\frac{l_r}{l_y}\bigg) + \bigg( \frac{1}{l_y} \bigg) \frac{\bar{M}}{P} + \bigg(\frac{l_r}{l_y}\bigg) r \\
+r &amp; = \overbrace{\bigg(\frac{l_0}{l_r} - \pi^e \bigg) }^{\alpha_{LM}} - \frac{1}{l_r} \frac{\bar{M}}{P} + \overbrace{\bigg(\frac{l_y}{l_r}\bigg)}^{\beta_{LM}} Y
+\end{aligned}
+\]</span></p>
+<ul>
+<li>Substituting <span class="math inline">\(r^*\)</span> obtained previously in the above to eliminate LHS and get a relationship between P and Y in which both goods market and asset market is satisfied.</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+P^* = \frac{\bar{M}}{l_r \Big[ \alpha_{LM} - \alpha_{IS} + (\beta_{IS} + \beta_{LM}) Y\Big]}
+\end{aligned}
+\]</span></p>
+<ul>
+<li><p>We can simplify this further but to no avail. Note that this is purely a relationship between prices and output when asset and goods market is in equilibrium i.e. the AD curve.</p></li>
+<li><p>Aggregate supply is not uniformly represented in AD-AS models because of the differences in interpretation between classical and Keynesians. Classicals assume that <span class="math inline">\(Y = Y_{FE}\)</span> represents the true long run equilibirum and in the long run we will have the following price and output:</p></li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+P^* &amp; = \frac{\bar{M}}{l_r \Big[ \alpha_{LM} - \alpha_{IS} + (\beta_{IS} + \beta_{LM}) Y^*\Big]} \\
+Y^* &amp; = Y_{FE}
+\end{aligned}
+\]</span></p>
+<ul>
+<li>On the other hand, Keynesians argue that prices would remain sticky in the short run and there is a possibility of temporary and persistent difference in output from the above <span class="math inline">\(Y^{*}\)</span>. This implies that they obtain the following equilibrium values for output and prices:</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+P^* &amp; = \bar{P} \\
+Y^* &amp; = \frac{\bar{M}}{\bar{P}} \frac{1}{l_r(\beta_{IS} + \beta_{LM})} - \frac{\alpha_{LM} - \alpha_{IS}}{\beta_{IS} + \beta_{LM}}
+\end{aligned}
+\]</span></p>
+<p><strong>Chapter 11: Numericals</strong></p>
+<pre class="r"><code>P = seq(0, 100, length.out = 1000)
+AS = 10*P
+AD = (120/1.5) + (300/1.5) * (1/P)
+plot(P, AD, type = &quot;l&quot;, col = &quot;blue&quot;, main = &quot;Equilibrium in AD and AS&quot;, ylab = &quot;output, Y&quot;)
+lines(P, AS, type = &quot;l&quot;, col = &quot;red&quot;)</code></pre>
+<p><img src="/post/09-analytics-IS-LM_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<pre class="r"><code>quadraticRoots &lt;- function(a, b, c) {
+
+  print(paste0(&quot;You have chosen the quadratic equation &quot;, a, &quot;x^2 + &quot;, b, &quot;x + &quot;, c, &quot;.&quot;))
+
+  discriminant &lt;- (b^2) - (4*a*c)
+
+  if(discriminant &lt; 0) {
+    return(paste0(&quot;This quadratic equation has no real numbered roots.&quot;))
+  }
+  else if(discriminant &gt; 0) {
+    x_int_plus &lt;- (-b + sqrt(discriminant)) / (2*a)
+    x_int_neg &lt;- (-b - sqrt(discriminant)) / (2*a)
+
+    return(paste0(&quot;The two x-intercepts for the quadratic equation are &quot;,
+                  format(round(x_int_plus, 5), nsmall = 5), &quot; and &quot;,
+                  format(round(x_int_neg, 5), nsmall = 5), &quot;.&quot;))
+  }
+  else #discriminant = 0  case
+    x_int &lt;- (-b) / (2*a)
+    return(paste0(&quot;The quadratic equation has only one root. This root is &quot;,
+                  x_int))
+}
+
+quadraticRoots(1, -80, -2000)</code></pre>
+<pre><code>## [1] &quot;You have chosen the quadratic equation 1x^2 + -80x + -2000.&quot;</code></pre>
+<pre><code>## [1] &quot;The two x-intercepts for the quadratic equation are 100.00000 and -20.00000.&quot;</code></pre>
+<p><strong>Practice Questions</strong></p>
+<p>A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Real Wage</th>
+<th align="center">Effort</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">8</td>
+<td align="center">7</td>
+</tr>
+<tr class="even">
+<td align="center">10</td>
+<td align="center">10</td>
+</tr>
+<tr class="odd">
+<td align="center">12</td>
+<td align="center">15</td>
+</tr>
+<tr class="even">
+<td align="center">14</td>
+<td align="center">17</td>
+</tr>
+<tr class="odd">
+<td align="center">16</td>
+<td align="center">19</td>
+</tr>
+<tr class="even">
+<td align="center">18</td>
+<td align="center">20</td>
+</tr>
+</tbody>
+</table>
+<p>The marginal product of labor for this firm is</p>
+<p><span class="math display">\[ MPN = E(100-n)/15\]</span>
+where E is the effort level and N is the number of workers employed. If the firm can pay only one of the six wage levels shown, which should it choose?</p>
+<ol style="list-style-type: lower-alpha">
+<li>8</li>
+<li>10</li>
+<li>12</li>
+<li>14</li>
+</ol>
+<p>A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Real Wage</th>
+<th align="center">Effort</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">8</td>
+<td align="center">7</td>
+</tr>
+<tr class="even">
+<td align="center">10</td>
+<td align="center">10</td>
+</tr>
+<tr class="odd">
+<td align="center">12</td>
+<td align="center">15</td>
+</tr>
+<tr class="even">
+<td align="center">14</td>
+<td align="center">17</td>
+</tr>
+<tr class="odd">
+<td align="center">16</td>
+<td align="center">19</td>
+</tr>
+<tr class="even">
+<td align="center">18</td>
+<td align="center">20</td>
+</tr>
+</tbody>
+</table>
+<p>The marginal product of labor for this firm is</p>
+<p><span class="math display">\[ MPN = E(100-n)/15\]</span>
+where E is the effort level and N is the number of workers employed.
+How many workers will it employ?</p>
+<p>A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Real Wage</th>
+<th align="center">Effort</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">8</td>
+<td align="center">7</td>
+</tr>
+<tr class="even">
+<td align="center">10</td>
+<td align="center">10</td>
+</tr>
+<tr class="odd">
+<td align="center">12</td>
+<td align="center">15</td>
+</tr>
+<tr class="even">
+<td align="center">14</td>
+<td align="center">17</td>
+</tr>
+<tr class="odd">
+<td align="center">16</td>
+<td align="center">19</td>
+</tr>
+<tr class="even">
+<td align="center">18</td>
+<td align="center">20</td>
+</tr>
+</tbody>
+</table>
+<p>The marginal product of labor for this firm is</p>
+<p><span class="math display">\[ MPN = E(100-n)/15\]</span>
+where E is the effort level and N is the number of workers employed. There are 200 workers in the town where the firm is located, all willing to work at a real wage of 8. How many workers will it employ?</p>
+<p>A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Real Wage</th>
+<th align="center">Effort</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">8</td>
+<td align="center">7</td>
+</tr>
+<tr class="even">
+<td align="center">10</td>
+<td align="center">10</td>
+</tr>
+<tr class="odd">
+<td align="center">12</td>
+<td align="center">15</td>
+</tr>
+<tr class="even">
+<td align="center">14</td>
+<td align="center">17</td>
+</tr>
+<tr class="odd">
+<td align="center">16</td>
+<td align="center">19</td>
+</tr>
+<tr class="even">
+<td align="center">18</td>
+<td align="center">20</td>
+</tr>
+</tbody>
+</table>
+<p>The marginal product of labor for this firm is</p>
+<p><span class="math display">\[ MPN = E(100-n)/15\]</span>
+where E is the effort level and N is the number of workers employed. There are 200 workers in the town where the firm is located, all willing to work at a real wage of 8. What happens to these firms if their optimal effort wage is 6?</p>
+<p>An economy is described by the following equations:</p>
+<p><span class="math display">\[
+\begin{aligned}
+C^d &amp;= 130 + 0.5(Y - T) - 500 r \\
+I^d &amp;= 100 - 500r \\
+G &amp;= 100\\
+T &amp;= 100\\
+L &amp;= 0.5 Y - 1000 (r) \\
+M &amp;= 1320 \\
+\bar{Y} &amp;= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+\]</span>
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. What is the expression for the IS curve for this economy?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[Y = 280 - 1000 (r)\]</span></li>
+<li><span class="math display">\[Y = 560 - 1000 (r)\]</span></li>
+<li><span class="math display">\[Y = 560 - 2000 (r)\]</span></li>
+<li><span class="math display">\[Y = 1320 - 2000 (r)\]</span></li>
+</ol>
+<p>An economy is described by the following equations:</p>
+<p><span class="math display">\[
+\begin{aligned}
+C^d &amp;= 130 + 0.5(Y - T) - 500 r \\
+I^d &amp;= 100 - 500r \\
+G &amp;= 100\\
+T &amp;= 100\\
+L &amp;= 0.5 Y - 1000 (r) \\
+M &amp;= 1320 \\
+\bar{Y} &amp;= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+\]</span>
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. What is the expression for the LM curve for this economy?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[Y = \frac{280}{P} - 1000 (r)\]</span></li>
+<li><span class="math display">\[Y = \frac{560}{P} + 1000 (r)\]</span></li>
+<li><span class="math display">\[Y = \frac{2640}{P} + 2000 (r)\]</span></li>
+<li><span class="math display">\[Y = \frac{1320}{0.5 P} - 2000 (r)\]</span></li>
+</ol>
+<p>An economy is described by the following equations:
+<span class="math display">\[
+\begin{aligned}
+C^d &amp;= 130 + 0.5(Y - T) - 500 r \\
+I^d &amp;= 100 - 500r \\
+G &amp;= 100\\
+T &amp;= 100\\
+L &amp;= 0.5 Y - 1000 (r) \\
+M &amp;= 1320 \\
+\bar{Y} &amp;= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+\]</span>
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. What is the equilibrium output, interest rate and price for this economy?</p>
+<ol style="list-style-type: lower-alpha">
+<li>500, 3, 6</li>
+</ol>
+<p>An economy is described by the following equations:
+<span class="math display">\[
+\begin{aligned}
+C^d &amp;= 130 + 0.5(Y - T) - 500 r \\
+I^d &amp;= 100 - 500r \\
+G &amp;= 100\\
+T &amp;= 100\\
+L &amp;= 0.5 Y - 1000 (r) \\
+M &amp;= 1320 \\
+\bar{Y} &amp;= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+\]</span>
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. Suppose that, because of investor optimism about the future marginal product of capital, the investment function becomes
+<span class="math display">\[ I^d = 200 - 500r \]</span>
+Assuming that the economy was initially at full employment. What are the equilibrium values of output and interest rate in the short run?</p>
+<ol style="list-style-type: lower-alpha">
+<li>Y = 600, P = 6, r = 8%</li>
+</ol>
+<p>An economy is described by the following equations:
+<span class="math display">\[
+\begin{aligned}
+C^d &amp;= 130 + 0.5(Y - T) - 500 r \\
+I^d &amp;= 100 - 500r \\
+G &amp;= 100\\
+T &amp;= 100\\
+L &amp;= 0.5 Y - 1000 (r) \\
+M &amp;= 1320 \\
+\bar{Y} &amp;= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+\]</span>
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. Suppose that, because of investor optimism about the future marginal product of capital, the investment function becomes
+<span class="math display">\[ I^d = 200 - 500r \]</span>
+Assuming that the economy was initially at full employment. What are the equilibrium values of output and interest rate in the long run?</p>
+<p>ANS: Y = 500, P = 11 and r = 0.13</p>
+<p>An economy is described by the following equations:
+<span class="math display">\[
+\begin{aligned}
+C^d &amp;= 130 + 0.5(Y - T) - 500 r \\
+I^d &amp;= 100 - 500r \\
+G &amp;= 100\\
+T &amp;= 100\\
+L &amp;= 0.5 Y - 1000 (r) \\
+M &amp;= 1320 \\
+\bar{Y} &amp;= 500 \;\; \text{(Full employment equilibrium)}
+\end{aligned}
+\]</span>
+Assume that expected inflation is zero so that money demand depends directly on the real interest rate. Suppose that, because of investor optimism about the future marginal product of capital, the investment function becomes
+<span class="math display">\[ I^d = 200 - 500r \]</span>
+Assuming that the economy was initially at full employment. How does this investor confidence affect long run prices?</p>
+</div>
+</div>
+</div>
