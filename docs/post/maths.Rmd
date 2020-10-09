@@ -1,38 +1,30 @@
 ---
 title: Mathematical Methods for Economics
 author: Nikhil Damodaran
-date: '2020-08-17'
-categories:
-  - lecture notes
-  - organization
-  - resources
-tags:
-  - economics
-  - lecture notes
-  - mathematical methods
-  - markdown
+date: '2020-10-06'
 description: Lecture notes for Mathematical Methods in Economics
-math: true
+math: yes
 ---
 
-Lectures notes from my course on mathematical methods for economics at the OP Jindal Global University's School of Government and Public Policy. Check out examples of mathematical methods in economics and its implementation in R.
+Mathematics is central to undergraduate economics. The key is to learn only as much as is required for you to use economics in daily life. For my undergraduate class, I teach students to be street smart in mathematics and learn the maths which helps them get through undergraduate economics. 
 
 <!--more-->
 
 
-<text class = red> __Lecture Notes__ </text>
+### Lecture Notes
 
 Fall 2020, [Syllabus](https://www.dropbox.com/s/wppoos8dusvkx5y/Syllabus%20Maths%20I%20Fall%202020.pdf?dl=0)
 
-<p class = "red"> __Topic 1: Basic Tools of Mathematical Economics__ </p>
+#### Topic 1: Basic Tools of Mathematical Economics
 
 [Lec 01](https://www.dropbox.com/s/0mzg5mfc9nrroag/lec01.pdf?dl=0): Introduction to Mathematical Economics  
 [Lec 02](https://www.dropbox.com/s/mhw57wk6ynef7d2/lec02.pdf?dl=0): Mathematical Models in Economics  
 [Lec 03](https://www.dropbox.com/s/guvq17e2nwkfk7g/lec03.pdf?dl=0): Introduction to Set Theory  
 [Lec 04](https://www.dropbox.com/s/7z2yf44qlppp0fm/lec04.pdf?dl=0): Relations, Functions and Economics 
 
+__Additional Notes__  
 
-An example of a rational function used in class is 
+__Rational Functions and Computer Aided Mathematics__: An example of a rational function used in class is 
 $$y = \frac{x^{2} +3}{5x + 7}$$
 While it is easier to imagine the shape of common mathematical functions in economics, it might get harder. For functions such as this, we rely on computer to give us an idea about its shape. For instance, we can simulate the shape of this function for 25 values of $x \in [-10, 10]$ to obtain the following:
 
@@ -54,7 +46,7 @@ plot(x,y, type = "l")
 
 Thus the computer can only help us approximate the shape of the function based on the kind of questions we ask. In order to inform ourselves about the shape, we can rely on the principles of differentiation which would be explored later in the course. 
 
-Remember that we used a linear total cost function to understand the application of linear functions in economics. This cost function is peculiar. One example is as follows:
+__Cost Functions in Economics__: Remember that we used a linear total cost function to understand the application of linear functions in economics. This cost function is peculiar. One example is as follows:
 
 ```{r Cost-functions, echo = FALSE}
 # total cost function:
@@ -91,9 +83,9 @@ plot(L, AFC, type = "l", col = "red")
 
 Notice that in economics we will use a variety of rectangular and regular hyperbolas, esp. in microeconomics. 
 
-Plotting a 3D Cobb Douglas production function:
+__Generalizing Functions in Higher Dimensions__: We can plot a 3D Cobb Douglas production function of the form $$y = L^{\alpha}K^{\beta}$$ as follows:
 
-```{r}
+```{r echo=FALSE}
 CobbDouglas <- function (L, K) {
    return (L^alpha * K^beta)
 }
@@ -108,6 +100,7 @@ persp(L, K, Y, theta = 80, phi = 20, expand = 0.5, col = "red")
 
 ```
 
+__Finding Roots of a Quardratic Equation__
 
 ```{r}
 P = seq(-25, 50, length.out = 3000)

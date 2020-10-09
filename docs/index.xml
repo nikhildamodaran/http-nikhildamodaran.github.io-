@@ -12,26 +12,26 @@
     
     
     <item>
-      <title>Understanding IS-LM Models</title>
-      <link>/post/analytics-is-lm/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/analytics-is-lm/</guid>
-      <description>Introduction After a preview of AD-AS we move onto a bit more detailed model using IS-LM.</description>
-    </item>
-    
-    <item>
       <title>Mathematical Methods for Economics</title>
       <link>/post/maths/</link>
-      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/maths/</guid>
       <description>
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;Lectures notes from my course on mathematical methods for economics at the OP Jindal Global University’s School of Government and Public Policy. Check out examples of mathematical methods in economics and its implementation in R.&lt;/p&gt;
+&lt;p&gt;Mathematics is central to undergraduate economics. The key is to learn only as much as is required for you to use economics in daily life. For my undergraduate class, I teach students to be street smart in mathematics and learn the maths which helps them get through undergraduate economics.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Understanding IS-LM Models</title>
+      <link>/post/analytics-is-lm/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/analytics-is-lm/</guid>
+      <description>Introduction After a preview of AD-AS we move onto a bit more detailed model using IS-LM.</description>
     </item>
     
     <item>
@@ -94,17 +94,6 @@
     </item>
     
     <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Assistant Professor
-School of Government and Public Policy
-OP Jindal Global University</description>
-    </item>
-    
-    <item>
       <title>Certified Copy</title>
       <link>/post/certified-copy/</link>
       <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
@@ -119,11 +108,11 @@ OP Jindal Global University</description>
     </item>
     
     <item>
-      <title></title>
-      <link>/landing/</link>
+      <title>About</title>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/landing/</guid>
+      <guid>/about/</guid>
       <description>Assistant Professor
 School of Government and Public Policy
 OP Jindal Global University</description>

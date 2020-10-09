@@ -2,21 +2,8 @@
 title: Understanding IS-LM Models
 author: Nikhil Damodaran
 date: '2020-09-01'
-categories:
-  - lecture notes
-  - r notes
-  - resources
-  - time series
-tags:
-  - business cycles
-  - computational methods
-  - economics
-  - macroeconomics
-  - markdown
-  - r
-math: true
-description: a blog which discusses extraction of business cycles from time series
-  data
+math: yes
+description: learn how to extract business cycles from time series data
 ---
 
 ## Introduction 
@@ -822,77 +809,6 @@ quadraticRoots(1, -80, -2000)
 ```
 
 
-__Practice Questions__
-
-A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:
-
-|  Real Wage|  Effort|
-|:--:|:--:|
-|  8|  7|
-|  10|  10|
-|  12|  15|
-|  14|  17|
-|  16|  19|
-|  18|  20|
-
-The marginal product of labor for this firm is
-
-$$ MPN = E(100-n)/15$$
-where E is the effort level and N is the number of workers employed. If the firm can pay only one of the six wage levels shown, which should it choose?
-
-(a) 8
-(b) 10
-(c) 12
-(d) 14
-
-A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:
-
-|  Real Wage|  Effort|
-|:--:|:--:|
-|  8|  7|
-|  10|  10|
-|  12|  15|
-|  14|  17|
-|  16|  19|
-|  18|  20|
-
-The marginal product of labor for this firm is
-
-$$ MPN = E(100-n)/15$$
-where E is the effort level and N is the number of workers employed.
-How many workers will it employ?
-
-A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:
-
-|  Real Wage|  Effort|
-|:--:|:--:|
-|  8|  7|
-|  10|  10|
-|  12|  15|
-|  14|  17|
-|  16|  19|
-|  18|  20|
-
-The marginal product of labor for this firm is
-
-$$ MPN = E(100-n)/15$$
-where E is the effort level and N is the number of workers employed. There are 200 workers in the town where the firm is located, all willing to work at a real wage of 8. How many workers will it employ?
-
-A firm identifies the following relationship between the real wage it pays and the effort exerted by its workers:
-
-|  Real Wage|  Effort|
-|:--:|:--:|
-|  8|  7|
-|  10|  10|
-|  12|  15|
-|  14|  17|
-|  16|  19|
-|  18|  20|
-
-The marginal product of labor for this firm is
-
-$$ MPN = E(100-n)/15$$
-where E is the effort level and N is the number of workers employed. There are 200 workers in the town where the firm is located, all willing to work at a real wage of 8. What happens to these firms if their optimal effort wage is 6?
 
 
 An economy is described by the following equations:

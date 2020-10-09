@@ -2,19 +2,7 @@
 title: Bookmarks
 author: Nikhil Damodaran
 date: '2020-01-01'
-categories:
-  - organization
-  - resources
-tags:
-  - chrome
-  - media
-  - news
-  - reading
-aliases:
-  - migrate-from-jekyl
 description: my select list of frequently visited websites
-series:
-  - Themes Guide
 ---
 
 A collection of my frequently visited websites for news, views and economics. 

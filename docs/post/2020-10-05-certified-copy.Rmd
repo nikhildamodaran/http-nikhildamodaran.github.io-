@@ -3,13 +3,10 @@ title: Certified Copy
 author: Nikhil Damodaran
 date: '2019-02-12'
 categories:
-  - leisure
 tags:
-  - movie review
-  - movies
 slug: certified-copy
 Description: a movie review
-DisableComments: no
+DisableComments: yes
 ---
 
 Will you be interested in a work of art if you knew it is a replica or will you show sanctity to the 'original'?

@@ -2,19 +2,7 @@
 title: Extracting Business Cycles from Time Series Data
 author: Nikhil Damodaran
 date: '2020-08-10'
-categories:
-  - lecture notes
-  - resources
-  - r notes
-  - time series
-tags:
-  - business cycles
-  - markdown
-  - r
-  - economics
-  - macroeconomics
-  - computational methods
-math: true
+math: yes
 description: a blog which discusses extraction of business cycles from time series
   data
 ---

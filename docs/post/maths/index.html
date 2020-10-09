@@ -49,26 +49,26 @@
     <ul class="social-links">
         
             <li>
-                <a href="https://de.linkedin.com/" rel="me" aria-label="Linkedin">
+                <a href="https://www.linkedin.com/in/nikhil-damodaran-6594a343/" rel="me" aria-label="Linkedin">
                     <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
                 </a>
             </li>
         
             <li>
-                <a href="https://github.com/lxndrblz/anatole/" rel="me" aria-label="GitHub">
+                <a href="https://github.com/nikhildamodaran" rel="me" aria-label="GitHub">
                     <i class="fa fa-2x fa-github" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            <li>
-                <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
-                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
                 </a>
             </li>
         
             <li>
                 <a href="mailto:ndamodaran@jgu.edu.in" rel="me" aria-label="e-mail">
                     <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://twitter.com/nikhildamodaran" rel="me" aria-label="twitter">
+                    <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
         
@@ -136,30 +136,31 @@
                 
                     <div class="info">
                         <em class="fa fa-sun-o"></em>
-                        <span class="date">Mon, Aug 17, 2020</span>
+                        <span class="date">Tue, Oct 6, 2020</span>
                         <em class="fa fa-clock-o"></em>
                         <span class="reading-time">4-minute read</span>
                     </div>
                 
             </div>
 
-            <p><text class = red> <strong>Lecture Notes</strong> </text></p>
+            <div id="lecture-notes" class="section level3">
+<h3>Lecture Notes</h3>
 <p>Fall 2020, <a href="https://www.dropbox.com/s/wppoos8dusvkx5y/Syllabus%20Maths%20I%20Fall%202020.pdf?dl=0">Syllabus</a></p>
-<p class="red">
-<strong>Topic 1: Basic Tools of Mathematical Economics</strong>
-</p>
+<div id="topic-1-basic-tools-of-mathematical-economics" class="section level4">
+<h4>Topic 1: Basic Tools of Mathematical Economics</h4>
 <p><a href="https://www.dropbox.com/s/0mzg5mfc9nrroag/lec01.pdf?dl=0">Lec 01</a>: Introduction to Mathematical Economics<br />
 <a href="https://www.dropbox.com/s/mhw57wk6ynef7d2/lec02.pdf?dl=0">Lec 02</a>: Mathematical Models in Economics<br />
 <a href="https://www.dropbox.com/s/guvq17e2nwkfk7g/lec03.pdf?dl=0">Lec 03</a>: Introduction to Set Theory<br />
 <a href="https://www.dropbox.com/s/7z2yf44qlppp0fm/lec04.pdf?dl=0">Lec 04</a>: Relations, Functions and Economics</p>
-<p>An example of a rational function used in class is
+<p><strong>Additional Notes</strong></p>
+<p><strong>Rational Functions and Computer Aided Mathematics</strong>: An example of a rational function used in class is
 <span class="math display">\[y = \frac{x^{2} +3}{5x + 7}\]</span>
 While it is easier to imagine the shape of common mathematical functions in economics, it might get harder. For functions such as this, we rely on computer to give us an idea about its shape. For instance, we can simulate the shape of this function for 25 values of <span class="math inline">\(x \in [-10, 10]\)</span> to obtain the following:</p>
 <p><img src="/post/maths_files/figure-html/rational-function-1.png" width="672" /></p>
 <p>What happens to this function when we get more values of <span class="math inline">\(x\)</span> in the same range?</p>
 <p><img src="/post/maths_files/figure-html/rational-function-1-1.png" width="672" /></p>
 <p>Thus the computer can only help us approximate the shape of the function based on the kind of questions we ask. In order to inform ourselves about the shape, we can rely on the principles of differentiation which would be explored later in the course.</p>
-<p>Remember that we used a linear total cost function to understand the application of linear functions in economics. This cost function is peculiar. One example is as follows:</p>
+<p><strong>Cost Functions in Economics</strong>: Remember that we used a linear total cost function to understand the application of linear functions in economics. This cost function is peculiar. One example is as follows:</p>
 <p><img src="/post/maths_files/figure-html/Cost-functions-1.png" width="672" /></p>
 <p>For a linear cost function we have a linear total variable cost too.</p>
 <p><img src="/post/maths_files/figure-html/Cost-functions-2-1.png" width="672" /></p>
@@ -168,19 +169,9 @@ While it is easier to imagine the shape of common mathematical functions in econ
 <p>But for a linear total cost function, our average fixed cost is actually a hyperbola of the following form:</p>
 <p><img src="/post/maths_files/figure-html/Cost-functions-4-1.png" width="672" /></p>
 <p>Notice that in economics we will use a variety of rectangular and regular hyperbolas, esp. in microeconomics.</p>
-<p>Plotting a 3D Cobb Douglas production function:</p>
-<pre class="r"><code>CobbDouglas &lt;- function (L, K) {
-   return (L^alpha * K^beta)
-}
-alpha = 0.3
-beta = 0.7
-L &lt;- seq(0, 10, length= 300)
-K &lt;- seq(0, 100, length= 300)
-Y &lt;- outer(L, K, CobbDouglas)
-Y[is.na(Y)] &lt;- 1
-op &lt;- par(bg = &quot;white&quot;)
-persp(L, K, Y, theta = 80, phi = 20, expand = 0.5, col = &quot;red&quot;)</code></pre>
+<p><strong>Generalizing Functions in Higher Dimensions</strong>: We can plot a 3D Cobb Douglas production function of the form <span class="math display">\[y = L^{\alpha}K^{\beta}\]</span> as follows:</p>
 <p><img src="/post/maths_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><strong>Finding Roots of a Quardratic Equation</strong></p>
 <pre class="r"><code>P = seq(-25, 50, length.out = 3000)
 Y = 0.14*P^2 + 1.89*P - 177.9
 plot(P,Y, type = &quot;l&quot;, col = &quot;red&quot;)
@@ -248,14 +239,14 @@ plot(eq(seq(1,10, length.out = 300)), type=&#39;l&#39;, col=&quot;red&quot;, mai
 grid (NULL,NULL, lty = 6, col = &quot;cornsilk2&quot;)
 abline(h=0, col=&quot;blue&quot;)</code></pre>
 <p><img src="/post/maths_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+</div>
 
         </div>
         <div class="post-footer">
             <div class="info">
-                <span class="separator"><a class="category" href="/categories/lecture-notes/">lecture notes</a><a class="category" href="/categories/organization/">organization</a><a class="category" href="/categories/resources/">resources</a></span>
-
-                <span class="separator"><a class="tag" href="/tags/economics/">economics</a><a class="tag" href="/tags/lecture-notes/">lecture notes</a><a class="tag" href="/tags/mathematical-methods/">mathematical methods</a><a class="tag" href="/tags/markdown/">markdown</a></span>
-
+                
+                
             </div>
         </div>
 
