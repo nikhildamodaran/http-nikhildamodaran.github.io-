@@ -1,0 +1,151 @@
+body {
+background-color: white;
+font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+/*font-family: Arial, Helvetica, sans-serif;*/
+font-size: 14pt;
+line-height: 1.5;
+/*max-width:80%;*/
+margin-top: 80pt;
+/*
+margin-left: 5%;
+margin-right: 5%;
+*/
+padding: 2em 2em 4em 4em;
+/*border: 1px solid black;*/
+/*border-top:1px solid #DCDCDC  ;*/
+border-bottom:1px solid #DCDCDC  ;
+}
+
+h1
+{
+/*color: #2F4F4F;*/
+color: black;
+font-weight: 300;
+text-align: left;
+}
+
+h2,h3, h4, h5, h6 {
+line-height: 1.5;
+text-align: left;
+font-size: 14pt;
+font-weight: 500;
+}
+
+/* The solid line after every section....*/
+hr {
+border: 1px solid #DCDCDC;
+}
+
+/*font color in main section*/
+main {
+color: black;
+}
+
+a {
+color: #082CF4;
+background-color: transparent;
+text-decoration: none;
+}
+/*
+a:hover{
+color: #082CF4;
+background-color: greenyellow;
+}
+*/
+
+p {
+color: black;
+text-align: left;
+font-size: 14pt;
+}
+
+header {
+background-color: white;
+position: fixed;
+top: 0%;
+left: 5%;
+right: 5%;
+height: 60pt;
+display: flex;
+align-items: center;
+/*box-shadow: 0 0 10pt 0 green;*/
+font-size: 14pt;
+font-weight: 300;
+border-bottom:1px solid #DCDCDC  ;
+border-top:1px solid #DCDCDC  ;
+/*max-width:80%;*/
+}
+
+
+header * {
+display: inline;
+}
+
+header li {
+margin-left: 20pt;
+margin-right: 20pt;
+margin-top: 20pt;
+margin-bottom: 20pt;
+}
+header img {
+height: 80px;
+margin-left: 40px;
+}
+
+.second {
+background-color: white;
+position: fixed;
+top: 75pt;
+left: 10%;
+right: 10%;
+height: 40pt;
+display:inline-flex;
+align-items: center;
+box-shadow: 0 0 15px 0 whitesmoke;
+font-size: 12pt;
+}
+
+* {
+box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+float: left;
+width: 33.33%;
+padding: 10px;
+height: 400pt;
+}
+.column2 {
+float: left;
+width: 50%;
+padding: 10px;
+/*height: 400pt;*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+width: 100%;
+}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column2 {
+width: 100%;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+    header{
+        width: inherit;
+    }    
+}

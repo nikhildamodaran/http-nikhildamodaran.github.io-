@@ -1,0 +1,197 @@
+body {
+background-color: white;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.5;
+padding: 0 1% 0 1%; 
+font-size: 100%;
+max-width: 900pt; /* alternatively: max-width: 72em;*/
+display: block;
+/*margin: 5% auto !important; */
+margin: 8pt auto !important;
+float: none !important;
+border: 1pt solid transpatent;
+/*border: 1px solid #dfdfe5;*/
+}
+
+h1 {
+color: rgb(213,94,0);
+font-weight: 400;
+text-align: center;
+display: block;
+}
+
+h2,h3, h4, h5, h6 {
+color: rgb(213,94,0)
+text-align: left;
+font-weight: 300;
+}
+
+p, ul, li, {
+color: black;
+text-align: left;
+display: block;
+line-height: 1.5;
+margin-left: 2%;
+}
+
+hr {
+border: 1px solid black; 
+}
+
+a {
+color: rgb(0,114,178);
+background-color: transparent;
+text-decoration: none;
+}
+
+/*Custom divisions:*/
+
+.header {
+background-color: white;
+max-width: 900pt;
+height: 45pt;
+margin: 0 auto !important; 
+float: none !important;
+border-bottom: 1px solid lightgray;
+}
+
+.header a {
+float: center;
+color: rgb(0,114,178);
+text-align: center;
+padding: 1em 4em 1em 1em;
+text-decoration: none;
+line-height: 1.5;
+font-size: 12pt; 
+}
+
+.header img {
+height: 100px;
+margin-left: 2pt;
+}
+
+.header a:hover {
+color: navy;
+}
+
+@media screen and (max-width: 500px) {
+.header a {
+float: none;
+display: inline-block;
+text-align: left;
+padding: 0em 2% 0em 2%;
+}
+    
+.header-right {
+float: none;
+padding: 0em 2% 0em 2%;
+}
+
+.header img {
+height: 80px;
+align-content: center;
+padding: 0em 0em 0em 5%;
+}
+}
+
+.sticky {    
+position: fixed;
+top: 0%;
+left: 5%;
+right: 5%;
+max-width: 900pt;
+}
+
+.sticky + .content {
+padding-top: 150pt;
+padding: 0em 1% 0em 1%;
+}
+
+
+
+*, *::after, *::before{
+box-sizing: border-box;
+}
+
+/*@media (max-width: 600px) and (min-width: 300px) {
+.header li { float: none;
+    display: block;
+    text-align: left;
+    } 
+}
+
+header * {
+display: inline-flex;
+} */
+
+/*
+header li {
+margin-left: 20pt;
+margin-right: 20pt;
+margin-top: 20pt;
+margin-bottom: 20pt;
+display: inherit;
+}
+header img {
+height: 80px;
+margin-left: 0pt;
+}
+*/
+
+.second {
+background-color: white;
+position: fixed;
+top: 75pt;
+left: 10%;
+right: 10%;
+height: 40pt;
+display:inline-flex;
+align-items: center;
+/*box-shadow: 0pt 0pt 10pt 0 gold;*/
+/*font-size: 12pt;*/
+}
+
+*, *::after, *::before{
+box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+float: left;
+width: 33.33%;
+padding: 10pt;
+/*height: 400pt;*/
+}
+.column2 {
+float: left;
+width: 50%;
+padding: 10pt;
+/*height: 400pt;*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.column {
+width: 100%;
+}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.column2 {
+width: 100%;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+header{
+width: inherit;
+}    
+}

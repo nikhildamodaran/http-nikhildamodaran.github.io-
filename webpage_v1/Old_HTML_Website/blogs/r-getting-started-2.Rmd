@@ -1,0 +1,154 @@
+---
+title: "Plotting Data Using Ggplot2 in R"
+output:
+  html_document:
+    toc: false
+    toc_float: false
+    toc_depth: 4
+    number_sections: false
+    css: stylesheet.css
+    highlight: haddock
+    toc_collapsed: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+--------
+
+#### Introduction
+In this small snippet, you would deal with data science in a different manner, in a manner an economist - more specifically a time series economist deals with. Time series variables are something which change over time - the exact opposite of my weight! If I denote the variable $y$ as a time series variable, then I should write it with a subscript which denotes its time i.e. $y_{t}$. 
+
+Why did they have to call this variable $Y_{t}$? My minutes of sleep yesterday will be $Y_{yesterday}$ and my minutes of sleep today will be $Y_{today}$. Even though both of them denote the same variable sleep, they are distinct values and you could have alternatively called them $x$ and $y$, with the connection between them being a relation between x and y. But imagine the number of alphabets we would require to represent a complex system. We might run out of alphabets easily!!
+
+So time series variable is by convention denoted as $y_{t}$. Most of the time series data comes well behaved. By this I mean that you can just download the data and plot it in R and voila! This makes it better for students to begin with time series data for rudimentary data analysis rather than any other data form. In general, time series data shows you behavior of variables over time. Variables in different disciplines will take different meaning, but their structure in terms of time series analytics remains the same. We will try and keep the analytical structure general enough so that you could follow even if you aren't an economist like me or my budding students. 
+
+
+Consider the data on St. Louis Federal Reserve website called [FRED](https://fred.stlouisfed.org/). Getting it in R is also super easy - follow directions given [here](https://cran.r-project.org/web/packages/fredr/vignettes/fredr.html). Learning to explore time series data at such an early stage of data anlaytics helps you gain perspective of why we do all of it that we do! It makes it easier for you to move from theory to actually observing how things are changing. And for students of economics, if you provide an argument without data, then you aren't making an argument at all. Moreover, its easy to use FRED its time series data to even substantiate your arguments. Let's start with an assumption that you're lucky! You get your time series data in a neat excel format. Let's import and visualize this data in R.
+
+### Exploring Excel Data
+
+Since most time series data is well behaved, it leads to data which gets fixed into excel and does not require pre-processing to make it readable. However to import excel into R, you need a package. We use the ReadXL package. If you do not have this package learn how to install a package. It's super easy - this [simple video](https://www.youtube.com/watch?v=ljdfqMfWn_A).^[More about R studio: In addition to R, R-studio comes with a lot of in0build functionality, one of which is reading excel just like you do in STATA. It also comes with a list of installed packages - it is your package manager. It comes with a help window, a plot viewer window and a window which shows you the current working directory. It also helps you visualize the variables which are there in the global environment. In short, it does a lot of work which would be left done manually in C++ paradigm.] After we install it, we invoke the package to be active using the library command - which is again a function! Then we use the command to import data and store it in a matrix called spending. I call it spending because I am examining Government expenditure data for select Eurozone countries from the Eurostat database - my hazardous research! I have some missing values which are NA in the excel file. It could be just blank or coded using other characters, so you can change the na = "" appropriately to adjust your requirements.
+```{r eval=FALSE}
+library(readxl)           # loading library for reading excel file
+spending = read_excel("~/Desktop/Book1.xlsx",na = "NA")
+```
+
+Lets have a look at the imported data. Note that you can actually do all of this using in a neat clickable interface in R-studio. Lets explore the data in R. There are three common ways of dealing with and eyeballing the data matrix or data frame. If you store it as a matrix, then you ask the computer to display some rows or some columns of the matrix. For eg: the second line says show me the rows 1 to 10 and columns 1 to 3 for the matrix spending denoted $spending[i,j]$.
+```{r eval=FALSE}
+spending[1:10, ]  # First 10 rows
+spending[1:10,1:3] # First 10 rows of data of the first 3 variables
+spending[1:5, -1] # display the first five rows, all variables except the first
+```
+
+You can also use the following commands to explore the top portion of the data called head and the lower portion of the data called tail. These terminology are common across R/python and even other programming languages. So you are learning robust data dissections here!
+```{r eval=FALSE}
+head(spending)                       # First 6 rows of dataset
+head(spending, n=10)                 # First 10 rows of dataset
+head(spending, n= -10)               # All rows but the last 10
+tail(spending)                       # Last 6 rows
+tail(spending, n=10)                 # Last 10 rows
+tail(spending, n= -10)               # All rows but the first 10
+```
+
+After literally looking at the head and tail of the data we fed to R, we need to understand the type to which R converted an excel file. Though this may not occur to you instantly, R automates the way it stores data. You do not have to tell it anything. When you use the following command, you observe that they type of this data is a "list". List is literally the English word. Well, now you wonder. If its a list then how can it be a matrix. Think of each column as a list and think of the master list as a list of column lists. So its list of a list!!
+```{r eval=FALSE}
+typeof(spending) # what type of data is it?
+str(spending)                        # displays the structure of the data object
+class(spending)
+```
+
+Now we want to know the names of the variables in this data set. Go ahead and explore!!
+```{r eval=FALSE}
+names(spending)                      # Lists variables in the dataset
+```
+
+#### Let's Plot Some Data
+First, it always helps us get a picture of the data by plotting the data - this last sentence is so circular!!
+``` {r eval=FALSE}
+plot( spending$`Ger` )
+```
+The default R plots need a lot of work for us to get to the nicer graphics capabilities of packages such as ggplot2 and matlibplot in python. Let me show you a version of this without resorting to GGplot.
+```{r eval=FALSE}
+plot( spending$`Ger`,
+     type = 'l', 
+     frame = T,
+     ylim=c(min(spending$Ger, na.rm=TRUE),max(spending$Ger, na.rm=TRUE)),
+     lwd = 2,         
+     col = "red",
+     main = "Government Spending Germany ",
+     xlab = "Quarters, 2000:Q1-2019:Q1", 
+     ylab = expression(G[t]))
+```
+These improvements in the plot certainly make the figure more readable. These are all based on attributes of the plot function. Most of them are self explanatory, but since we do this the first time, let me elaborate. I wanted the figure to be a line plot rather than a scatter plot. So I used the argument of the plot function which specified what type of plot do I want. There are others such as histograms. It is up to you to know which one is conventional and which one is plainly incorrect.^[Both are possible. Time series is plotted using a line graph conventionally.]
+```{r eval=FALSE}
+plot( spending$`Ger`,
+     type = 'h', 
+     frame = T,
+
+     lwd = 2,         
+     col = "red",
+     main = "Government Spending Germany ",
+     xlab = "Quarters, 2000:Q1-2019:Q1", 
+     ylab = expression(G[t]))
+```
+
+The next option I specified is that I wanted to let the data have a frame around it. I could have specified one without a frame and with a blue color too.
+```{r eval=FALSE}
+plot( spending$`Ger`,
+     type = 'h', 
+     frame = F,
+     lwd = 2,         
+     col = "blue",
+     main = "Government Spending Germany ",
+     xlab = "Quarters, 2000:Q1-2019:Q1", 
+     ylab = expression(G[t]))
+```
+I also changed the line width to 2 which you can increase or decrease based on how it appeals to you visually. Let's try. This one if when the width is 20:
+```{r eval=FALSE}
+plot( spending$`Ger`,
+     type = 'h', 
+     frame = F,
+     lwd = 20,         
+     col = "blue",
+     main = "Government Spending Germany ",
+     xlab = "Quarters, 2000:Q1-2019:Q1", 
+     ylab = expression(G[t]))
+```
+This one is when the width is 200:
+```{r eval=FALSE}
+plot( spending$`Ger`,
+     type = 'h', 
+     frame = F,
+     lwd = 200,         
+     col = "blue",
+     main = "Government Spending Germany ",
+     xlab = "Quarters, 2000:Q1-2019:Q1", 
+     ylab = expression(G[t]))
+```
+There are other arguments to the plot function in which main, xlab and ylab are all labels. Main labels the figure, x and y label the axis respectively. There is one other aspect which showed up in the second plot command but disappeared later. That is the ylim which sets the axis limits: the importance of which will be discussed in a later post.
+
+### Summary
+
+We will close this section plotting our desired method and specification and mentioning the limitations of the plots. First and foremost even though quarters are labeled here, the x axis does plot quarters or doesn't even show them. The data shows Germany's government expenditure in Bn Euros from 2000:Quarter 1 to 2019:Q1. Second, the $y$ axis has to many zeros, it can still be reduced to a more legible magnitude. Finally, there could be other changes which could be brought to the data visualization based on how do you want your pictures to be. Follow the conventions and you would not have to reinvent the wheel. 
+
+```{r eval=FALSE}
+plot( spending$`Ger`,
+     type = 'l', 
+     frame = T,
+     ylim=c(min(spending$Ger, na.rm=TRUE),max(spending$Ger, na.rm=TRUE)),
+     lwd = 2,         
+     col = "#DD0000",
+     main = "Government Spending Germany ",
+     xlab = "Quarters, 2000:Q1-2019:Q1", 
+     ylab = expression(G[t]))
+```
+
+Explore other aspects of the data and think of the tentative future steps in analyzing the data. The raw data downloaded from Eurozone looks weird. For answers, wait for the next post or go to [Eurostat](https://ec.europa.eu/eurostat/data/database) and download government expenditure, quarterly for select countries which is under the National Accounts Statistics for Eurozone and the series is called namq_10_gdp.
+
+
+#### Great New Resources
+
+* [FRED Database Through R](https://cran.r-project.org/web/packages/fredr/vignettes/fredr.html)
+
