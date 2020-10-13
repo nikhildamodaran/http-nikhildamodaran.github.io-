@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on Website of Nikhil Damodaran</title>
+    <link>/docs/</link>
+    <description>Recent content in Docs on Website of Nikhil Damodaran</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/docs/about/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/about/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Assistant Professor&lt;br /&gt;
+&lt;a href=&#34;http://jsgp.edu.in/&#34;&gt;School of Government and Public Policy&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://jgu.edu.in/&#34;&gt;OP Jindal Global University&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cabin 6, T4, Academic Block&lt;br /&gt;
+OP Jindal Global University, Sonipat, Haryana&lt;br /&gt;
+Email: &lt;a href=&#34;mailto:ndamodaran@jgu.edu.in&#34;&gt;ndamodaran@jgu.edu.in&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Research&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;My research focuses on transmission of economic policy across open economies.&lt;/p&gt;
+&lt;p&gt;I examine transmission in a variety of setting. I analyze regional economies which form a part of a fiscal unions in my paper “Fiscal Policy and Transmission: The Case of India’s States”, which is currently under review. I also look at transmission of fiscal policies for the Eurozone in my paper “Trade Transmission of Fiscal Policies in a Currency Union”. I am broadly interested in the effect of policy transmission for these regions especially due to their huge interdependence, which makes policy making a strategic and consequnetial exercise for these regions - in addition to its contributions to supra-regional economic performance.&lt;/p&gt;
+&lt;p&gt;In similar spirit, I examine transmission of Demonetization shock on the Indian economy in a paper “&lt;a href=&#34;https://www.monash.edu/__data/assets/pdf_file/0005/2252795/07-20-Consumer-payment-choice-and-demonetizationedited-final.pdf&#34;&gt;Consumer Payment Choice and the Heterogeneous Impact of India’s Demonetization&lt;/a&gt;” in which we look at the disaggregate effects of India’s demonetization through short payment choices for consumers. This is largely regional transmission of this monetary shock.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Teaching&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I teach Macroeconomics I and &lt;a href=&#34;post/macro/&#34;&gt;II&lt;/a&gt;, International Trade, &lt;a href=&#34;post/maths/&#34;&gt;Mathematical Methods for Economics&lt;/a&gt;, Statistics II all of which are compulsary courses for BA.(Hons) Economics at O.P. Jindal Global University.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

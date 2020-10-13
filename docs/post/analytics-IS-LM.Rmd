@@ -26,9 +26,11 @@ where $y$ is the output produced, $N$ is the labor supply, $K$ is the capital re
 
 <span style="color:rgb(0,114,178)"> Production function </span> under the assumption that capital or other factors are not constrained and 
 
-\begin{gather}
+$$
+\begin{aligned}
 y = A \Big( \gamma_1 N - \frac{1}{2} \gamma_2 N^2 \Big)\Bigg|_{K \; \text{constant}}
-\end{gather}
+\end{aligned}
+$$
 
 Notice that this is essentially a function of one variable $y=f(N)$ with parameters i.e. $A, \gamma_1, \gamma_2$. Recall the profit maximization problem from Micro courses.
 
