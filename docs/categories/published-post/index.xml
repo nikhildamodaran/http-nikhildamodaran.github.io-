@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>published post on Website of Nikhil Damodaran</title>
+    <link>/categories/published-post/</link>
+    <description>Recent content in published post on Website of Nikhil Damodaran</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/published-post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RBI and uncoventional monetary policy for financing state expenditures during the Pandemic</title>
+      <link>/post/rbi-s-response-to-covid-19-needs-to-be-localized-and-unconventional/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rbi-s-response-to-covid-19-needs-to-be-localized-and-unconventional/</guid>
+      <description>Published as Indian Express, April 24, 2020
+The IMF has massively downgraded India’s projected GDP growth rate for the current fiscal year to 1.</description>
+    </item>
+    
+  </channel>
+</rss>

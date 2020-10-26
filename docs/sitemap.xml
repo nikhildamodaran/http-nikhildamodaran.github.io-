@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/monetary-policy-and-new-keynesian-models/</loc>
+    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/docs/about/</loc>
     <lastmod>2020-10-13T00:00:00+00:00</lastmod>
   </url>
@@ -14,11 +24,6 @@
   
   <url>
     <loc>/post/maths/</loc>
-    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
     <lastmod>2020-10-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,13 +48,33 @@
   </url>
   
   <url>
-    <loc>/post/getting-started-with-r/</loc>
-    <lastmod>2020-01-25T00:00:00+00:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/bookmarks/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+    <loc>/tags/economics/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/published-post/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/rbi-s-response-to-covid-19-needs-to-be-localized-and-unconventional/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/getting-started-with-r/</loc>
+    <lastmod>2020-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -68,11 +93,12 @@
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>/post/bookmarks/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
@@ -81,10 +107,6 @@
   
   <url>
     <loc>/research/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
   </url>
   
   <url>

@@ -28,7 +28,7 @@ Then we import the data from an excel sheet.
 
 ```{r}
 library(readxl)
-gdp <- read_excel("/Users/nikhildamodaran/Dropbox/Teaching/Macroeconomics-II/Fall-2020/Teaching Resources/Exercise 1/GDP FRED USA.xlsx")
+gdp <- read_excel("/Users/nikhildamodaran/Dropbox/Nikhil/teaching/Macroeconomics-II/Fall-2020/Teaching Resources/Exercise 1/GDP FRED USA.xlsx")
 
 # features of the data
 class(gdp) 

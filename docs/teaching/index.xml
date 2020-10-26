@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teachings on Website of Nikhil Damodaran</title>
+    <link>/teaching/</link>
+    <description>Recent content in Teachings on Website of Nikhil Damodaran</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mathematical Methods for Economics</title>
+      <link>/teaching/maths/</link>
+      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/maths/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Mathematics is central to undergraduate economics. The key is to learn only as much as is required for you to use economics in daily life. For my undergraduate class, I teach students to be street smart in mathematics and learn the maths which helps them get through undergraduate economics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Macroeconomics II</title>
+      <link>/teaching/macro/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/macro/</guid>
+      <description>&lt;p&gt;Lectures notes from my course on macroeconomics at the OP Jindal Global University&amp;rsquo;s School of Government and Public Policy. Check out the latest debate about India&amp;rsquo;s macroeconomic policy in my lecture notes.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

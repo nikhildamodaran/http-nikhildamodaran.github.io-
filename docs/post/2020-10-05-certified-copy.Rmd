@@ -9,15 +9,21 @@ Description: a movie review
 DisableComments: yes
 ---
 
-Will you be interested in a work of art if you knew it is a replica or will you show sanctity to the 'original'?
+Will you be interested in a work of art if you knew it was a replica or will you show sanctity to the 'original'? This is the question which forms the basis of conversations in this beautiful movie _Certified Copy_ by Abbas Kiarostami.
 
 <!--more-->
 
 ![](/post/2020-10-05-certified-copy.en_files/ZZ2053ADC4.jpg)
 
-> Will you be interested in a work of art if you knew it is a replica or will you show sanctity to the 'original'?
+> Will you be interested in a work of art if you knew it was a replica or will you show sanctity to the 'original'? This is the question which forms the basis of conversations in this beautiful movie _Certified Copy_. 
 
-This is a review of the beautiful movie "[Certified Copy](https://www.imdb.com/title/tt1020773/)" by [Abbas Kiarostami](https://en.wikipedia.org/wiki/Abbas_Kiarostami) which uses the backdrop of a conversation between a writer and a French women to discuss the sanctity of orignial art or the intrigue in a replica. Is there a debate? Why do we value the original so much more than replica?
+This is a review of the beautiful movie "[Certified Copy](https://www.imdb.com/title/tt1020773/)" by [Abbas Kiarostami](https://en.wikipedia.org/wiki/Abbas_Kiarostami) which uses the backdrop of a conversation between a writer and a French antiques dealer to take you through a mirage created by them and their lives. What starts out as a discussion surrounding the sanctity of orignial art or the intrigue in a replica, turns out to be a roller coaster of bickering and duet of emotions.
+
+The writer comes to Tuscany to discuss his book, which he calls "Certified Copy", which discusses the idea that  "issues of authenticity are irrelevant because every reproduction is itself an original, and even the original is a copy of another form." [^*] I want to discuss the movie which starts with this catchy idea just as a mechanism to lure you into their conversations. 
+
+__The Authenticity of a Certified Copy__  
+
+Is there a debate? Why do we value the original so much more than replica? At the outset, I found myself against the writer played by [William Shimell](https://www.imdb.com/name/nm1468516/) - originally an opera singer, and in the shoes of this French antiques dealer for two reasons. First, I absolutely dilike the idea that a copy deserves its space in art and I thought of this concept as a 
 
 Since the original is a reflection of the artist's environment, the art-work is a byproduct. Isn’t the original, thus an image of the feelings or times an artist co-exists with the thought? This movie draws parallel between these questions and the life of [Juliet Binoche's](https://www.imdb.com/name/nm0000300/) character.
 
@@ -55,4 +61,6 @@ At a certain level, it makes you go crazy when the original narrative clashes wi
 It is this transition which makes for the Certified Copy an exercise in thought and movie-making. It essays an ease of natural conversations so carefully crafted for the reel that you feel like you are eavesdropping an active conversation. It plays with our emotional connect with the main characters and takes us on a ride.
 
 However, it could have done better by making the transition smoother, even if they did not want to clarify the relation between Binoche and Shimell. Perhaps, the take away could be the confusion or the baggage. If we could see any conversation without the respective roles essayed by the people involved, we might view these conversations differently. A disagreement is a quarrel if it’s played between couples, otherwise it is a civilized display of differences?
+
+[^*]: [Borrowed from wikipedia](https://en.wikipedia.org/wiki/Certified_Copy_(film))
 
